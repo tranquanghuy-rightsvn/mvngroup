@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Không tìm thấy trang – MVN Group</title>
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon-192x192.png" sizes="192x192">
+
+    <style>
+        /* Trang 404 duoc serve o bat ky path nao -> moi duong dan phai tuyet doi tu root */
+        @font-face {
+            font-family: 'Inter Tight';
+            src: url('/fonts/InterTight-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 100 900;
+            font-display: swap;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            color: #2c2c2c;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .nf__logo img {
+            width: 72px;
+            height: auto;
+            display: block;
+            margin: 0 auto 40px;
+        }
+
+        .nf__code {
+            margin: 0;
+            font-size: clamp(80px, 14vw, 160px);
+            font-weight: 200;
+            letter-spacing: 6px;
+            line-height: 1;
+            color: #8f8f8a;
+        }
+
+        .nf__title {
+            margin: 20px 0 12px;
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 400;
+        }
+
+        .nf__text {
+            margin: 0 0 36px;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #6f6f6b;
+            max-width: 480px;
+        }
+
+        .nf__btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: #e9a63c;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            letter-spacing: .5px;
+            border-radius: 999px;
+            transition: background .3s ease;
+        }
+
+        .nf__btn:hover {
+            background: #2c2c2c;
+        }
+
+        .nf__links {
+            margin-top: 28px;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 13px;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+        }
+
+        .nf__links a {
+            color: #8a8a86;
+            text-decoration: none;
+            transition: color .3s ease;
+        }
+
+        .nf__links a:hover {
+            color: #e9a63c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="nf__logo" href="/" aria-label="MVN Group - Trang chủ">
+        <img src="/images/logo.avif" alt="MVN Group">
+    </a>
+
+    <h1 class="nf__code">404</h1>
+    <p class="nf__title">Không tìm thấy trang bạn yêu cầu</p>
+    <p class="nf__text">Trang có thể đã được di chuyển sang địa chỉ mới hoặc không còn tồn tại. Hãy quay về trang chủ hoặc khám phá các mục bên dưới.</p>
+
+    <a class="nf__btn" href="/">Về trang chủ</a>
+
+    <nav class="nf__links">
+        <a href="/about-us/">About</a>
+        <a href="/our-projects/">Projects</a>
+        <a href="/news/">News</a>
+        <a href="/contact-us/">Contact</a>
+    </nav>
+
+</body>
+
+</html>

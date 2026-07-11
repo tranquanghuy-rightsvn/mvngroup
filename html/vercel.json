@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/portfolio-item/:slug",
+      "destination": "/our-projects/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug",
+      "destination": "/news/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio-category/:slug",
+      "destination": "/our-projects/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/news/",
+      "permanent": true
+    }
+  ]
+}
