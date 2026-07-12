@@ -3,7 +3,12 @@ name: Build HTML from data
 on:
   push:
     branches: [master]
-    paths: ['data/**']   # chỉ chạy khi CMS commit vào data/ -> commit của CI (chỉ đụng html/) không tự kích hoạt lại
+    # Chỉ trigger ở posts.json/projects.json — luôn là commit CUỐI của mỗi lần Lưu/Xoá trên CMS.
+    # Nhờ vậy CI không bao giờ build trạng thái dở dang (VD: đã xoá post.json nhưng index chưa cập nhật),
+    # và mỗi thao tác chỉ chạy đúng 1 lần build. Commit của CI (chỉ đụng html/) không tự kích hoạt lại.
+    paths:
+      - 'data/posts.json'
+      - 'data/projects.json'
   workflow_dispatch:      # cho phép bấm chạy tay trên tab Actions
 
 permissions:
