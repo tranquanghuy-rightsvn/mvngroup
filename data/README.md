@@ -6,8 +6,8 @@ Thư mục này là "database" bài viết của site. **Không sửa tay** — 
 
 | Đường dẫn | Ai ghi | Nội dung |
 |---|---|---|
-| `content/posts.json` | CMS | Index metadata toàn bộ bài viết |
-| `content/news/<slug>/post.json` | CMS | Metadata + content HTML của 1 bài |
+| `data/posts.json` | CMS | Index metadata toàn bộ bài viết |
+| `data/news/<slug>/post.json` | CMS | Metadata + content HTML của 1 bài |
 | `html/news/<slug>/images/*` | CMS | Cover + ảnh trong bài — ghi **thẳng vào site** để không duplicate ảnh |
 | `html/news/<slug>/index.html` | CI/CD | Trang bài viết, generate từ `post.json` |
 | `html/` còn lại | CI/CD | Website chính |
@@ -39,4 +39,4 @@ Thư mục này là "database" bài viết của site. **Không sửa tay** — 
 
 - Build đọc `posts.json` + từng `post.json`, generate `html/news/<slug>/index.html` (+ trang index/sitemap nếu cần).
 - **Không đụng vào `html/news/<slug>/images/`** — ảnh đã nằm đúng chỗ do CMS ghi.
-- CMS xoá bài / đổi slug sẽ tự xoá `content/news/<slug>` và `html/news/<slug>` tương ứng (kể cả `index.html` do CI tạo — CI build lại là xong).
+- CMS xoá bài / đổi slug sẽ tự xoá `data/news/<slug>` và `html/news/<slug>` tương ứng (kể cả `index.html` do CI tạo — CI build lại là xong).
