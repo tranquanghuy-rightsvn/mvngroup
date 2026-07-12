@@ -6,7 +6,7 @@ Input:
   data/posts.json               # bài do CMS quản lý (GAS ghi)
   data/news/<slug>/post.json    # content HTML từng bài CMS
   data/legacy-posts.json        # metadata bài tĩnh có sẵn (không build lại trang)
-  templates/post.html, templates/news-index.html
+  templates/post.html, templates/index.html
   html/news/<slug>/images/*     # ảnh đã được CMS đẩy thẳng vào đây
 
 Output:
@@ -167,7 +167,7 @@ def main():
     merged = sorted(by_slug.values(), key=lambda p: str(p["created_at"]), reverse=True)
 
     post_tpl = (ROOT / "templates" / "post.html").read_text(encoding="utf-8")
-    index_tpl = (ROOT / "templates" / "news-index.html").read_text(encoding="utf-8")
+    index_tpl = (ROOT / "templates" / "index.html").read_text(encoding="utf-8")
 
     built = 0
     for p in cms:

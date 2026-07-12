@@ -2,11 +2,16 @@
 """
 Scaffold một lần (chạy lại khi design site thay đổi):
 1. templates/post.html       <- từ 1 trang bài viết mẫu, thay phần động bằng placeholder
-2. templates/news-index.html <- từ html/news/index.html
+2. templates/index.html     <- từ html/news/index.html
 3. data/legacy-posts.json    <- quét metadata các bài viết tĩnh có sẵn (không do CMS tạo)
 
-Chạy: python3 scripts/scaffold_templates.py
+LƯU Ý: templates/ là file SỬA TAY (source of truth của design).
+Script này chỉ dùng để bootstrap lại từ trang có sẵn — sẽ KHÔNG ghi đè
+template đang tồn tại trừ khi chạy với --force.
+
+Chạy: python3 scripts/scaffold_templates.py [--force]
 """
+import sys
 import html as htmllib
 import json
 import re
@@ -84,7 +89,7 @@ def make_index_template():
         r"\1\n{{SEARCH_LATEST}}\n            \2",
         s, count=1, flags=re.S,
     )
-    out = ROOT / "templates" / "news-index.html"
+    out = ROOT / "templates" / "index.html"
     out.write_text(s, encoding="utf-8")
     print("wrote", out)
     assert "{{NEWS_CARDS}}" in s and "{{SEARCH_LATEST}}" in s
@@ -142,6 +147,10 @@ def scrape_legacy():
 
 
 if __name__ == "__main__":
+    force = "--force" in sys.argv
+    existing = [p for p in [ROOT / "templates" / "post.html", ROOT / "templates" / "index.html"] if p.exists()]
+    if existing and not force:
+        sys.exit("Template đã tồn tại (%s). Đây là file sửa tay — nếu thật sự muốn sinh lại từ trang có sẵn, chạy với --force." % ", ".join(str(x) for x in existing))
     make_post_template()
     make_index_template()
     scrape_legacy()
