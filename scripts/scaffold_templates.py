@@ -38,7 +38,7 @@ ARTICLE_BLOCK = """<article class="post">
 
 {{CONTENT}}
 
-            <p class="post__meta">By MVN Group</p>
+            <p class="post__meta">By {{AUTHOR}}</p>
 
         </article>"""
 
@@ -77,7 +77,7 @@ def make_post_template():
     out.write_text(s, encoding="utf-8")
     print("wrote", out)
     for ph in ["{{TITLE}}", "{{DESCRIPTION}}", "{{URL}}", "{{COVER_URL}}", "{{COVER_MIME}}",
-               "{{DATE_DISPLAY}}", "{{CONTENT}}", "{{RELATED_CARDS}}", "{{SEARCH_LATEST}}"]:
+               "{{DATE_DISPLAY}}", "{{CONTENT}}", "{{AUTHOR}}", "{{RELATED_CARDS}}", "{{SEARCH_LATEST}}"]:
         assert ph in s, "thiếu placeholder " + ph
 
 

@@ -123,6 +123,7 @@ def build_post_page(post, merged, tpl):
         .replace("{{COVER_URL}}", SITE + cover_of(post))
         .replace("{{COVER_MIME}}", MIME.get(ext, "image/jpeg"))
         .replace("{{DATE_DISPLAY}}", date_display(post["created_at"]))
+        .replace("{{AUTHOR}}", esc(post.get("author") or "MVN Group"))
         .replace("{{CONTENT}}", transform_content(post.get("content", ""), slug))
         .replace("{{RELATED_CARDS}}", "\n\n".join(related_card(p) for p in related))
         .replace("{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in latest))
