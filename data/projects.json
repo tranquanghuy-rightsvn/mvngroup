@@ -6,7 +6,7 @@
     "description": "cha co gi",
     "architect": "KTS quang huy",
     "location": "",
-    "date": "Fri Jul 17 2026 00:00:00 GMT+0700 (Giờ Đông Dương)",
+    "date": "",
     "categories": [
       "Cảnh quan",
       "Housing",
@@ -14,6 +14,6 @@
     ],
     "cover": "our-projects/test/images/01.jpg",
     "created_at": "2026-07-12T14:59:01.159Z",
-    "updated_at": "2026-07-12T14:59:01.159Z"
+    "updated_at": "2026-07-12T15:10:13.754Z"
   }
 ]
