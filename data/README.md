@@ -35,8 +35,11 @@ Thư mục này là "database" bài viết của site. **Không sửa tay** — 
 - `content`: HTML của bài. Ảnh trong content có `src` là đường dẫn tương đối `news/<slug>/images/NN.<ext>` — trùng khớp vị trí thật của ảnh dưới `html/`, nên build không phải xử lý gì về ảnh; ảnh có caption nằm trong `<figure class="image"><img><figcaption>`.
 - `images`: mảng đường dẫn ảnh của bài.
 
-## Ghi chú cho script build (CI/CD)
+## CI/CD (đã có: `.github/workflows/build.yml`)
 
-- Build đọc `posts.json` + từng `post.json`, generate `html/news/<slug>/index.html` (+ trang index/sitemap nếu cần).
-- **Không đụng vào `html/news/<slug>/images/`** — ảnh đã nằm đúng chỗ do CMS ghi.
-- CMS xoá bài / đổi slug sẽ tự xoá `data/news/<slug>` và `html/news/<slug>` tương ứng (kể cả `index.html` do CI tạo — CI build lại là xong).
+- Trigger khi có commit vào `data/**` (chính là các commit của GAS CMS) → chạy `scripts/build.py` → commit kết quả vào `html/` → Vercel deploy.
+- `scripts/build.py` (stdlib Python, chạy local được): generate `html/news/<slug>/index.html` cho từng bài CMS, build lại trang danh sách `html/news/index.html` và `html/sitemap.xml` từ `posts.json` + `legacy-posts.json`.
+- `data/legacy-posts.json`: metadata 11 bài tĩnh có sẵn (không do CMS tạo) — GAS **không** đụng file này; trang của các bài legacy giữ nguyên, chỉ được liệt kê ở trang danh sách/sitemap/related.
+- `templates/post.html` + `templates/news-index.html`: template trang, sinh từ design hiện tại bằng `scripts/scaffold_templates.py` — khi đổi design site thì chạy lại script này.
+- Build **không đụng** `html/news/<slug>/images/` — ảnh do CMS ghi thẳng vào.
+- CMS xoá bài / đổi slug sẽ tự xoá `data/news/<slug>` và `html/news/<slug>`; CI build lại danh sách là hết dấu vết.
