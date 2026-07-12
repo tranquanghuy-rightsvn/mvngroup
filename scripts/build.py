@@ -6,13 +6,19 @@ Input:
   data/posts.json               # bài do CMS quản lý (GAS ghi)
   data/news/<slug>/post.json    # content HTML từng bài CMS
   data/legacy-posts.json        # metadata bài tĩnh có sẵn (không build lại trang)
-  templates/post.html, templates/index.html
+  data/projects.json            # dự án do CMS quản lý (GAS ghi)
+  data/our-projects/<slug>/project.json
+  data/legacy-projects.json     # metadata dự án tĩnh có sẵn
+  templates/post.html, templates/index.html, templates/project.html, templates/projects-index.html
   html/news/<slug>/images/*     # ảnh đã được CMS đẩy thẳng vào đây
 
 Output:
-  html/news/<slug>/index.html   # chỉ cho bài CMS
-  html/news/index.html          # danh sách tất cả bài (CMS + legacy)
-  html/sitemap.xml              # cập nhật URL bài viết
+  html/news/<slug>/index.html          # chỉ cho bài CMS
+  html/news/index.html                 # danh sách tất cả bài (CMS + legacy)
+  html/our-projects/<slug>/index.html  # chỉ cho dự án CMS
+  html/our-projects/index.html         # danh sách tất cả dự án (CMS + legacy)
+  html/index.html                      # trang chủ: latest news + search overlay
+  html/sitemap.xml                     # URL bài viết + dự án
 
 Chạy local để thử: python3 scripts/build.py
 """
@@ -95,6 +101,44 @@ def search_card(p):
                 </a>""" % (p["slug"], esc(p["title"]), cover_of(p), esc(p["title"]), esc(truncate(p.get("description", ""))))
 
 
+
+def project_card(p):
+    """Card trong html/our-projects/index.html (catalog grid, có data-tags để filter)."""
+    cats = p.get("categories") or []
+    cat_spans = "\n".join('                        <span class="project-card__cat">%s</span>' % esc(c) for c in cats)
+    return """                <article class="project-card" data-tags="%s">
+                    <a href="%s/"><img class="project-card__image" loading="lazy" alt="%s" src="%s"></a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title"><a href="%s/">%s</a></h3>
+                        <div class="project-card__cats">
+%s
+                    </div>
+                        <div class="project-card__footer">
+                            <a class="project-card__link" href="%s/" aria-label="View %s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg></a>
+                        </div>
+                    </div>
+                </article>""" % (esc("|".join(cats)), p["slug"], esc(p["title"]), project_cover_of(p),
+                                p["slug"], esc(p["title"]), cat_spans, p["slug"], esc(p["title"]))
+
+
+def project_cover_of(p):
+    if p.get("cover"):
+        return "/" + p["cover"]
+    imgs = p.get("images") or []
+    return ("/" + imgs[0]) if imgs else "/thumbnail.png"
+
+
+def search_project_card(p):
+    """Card dự án trong search overlay (Latest Projects)."""
+    return """                <a class="search-overlay__card" href="/our-projects/%s/">
+                    <img loading="lazy" alt="%s" src="%s">
+                    <div>
+                        <h5>%s</h5>
+                        <p>%s</p>
+                    </div>
+                </a>""" % (p["slug"], esc(p["title"]), project_cover_of(p), esc(p["title"]), esc(truncate(p.get("description", ""))))
+
+
 # ---------- content transform ----------
 
 def transform_content(content, slug):
@@ -109,7 +153,7 @@ def transform_content(content, slug):
 
 # ---------- builders ----------
 
-def build_post_page(post, merged, tpl):
+def build_post_page(post, merged, projects, tpl):
     slug = post["slug"]
     cover = post.get("cover") or ""
     ext = cover.rsplit(".", 1)[-1].lower() if "." in cover else "jpg"
@@ -127,6 +171,7 @@ def build_post_page(post, merged, tpl):
         .replace("{{CONTENT}}", transform_content(post.get("content", ""), slug))
         .replace("{{RELATED_CARDS}}", "\n\n".join(related_card(p) for p in related))
         .replace("{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in latest))
+        .replace("{{SEARCH_LATEST_PROJECTS}}", "\n".join(search_project_card(p) for p in projects[:3]))
     )
     out = HTML / "news" / slug / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -134,16 +179,63 @@ def build_post_page(post, merged, tpl):
     print("built", out.relative_to(ROOT))
 
 
-def build_news_index(merged, tpl):
-    page = tpl.replace("{{NEWS_CARDS}}", "\n\n".join(news_card(p) for p in merged)).replace(
-        "{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in merged[:3])
+def build_news_index(merged, projects, tpl):
+    page = (
+        tpl.replace("{{NEWS_CARDS}}", "\n\n".join(news_card(p) for p in merged))
+        .replace("{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in merged[:3]))
+        .replace("{{SEARCH_LATEST_PROJECTS}}", "\n".join(search_project_card(p) for p in projects[:3]))
     )
     (HTML / "news" / "index.html").write_text(page, encoding="utf-8")
     print("built html/news/index.html")
 
 
-def update_homepage(merged):
-    """Cập nhật tại chỗ 2 khối trên trang chủ: grid LATEST NEWS + search overlay (3 bài mới nhất).
+def build_project_page(prj, posts_merged, projects_merged, tpl):
+    slug = prj["slug"]
+    cover = project_cover_of(prj)  # "/our-projects/.../cover.jpg" hoặc ảnh đầu
+    ext = cover.rsplit(".", 1)[-1].lower() if "." in cover else "jpg"
+    images = prj.get("images") or []
+
+    slides = "\n".join(
+        '                    <img%s loading="lazy" src="/%s" alt="%s %d">'
+        % (' class="is-active"' if i == 0 else "", img, esc(prj["title"]), i + 1)
+        for i, img in enumerate(images)
+    )
+    cats = prj.get("categories") or []
+
+    page = (
+        tpl.replace("{{TITLE}}", esc(prj["title"]))
+        .replace("{{DESCRIPTION}}", esc(truncate(prj.get("description", ""), 220)))
+        .replace("{{URL}}", "%s/our-projects/%s/" % (SITE, slug))
+        .replace("{{COVER_URL}}", SITE + cover)
+        .replace("{{COVER_MIME}}", MIME.get(ext, "image/jpeg"))
+        .replace("{{SLIDER_IMAGES}}", slides)
+        .replace("{{IMG_TOTAL}}", "%02d" % max(len(images), 1))
+        .replace("{{ARCHITECT}}", esc(prj.get("architect", "")))
+        .replace("{{LOCATION}}", esc(prj.get("location", "")))
+        .replace("{{DATE_DISPLAY}}", date_display(prj.get("date") or prj.get("created_at")))
+        .replace("{{CATEGORIES_DISPLAY}}", esc(" · ".join(cats)))
+        .replace("{{CONTENT}}", transform_content(prj.get("content", ""), slug))
+        .replace("{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in posts_merged[:3]))
+        .replace("{{SEARCH_LATEST_PROJECTS}}", "\n".join(search_project_card(p) for p in projects_merged[:3]))
+    )
+    out = HTML / "our-projects" / slug / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(page, encoding="utf-8")
+    print("built", out.relative_to(ROOT))
+
+
+def build_projects_index(projects_merged, posts_merged, tpl):
+    page = (
+        tpl.replace("{{PROJECT_CARDS}}", "\n".join(project_card(p) for p in projects_merged))
+        .replace("{{SEARCH_LATEST}}", "\n".join(search_card(p) for p in posts_merged[:3]))
+        .replace("{{SEARCH_LATEST_PROJECTS}}", "\n".join(search_project_card(p) for p in projects_merged[:3]))
+    )
+    (HTML / "our-projects" / "index.html").write_text(page, encoding="utf-8")
+    print("built html/our-projects/index.html")
+
+
+def update_homepage(merged, projects_merged):
+    """Cập nhật tại chỗ trang chủ: grid LATEST NEWS + search overlay (news + projects).
     Phần còn lại của html/index.html giữ nguyên (trang chủ vẫn sửa tay được)."""
     path = HTML / "index.html"
     if not path.exists():
@@ -163,37 +255,59 @@ def update_homepage(merged):
         lambda m: m.group(1) + "\n" + search + "\n            " + m.group(2),
         s, count=1, flags=re.S,
     )
+    searchprj = "\n".join(search_project_card(p) for p in projects_merged[:3])
+    s = re.sub(
+        r'(<h4>Latest Projects</h4>\s*<div class="search-overlay__grid">).*?(</div>\s*</div>)',
+        lambda m: m.group(1) + "\n" + searchprj + "\n            " + m.group(2),
+        s, count=1, flags=re.S,
+    )
     path.write_text(s, encoding="utf-8")
     print("built html/index.html (latest news + search overlay)")
 
 
-def build_sitemap(merged):
+def build_sitemap(merged, projects_merged):
     path = HTML / "sitemap.xml"
     s = path.read_text(encoding="utf-8")
     blocks = re.findall(r"[ \t]*<url>.*?</url>\n?", s, flags=re.S)
-    kept = [b for b in blocks if not re.search(r"<loc>%s/news/.+</loc>" % re.escape(SITE), b)]
+    kept = [b for b in blocks
+            if not re.search(r"<loc>%s/news/.+</loc>" % re.escape(SITE), b)
+            and not re.search(r"<loc>%s/our-projects/.+</loc>" % re.escape(SITE), b)]
     post_blocks = [
         "    <url>\n        <loc>%s/news/%s/</loc>\n        <lastmod>%s</lastmod>\n        <priority>0.6</priority>\n    </url>\n"
         % (SITE, p["slug"], parse_iso(p["updated_at"]).strftime("%Y-%m-%d"))
         for p in merged
     ]
+    prj_blocks = [
+        "    <url>\n        <loc>%s/our-projects/%s/</loc>\n        <lastmod>%s</lastmod>\n        <priority>0.6</priority>\n    </url>\n"
+        % (SITE, p["slug"], parse_iso(p["updated_at"]).strftime("%Y-%m-%d"))
+        for p in projects_merged
+    ]
     out = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    out += "".join(kept) + "".join(post_blocks) + "</urlset>\n"
+    out += "".join(kept) + "".join(post_blocks) + "".join(prj_blocks) + "</urlset>\n"
     path.write_text(out, encoding="utf-8")
-    print("built html/sitemap.xml (%d url bài viết)" % len(post_blocks))
+    print("built html/sitemap.xml (%d bài viết, %d dự án)" % (len(post_blocks), len(prj_blocks)))
+
+
+def merge_by_slug(legacy, cms, sort_key):
+    by_slug = {}
+    for p in legacy + cms:  # CMS ghi đè legacy nếu trùng slug
+        by_slug[p["slug"]] = p
+    return sorted(by_slug.values(), key=sort_key, reverse=True)
 
 
 def main():
     cms = load_json(DATA / "posts.json", [])
     legacy = load_json(DATA / "legacy-posts.json", [])
+    merged = merge_by_slug(legacy, cms, lambda p: str(p["created_at"]))
 
-    by_slug = {}
-    for p in legacy + cms:  # CMS ghi đè legacy nếu trùng slug
-        by_slug[p["slug"]] = p
-    merged = sorted(by_slug.values(), key=lambda p: str(p["created_at"]), reverse=True)
+    cms_projects = load_json(DATA / "projects.json", [])
+    legacy_projects = load_json(DATA / "legacy-projects.json", [])
+    projects_merged = merge_by_slug(legacy_projects, cms_projects, lambda p: str(p.get("date") or p["created_at"]))
 
     post_tpl = (ROOT / "templates" / "post.html").read_text(encoding="utf-8")
     index_tpl = (ROOT / "templates" / "index.html").read_text(encoding="utf-8")
+    project_tpl = (ROOT / "templates" / "project.html").read_text(encoding="utf-8")
+    projects_index_tpl = (ROOT / "templates" / "projects-index.html").read_text(encoding="utf-8")
 
     built = 0
     for p in cms:
@@ -201,13 +315,23 @@ def main():
         if not pj.exists():
             print("WARN: thiếu", pj.relative_to(ROOT), "- bỏ qua")
             continue
-        build_post_page(load_json(pj, {}), merged, post_tpl)
+        build_post_page(load_json(pj, {}), merged, projects_merged, post_tpl)
         built += 1
 
-    build_news_index(merged, index_tpl)
-    update_homepage(merged)
-    build_sitemap(merged)
-    print("Done: %d bài CMS, %d bài tổng (gồm %d legacy)" % (built, len(merged), len(legacy)))
+    built_prj = 0
+    for p in cms_projects:
+        pj = DATA / "our-projects" / p["slug"] / "project.json"
+        if not pj.exists():
+            print("WARN: thiếu", pj.relative_to(ROOT), "- bỏ qua")
+            continue
+        build_project_page(load_json(pj, {}), merged, projects_merged, project_tpl)
+        built_prj += 1
+
+    build_news_index(merged, projects_merged, index_tpl)
+    build_projects_index(projects_merged, merged, projects_index_tpl)
+    update_homepage(merged, projects_merged)
+    build_sitemap(merged, projects_merged)
+    print("Done: %d bài + %d dự án CMS | tổng %d bài, %d dự án" % (built, built_prj, len(merged), len(projects_merged)))
 
 
 if __name__ == "__main__":

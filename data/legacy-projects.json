@@ -1,0 +1,348 @@
+[
+  {
+    "id": "legacy-vertical-hue-lang-hue-tren-cao",
+    "slug": "vertical-hue-lang-hue-tren-cao",
+    "title": "VERTICAL HUE – LÀNG HUẾ TRÊN CAO",
+    "description": "Vertical Hue – phương án kiến trúc nhà ở xã hội của MVN Group, Quán quân hạng mục Professional tại Genesis Green Living Challenge 2026, chuyển hóa mô hình nhà vườn Huế vào không gian cao tầng hiện đại.",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "TP Huế",
+    "date": "2026-06-01",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/cover.jpg",
+    "created_at": "2026-06-01T00:00:00.000Z",
+    "updated_at": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-toa-nha-le-huu-trac-le-huu-trac-building",
+    "slug": "toa-nha-le-huu-trac-le-huu-trac-building",
+    "title": "Toà nhà Lê Hữu Trác – Lê Hữu Trác Building",
+    "description": "Công trình là lời giải cho bài toán nhà trong kiệt với mật độ cao, nơi mọi giới hạn về diện tích và hình thái lô đất đều được chuyển hóa thành ý tưởng thiết kế. Không gian được tổ chức theo chiều đứng, tận dụng tối đa…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Lê Hữu Trác, Đà Nẵng",
+    "date": "2026-05-21",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/toa-nha-le-huu-trac-le-huu-trac-building/images/cover.jpg",
+    "created_at": "2026-05-21T00:00:00.000Z",
+    "updated_at": "2026-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-villa-hien-dai-2",
+    "slug": "villa-hien-dai-2",
+    "title": "VILLA HIỆN ĐẠI",
+    "description": "Công trình gây ấn tượng với phong cách tối giản nhưng vẫn rất sang, thể hiện qua các khối kiến trúc gọn gàng và mạnh mẽ. Không gian mở kết hợp cửa kính lớn giúp ngôi nhà luôn sáng và thông thoáng. Ban công cùng mảng…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2026-04-06",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "villa"
+    ],
+    "cover": "our-projects/villa-hien-dai-2/images/cover.jpg",
+    "created_at": "2026-04-06T00:00:00.000Z",
+    "updated_at": "2026-04-06T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-villa-hien-dai-2-tang",
+    "slug": "villa-hien-dai-2-tang",
+    "title": "VILLA HIỆN ĐẠI 2 TẦNG",
+    "description": "Căn villa hiện đại được thiết kế với hình khối vuông vức, đường nét tối giản và tông màu trung tính tạo nên vẻ đẹp tinh tế. Hệ ban công rộng kết hợp mảng xanh giúp không gian luôn thông thoáng, tận dụng ánh sáng tự…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Trường Chinh, TP Huế",
+    "date": "2026-03-12",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/villa-hien-dai-2-tang/images/cover.jpg",
+    "created_at": "2026-03-12T00:00:00.000Z",
+    "updated_at": "2026-03-12T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-khu-san-pickleball-to-hop-the-thao",
+    "slug": "khu-san-pickleball-to-hop-the-thao",
+    "title": "KHU SÂN PICKLEBALL – TỔ HỢP THỂ THAO",
+    "description": "Công trình gây ấn tượng với ngôn ngữ kiến trúc mềm mại, các lớp mái uốn cong liên tục tạo nên hình khối độc đáo và giàu tính biểu tượng. Tông màu đất nung ấm áp kết hợp cùng kính và mảng cây xanh giúp tổng thể trở nên…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-03-09",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing",
+      "Structure"
+    ],
+    "cover": "our-projects/khu-san-pickleball-to-hop-the-thao/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-nha-3-tang-hien-dai",
+    "slug": "nha-3-tang-hien-dai",
+    "title": "NHÀ 3 TẦNG HIỆN ĐẠI",
+    "description": "Công trình nhà phố nổi bật với thiết kế hiện đại và các ban công phủ cây xanh ở nhiều tầng, tạo nên một không gian sống thoáng đãng ngay giữa đô thị. Với mặt tiền gọn gàng và hình khối tối giản, ngôi nhà tận dụng tốt…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Thanh Khê, Đà Nẵng",
+    "date": "2026-03-09",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/nha-3-tang-hien-dai/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-nha-o-ket-hop-cho-thue",
+    "slug": "nha-o-ket-hop-cho-thue",
+    "title": "NHÀ Ở KẾT HỢP DỊCH VỤ CHO THUÊ",
+    "description": "Công trình gây ấn tượng với hình khối kiến trúc cao và gọn, được tổ chức theo dạng các khối xếp tầng. Thiết kế tận dụng chiều cao để tạo ra nhiều ban công và khoảng xanh, giúp không gian trở nên thông thoáng và gần gũi…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2026-03-09",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất",
+      "Structure"
+    ],
+    "cover": "our-projects/nha-o-ket-hop-cho-thue/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-to-hop-van-hoa-hon-kem-da-dung",
+    "slug": "to-hop-van-hoa-hon-kem-da-dung",
+    "title": "TỔ HỢP VĂN HÓA HÒN KẼM – ĐÁ DỪNG",
+    "description": "Lấy cảm hứng từ cảnh quan hùng vĩ của Hòn Kẽm – Đá Dừng, nơi dòng Thu Bồn uốn lượn giữa đôi bờ núi đá, công trình được thiết kế như một “nếp nhà mở”, kết nối con người với thiên nhiên và ký ức vùng đất. Không chỉ là một…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-03-09",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing"
+    ],
+    "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-villa-hien-dai",
+    "slug": "villa-hien-dai",
+    "title": "VILLA HIỆN ĐẠI",
+    "description": "Công trình gây ấn tượng với ngôn ngữ kiến trúc hiện đại, sử dụng các khối hình học mạnh mẽ và bố cục bất đối xứng tạo nên vẻ ngoài sang trọng và tinh tế. Tông màu xám chủ đạo kết hợp cùng kính lớn giúp tổng thể trở nên…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2026-03-09",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất",
+      "villa"
+    ],
+    "cover": "our-projects/villa-hien-dai/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-villa-khu-do-thi-moi",
+    "slug": "villa-khu-do-thi-moi",
+    "title": "VILLA KHU ĐÔ THỊ MỚI",
+    "description": "Ngôn ngữ kiến trúc hiện đại được thể hiện qua hình khối bo tròn mềm mại, các ban công đua rộng và những lớp không gian xếp chồng theo phương đứng. Thay vì phô trương, công trình chọn cách thể hiện sự sang trọng một cách…",
+    "architect": "",
+    "location": "",
+    "date": "2026-03-09",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Structure"
+    ],
+    "cover": "our-projects/villa-khu-do-thi-moi/images/cover.jpg",
+    "created_at": "2026-03-09T00:00:00.000Z",
+    "updated_at": "2026-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-my-dinh-pearl",
+    "slug": "my-dinh-pearl",
+    "title": "MỸ ĐÌNH PEARL",
+    "description": "Không chỉ là một tổ hợp căn hộ cao cấp, Mỹ Đình Pearl kiến tạo chuẩn sống mới giữa trung tâm phía Tây Thủ đô với không gian xanh hài hòa và kết nối giao thông chiến lược. Dự án mang đến tầm nhìn rộng mở, cân bằng giữa…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-03-03",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Structure"
+    ],
+    "cover": "our-projects/my-dinh-pearl/images/cover.jpg",
+    "created_at": "2026-03-03T00:00:00.000Z",
+    "updated_at": "2026-03-03T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-truong-hoc-lien-cap-integrated-school",
+    "slug": "truong-hoc-lien-cap-integrated-school",
+    "title": "TRƯỜNG HỌC LIÊN CẤP – INTEGRATED SCHOOL",
+    "description": "Mô hình trường học liên cấp được phát triển như một bài toán tổng thể từ thiết kế, vận hành đến khai thác lâu dài. Không gian học tập an toàn, linh hoạt và hỗ trợ phát triển toàn diện cho học sinh. Giải pháp kiến trúc…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-03-02",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing",
+      "Structure"
+    ],
+    "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/cover.jpg",
+    "created_at": "2026-03-02T00:00:00.000Z",
+    "updated_at": "2026-03-02T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-golden-villa",
+    "slug": "golden-villa",
+    "title": "GOLDEN VILLA",
+    "description": "Được xây dựng theo phong cách kiến trúc Địa Trung Hải hiện đại, tạo ra không gian mở và thoáng đãng. Với lối kiến trúc đơn giản nhưng tinh tế, căn nhà có các cửa sổ rộng để tận dụng ánh sáng tự nhiên và tầm nhìn bên…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2025-12-26",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/golden-villa/images/cover.jpg",
+    "created_at": "2025-12-26T00:00:00.000Z",
+    "updated_at": "2025-12-26T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-mam-house-nha-o-ket-hop-cho-thue",
+    "slug": "mam-house-nha-o-ket-hop-cho-thue",
+    "title": "Mầm House – Nhà ở kết hợp cho thuê",
+    "description": "Mầm House – mô hình nhà ở kết hợp cho thuê hiện đại, tối ưu không gian và công năng. Với thiết kế thông minh, chan hòa ánh sáng tự nhiên và điểm nhấn xanh mát, công trình mang đến một không gian sống tiện nghi, thoải…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Thanh Khê, Đà Nẵng",
+    "date": "2025-09-18",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất",
+      "Structure"
+    ],
+    "cover": "our-projects/mam-house-nha-o-ket-hop-cho-thue/images/cover.jpg",
+    "created_at": "2025-09-18T00:00:00.000Z",
+    "updated_at": "2025-09-18T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-cong-vien-vui-choi-cong-dong-o-hoi-an",
+    "slug": "cong-vien-vui-choi-cong-dong-o-hoi-an",
+    "title": "CÔNG VIÊN VUI CHƠI CỘNG ĐỒNG Ở HỘI AN",
+    "description": "Từ một khu đất bỏ hoang lâu năm với cảnh quan xuống cấp và không gian bị lãng phí, dự án cải tạo này đã biến nơi đây thành một công viên vui chơi sinh thái sống động – mang lại hơi thở mới cho cộng đồng dân cư tại Hội…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Hội An",
+    "date": "2025-07-24",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng"
+    ],
+    "cover": "our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/images/cover.jpg",
+    "created_at": "2025-07-24T00:00:00.000Z",
+    "updated_at": "2025-07-24T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
+    "slug": "canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
+    "title": "CẢNH QUAN TRUNG TÂM THƯƠNG MẠI KẾT HỢP VĂN PHÒNG",
+    "description": "Giải pháp thiết kế không gian hiện đại, đáp ứng đồng thời nhu cầu làm việc, mua sắm và thư giãn. Khu vực cảnh quan được bố trí hợp lý với mảng xanh, tiểu cảnh nước và các khu vực nghỉ chân, mang lại sự cân bằng giữa…",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Đà Nẵng",
+    "date": "2025-07-22",
+    "categories": [
+      "Cảnh quan"
+    ],
+    "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/cover.jpg",
+    "created_at": "2025-07-22T00:00:00.000Z",
+    "updated_at": "2025-07-22T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-solea-house",
+    "slug": "solea-house",
+    "title": "Solea House",
+    "description": "Phong cách Địa Trung Hải được biết đến không chỉ là sự kết hợp hài hòa giữa kiến trúc và thiên nhiên, mà còn là biểu tượng của một lối sống thanh bình, nơi con người tận hưởng sự giao thoa giữa ánh sáng, gió biển và…",
+    "architect": "KTS Vũ Đức Cảnh",
+    "location": "Sơn Trà, Đà Nẵng",
+    "date": "2025-07-22",
+    "categories": [
+      "Cảnh quan",
+      "Housing"
+    ],
+    "cover": "our-projects/solea-house/images/cover.jpg",
+    "created_at": "2025-07-22T00:00:00.000Z",
+    "updated_at": "2025-07-22T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-studio-wedding-van-phong-tiec-cuoi",
+    "slug": "studio-wedding-van-phong-tiec-cuoi",
+    "title": "WEDDING STUDIO – VĂN PHÒNG TIỆC CƯỚI",
+    "description": "Ngôi nhà được hình thành từ sự đối thoại giữa nhu cầu sống thực tế của con người và bối cảnh không gian đặc thù của khu đất. Từ tỷ lệ hình khối, tổ chức mặt bằng, cho đến cách xử lý ánh sáng và thông gió, mọi yếu tố đều…",
+    "architect": "KTS Nguyễn Nhị Thiên",
+    "location": "Liên chiểu, Đà Nẵng",
+    "date": "2025-07-22",
+    "categories": [
+      "Công trình công cộng",
+      "Housing",
+      "Nội thất"
+    ],
+    "cover": "our-projects/studio-wedding-van-phong-tiec-cuoi/images/cover.jpg",
+    "created_at": "2025-07-22T00:00:00.000Z",
+    "updated_at": "2025-07-22T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-trung-tam-thuong-mai-ket-hop-van-phong",
+    "slug": "trung-tam-thuong-mai-ket-hop-van-phong",
+    "title": "TRUNG TÂM THƯƠNG MẠI KẾT HỢP VĂN PHÒNG",
+    "description": "Dự án tổ hợp cao tầng này được quy hoạch như một trung tâm đa chức năng giữa lòng đô thị, bao gồm văn phòng, khách sạn, thương mại và khu công cộng. Thiết kế tổng thể nhấn mạnh tính kết nối giữa các khối công trình…",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Đà Nẵng",
+    "date": "2025-07-22",
+    "categories": [
+      "Công trình công cộng",
+      "Housing",
+      "Nội thất"
+    ],
+    "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/cover.jpg",
+    "created_at": "2025-07-22T00:00:00.000Z",
+    "updated_at": "2025-07-22T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-terra-verde-serviced-apartment",
+    "slug": "terra-verde-serviced-apartment",
+    "title": "TERRA VERDE SERVICED APARTMENT",
+    "description": "TERRA VERDE là tổ hợp căn hộ dịch vụ cao cấp, được kiến tạo như một biểu tượng sống xanh giữa lòng đô thị hiện đại. Ngôn ngữ kiến trúc đương đại kết hợp cùng các tầng không gian cây xanh, mang đến trải nghiệm cư trú…",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đường Chính Hữu, Phường An Hải, TP Đà Nẵng",
+    "date": "2025-07-20",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất",
+      "Structure"
+    ],
+    "cover": "our-projects/terra-verde-serviced-apartment/images/cover.jpg",
+    "created_at": "2025-07-20T00:00:00.000Z",
+    "updated_at": "2025-07-20T00:00:00.000Z"
+  }
+]

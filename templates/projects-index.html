@@ -4,36 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{TITLE}} – MVN Group</title>
+    <title>Our Projects – MVN Group</title>
 
     <!-- ===== SEO co ban ===== -->
-    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="description" content="Khám phá các dự án của MVN Group: nhà ở – dịch vụ, công trình công cộng, cảnh quan, nội thất và villa tại Đà Nẵng và khu vực miền Trung.">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="canonical" href="{{URL}}">
+    <link rel="canonical" href="https://mvngroup.vn/our-projects/">
 
     <!-- ===== Open Graph (social thumbnail) ===== -->
     <meta property="og:locale" content="vi_VN">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="MVN Group">
-    <meta property="og:title" content="{{TITLE}} – MVN Group">
-    <meta property="og:description" content="{{DESCRIPTION}}">
-    <meta property="og:url" content="{{URL}}">
-    <meta property="og:image" content="{{COVER_URL}}">
-    <meta property="og:image:secure_url" content="{{COVER_URL}}">
-    <meta property="og:image:type" content="{{COVER_MIME}}">
-    <meta property="og:image:alt" content="{{TITLE}}">
+    <meta property="og:title" content="Our Projects – MVN Group">
+    <meta property="og:description" content="Khám phá các dự án của MVN Group: nhà ở – dịch vụ, công trình công cộng, cảnh quan, nội thất và villa tại Đà Nẵng và khu vực miền Trung.">
+    <meta property="og:url" content="https://mvngroup.vn/our-projects/">
+    <meta property="og:image" content="https://mvngroup.vn/thumbnail.png">
+    <meta property="og:image:secure_url" content="https://mvngroup.vn/thumbnail.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MVN Group - Thiết kế kiến trúc, nội thất và thi công tại Đà Nẵng">
 
     <!-- ===== Twitter Card ===== -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{TITLE}} – MVN Group">
-    <meta name="twitter:description" content="{{DESCRIPTION}}">
-    <meta name="twitter:image" content="{{COVER_URL}}">
+    <meta name="twitter:title" content="Our Projects – MVN Group">
+    <meta name="twitter:description" content="Khám phá các dự án của MVN Group: nhà ở – dịch vụ, công trình công cộng, cảnh quan, nội thất và villa tại Đà Nẵng và khu vực miền Trung.">
+    <meta name="twitter:image" content="https://mvngroup.vn/thumbnail.png">
 
     <!-- ===== Favicon ===== -->
-    <link rel="icon" href="../../favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="../../favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-    <meta name="msapplication-TileImage" content="../../mstile-270x270.png">
+    <link rel="icon" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../mstile-270x270.png">
 
     <!-- ===== Schema.org (Organization + WebSite + Breadcrumb) ===== -->
     <script type="application/ld+json">
@@ -76,7 +78,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "{{URL}}#breadcrumb",
+          "@id": "https://mvngroup.vn/our-projects/#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -87,14 +89,8 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Tin tức",
-              "item": "https://mvngroup.vn/news/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "{{TITLE}}",
-              "item": "{{URL}}"
+              "name": "Dự án",
+              "item": "https://mvngroup.vn/our-projects/"
             }
           ]
         }
@@ -113,7 +109,7 @@
     <style>
         @font-face {
             font-family: 'Inter Tight';
-            src: url('../../fonts/InterTight-VariableFont_wght.ttf') format('truetype-variations');
+            src: url('../fonts/InterTight-VariableFont_wght.ttf') format('truetype-variations');
             font-weight: 100 900;
             font-display: swap;
         }
@@ -287,247 +283,207 @@
             .hero__actions { top: 20px; right: 24px; }
         }
 
-        .section__container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 12px;
+        /* ===== CATALOG (filter + grid projects, tham khao our-projects-content.png) ===== */
+        .section--catalog {
+            background: #fafaf8;
+            padding: 70px 48px 100px;
         }
 
-        /* ===== PAGE HEAD (trang, khong banner) ===== */
-        .page-head {
-            background: var(--white);
-        }
-
-        /* ===== BAI VIET ===== */
-        .section--post {
-            background: var(--white);
-            padding: 150px 48px 90px; /* lui xuong khoi logo/menu fixed roi moi den tieu de */
-        }
-
-        .post {
-            max-width: 920px;
+        .catalog__container {
+            max-width: 1360px;
             margin: 0 auto;
         }
 
-        .post__date {
-            font-size: 14px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #8a8a86;
-            margin: 0 0 14px;
-        }
-
-        .post__title {
-            margin: 0 0 40px;
-            font-size: clamp(28px, 3.6vw, 44px);
-            font-weight: 400;
-            line-height: 1.3;
-            color: var(--dark);
-        }
-
-        /* Muc luc */
-        .toc {
-            background: #f8fafc;
-            border: 1px solid #e5e7eb;
-            border-radius: 14px;
-            padding: 18px 22px;
-            margin: 0 0 32px;
-        }
-
-        .toc strong {
-            display: block;
-            font-size: 18px;
-            font-weight: 800;
-            color: #111827;
-            margin-bottom: 8px;
-        }
-
-        .toc ol {
-            margin: 0;
-            padding-left: 22px;
-        }
-
-        .toc li {
-            margin: 7px 0;
-            font-size: 16px;
-        }
-
-        .toc a {
-            color: #0b2e6f;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .toc a:hover {
-            text-decoration: underline;
-        }
-
-        .post h2 {
-            font-size: 28px;
-            line-height: 1.32;
-            font-weight: 800;
-            color: #111827;
-            margin: 42px 0 18px;
-            padding-left: 18px;
-            border-left: 5px solid var(--gold);
-        }
-
-        .post figure {
-            margin: 20px 0 28px;
-        }
-
-        .post figure img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 14px;
-            box-shadow: 0 10px 28px rgba(15, 23, 42, .12);
-        }
-
-        .post figcaption {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #667085;
-            text-align: center;
-            margin-top: 9px;
-            font-style: italic;
-        }
-
-        .post p {
-            font-size: 17px;
-            line-height: 1.85;
-            color: #2f3744;
+        .catalog__filter-label {
             margin: 0 0 18px;
+            font-size: 17px;
+            color: #555;
         }
 
-        .post a {
-            color: #0b2e6f;
+        .catalog__filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
-        /* Khoi CTA cuoi bai */
-        .post-cta {
-            background: #f8fafc;
-            border: 1px solid #e5e7eb;
-            border-left: 5px solid #0b2e6f;
-            border-radius: 14px;
-            padding: 22px 24px;
-            margin: 40px 0 0;
-        }
-
-        .post-cta h2 {
+        .catalog__chip {
             border: none;
-            padding: 0;
-            font-size: 24px;
-            line-height: 1.35;
-            color: #0b2e6f;
-            margin: 0 0 14px;
+            background: #f1f1ef;
+            border-radius: 999px;
+            padding: 12px 22px;
+            font: inherit;
+            font-size: 15px;
+            color: #777;
+            cursor: pointer;
+            transition: background .25s ease, color .25s ease;
         }
 
-        .post__meta {
-            margin: 36px 0 0;
-            padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
-            font-size: 14px;
-            color: #8a8a86;
+        .catalog__chip:hover {
+            background: #e6e6e2;
         }
 
-        /* Bai viet lien quan */
-        .related__title {
-            max-width: 1216px;
-            margin: 80px auto 36px;
-            padding: 0 12px;
-            font-size: clamp(24px, 3vw, 34px);
-            font-weight: 300;
-            letter-spacing: 1px;
-            color: #8f8f8a;
+        .catalog__chip.active {
+            background: var(--gold);
+            color: var(--white);
         }
 
-        .related__title em {
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            .section--post { padding: 120px 24px 70px; }
-        }
-
-        /* ===== LATEST NEWS ===== */
-        .section--news {
-            background: #fff;
-            padding: 90px 0 100px;
-        }
-
-        .news__title {
-            margin: 24px 0 0;
-            font-size: clamp(27px, 4.2vw, 46px);
-            font-weight: 300;
-            letter-spacing: 1px;
-            line-height: 1.25;
-            color: #8f8f8a;
-        }
-
-        .news__title em {
-            font-style: italic;
-        }
-
-        .news__grid {
+        .catalog__grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 36px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 32px;
+            margin-top: 70px;
         }
 
-        .news-card {
+        .catalog__empty {
+            margin: 70px 0 0;
+            font-size: 16px;
+            color: #8a8a86;
+            display: none;
+        }
+
+        /* --- Project card: dong bo voi Latest Projects o index.html --- */
+        .project-card {
+            background: var(--white);
+            border-radius: 18px;
+            padding: 10px 10px 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
             display: flex;
             flex-direction: column;
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            text-decoration: none;
-            color: inherit;
-            transition: transform .3s ease;
-            overflow: hidden;
-            /* cao bang nhau trong grid */
         }
 
-        .news-card:hover {
-            transform: translateY(-4px);
+        .project-card.hidden {
+            display: none;
         }
 
-        .news-card__image {
+        .project-card__image {
             width: 100%;
             aspect-ratio: 4 / 3;
             object-fit: cover;
+            border-radius: 12px;
             display: block;
         }
 
-        .news-card__date {
-            font-size: 14px;
-            color: #999;
-            margin: 18px 18px 12px;
+        .project-card__body {
+            padding: 20px 14px 0;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
-        .news-card__title {
-            margin: 0 18px 16px;
-            font-size: 18px;
+        .project-card__title {
+            margin: 0;
+            font-size: 19px;
             font-weight: 400;
-            line-height: 1.4;
-            color: #2c2c2c;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #8a8a85;
         }
 
-        .news-card__desc {
-            margin: 0 18px 18px;
-            padding: 0;
+        .project-card__meta {
+            display: flex;
+            gap: 28px;
+            margin-top: 16px;
             font-size: 15px;
-            line-height: 1.65;
-            color: #8f8f8f;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            flex: 1; /* text vung het chieu cao con lai */
+            color: #555;
         }
 
-        @media (max-width: 768px) {
-            .section--news { padding: 60px 0 70px; }
-            .news__grid { grid-template-columns: 1fr; gap: 32px; margin-top: 48px; }
+        .project-card__meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-card__meta strong {
+            font-weight: 600;
+        }
+
+        .project-card__meta svg {
+            width: 18px;
+            height: 18px;
+            color: #777;
+            flex-shrink: 0;
+        }
+
+        .project-card__desc {
+            margin: 14px 0 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #8f8f8f;
+        }
+
+        .project-card__title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color .25s ease;
+        }
+
+        .project-card__title a:hover {
+            color: var(--gold);
+        }
+
+        .project-card__cats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0 0;
+        }
+
+        .project-card__cat {
+            background: #f1f1ef;
+            border-radius: 999px;
+            padding: 7px 14px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .project-card__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 22px;
+        }
+
+        .project-card__tag {
+            background: #f1f1ef;
+            border-radius: 999px;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #777;
+        }
+
+        .project-card__link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            color: #555;
+            text-decoration: none;
+            transition: background .25s ease, border-color .25s ease;
+        }
+
+        .project-card__link:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .project-card__link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .catalog__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 680px) {
+            .section--catalog { padding: 50px 24px 70px; }
+            .catalog__grid { grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
+            .project-card__meta { gap: 24px; flex-wrap: wrap; }
         }
 
         /* ===== WIDGET CONTACT (fixed goc duoi phai, tham khao contact-direct.png / -clicked.png) ===== */
@@ -1028,13 +984,16 @@
 <body>
 
     <!-- ===== HERO (video nen) ===== -->
-    <!-- ===== HEADER trang (khong banner) ===== -->
-    <header class="page-head">
+    <header class="hero">
+
+        <img class="hero__banner" src="../images/our-projects.avif" alt="MVN Ggroup projects">
+
+        <!-- Thanh tren -->
         <div class="hero__bar">
 
             <!-- Logo (mark tam giac) -->
-            <a class="hero__logo" href="../../index.html" aria-label="MVN Ggroup - Home">
-                <img src="../../images/logo.avif" alt="MVN Ggroup" style="width: 72px; height: auto; display: block;">
+            <a class="hero__logo" href="../index.html" aria-label="MVN Ggroup - Home">
+                <img src="../images/logo.avif" alt="MVN Ggroup" style="width: 72px; height: auto; display: block;">
             </a>
 
             <!-- Actions: Search + Menu -->
@@ -1058,37 +1017,81 @@
             </div>
 
         </div>
+
+        <!-- Caption goc duoi trai -->
+        <div class="hero__caption">
+            <div class="hero__caption-label">
+                <svg viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path fill="#ffffff" d="M7.999 2.667 13.332 8l-5.333 5.333H2.665V2.667z"></path>
+                </svg>
+                Our Projects
+            </div>
+            <h1 class="hero__caption-title">BEYOND <em>projects, toward</em> LEGACIES</h1>
+        </div>
+
     </header>
 
 
-    <!-- ===== LATEST NEWS ===== -->
-    <!-- ===== BAI VIET ===== -->
-    <section class="section--post">
-        <article class="post">
+    <!-- ===== CATALOG: filter + grid projects (du lieu that mvngroup.vn) ===== -->
+    <section class="section--catalog">
+        <div class="catalog__container">
 
-            <p class="post__date">{{DATE_DISPLAY}}</p>
-            <h1 class="post__title">{{TITLE}}</h1>
-
-{{CONTENT}}
-
-            <p class="post__meta">By {{AUTHOR}}</p>
-
-        </article>
-
-        <!-- ===== BAI VIET LIEN QUAN ===== -->
-        <h2 class="related__title">Bài viết <em>liên quan</em></h2>
-        <div class="section__container">
-            <div class="news__grid">
-{{RELATED_CARDS}}
+            <p class="catalog__filter-label">Filter by Scope of Work</p>
+            <div class="catalog__filters" id="catalogFilters">
+                <button type="button" class="catalog__chip" data-filter="Cảnh quan">Cảnh quan</button>
+                <button type="button" class="catalog__chip" data-filter="Công trình công cộng">Công trình công cộng</button>
+                <button type="button" class="catalog__chip" data-filter="Housing">Housing</button>
+                <button type="button" class="catalog__chip" data-filter="Nhà ở - Dịch vụ">Nhà ở - Dịch vụ</button>
+                <button type="button" class="catalog__chip" data-filter="Nội thất">Nội thất</button>
+                <button type="button" class="catalog__chip" data-filter="Structure">Structure</button>
+                <button type="button" class="catalog__chip" data-filter="Villa">Villa</button>
             </div>
+
+            <div class="catalog__grid" id="catalogGrid">
+{{PROJECT_CARDS}}
+            </div>
+
+            <p class="catalog__empty" id="catalogEmpty">Chưa có dự án nào thuộc hạng mục này.</p>
+
         </div>
     </section>
 
+    <!-- Filter da chon: click them chip de chon dong thoi nhieu category (OR),
+         click lai chip dang active de tat no; khong chip nao active -> hien tat ca -->
+    <script>
+        (function () {
+            const chips = document.querySelectorAll('.catalog__chip');
+            const cards = document.querySelectorAll('#catalogGrid .project-card');
+            const empty = document.getElementById('catalogEmpty');
+
+            function applyFilter() {
+                const active = Array.from(chips)
+                    .filter(c => c.classList.contains('active'))
+                    .map(c => c.dataset.filter);
+
+                let visible = 0;
+                cards.forEach(card => {
+                    const tags = card.dataset.tags.split('|');
+                    const show = active.length === 0 || active.some(f => tags.includes(f));
+                    card.classList.toggle('hidden', !show);
+                    if (show) visible++;
+                });
+                empty.style.display = visible === 0 ? 'block' : 'none';
+            }
+
+            chips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    chip.classList.toggle('active');
+                    applyFilter();
+                });
+            });
+        })();
+    </script>
 
     <!-- ===== SEARCH OVERLAY ===== -->
     <div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Site search" hidden>
 
-        <form class="search-overlay__bar" role="search" method="get" action="../../search/">
+        <form class="search-overlay__bar" role="search" method="get" action="../search/">
             <label class="search-overlay__inputwrap">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                     <circle cx="11" cy="11" r="7"></circle>
@@ -1115,7 +1118,7 @@
             </div>
         </div>
 
-        <a class="search-overlay__showall" href="../../search/">Show All Results</a>
+        <a class="search-overlay__showall" href="../search/">Show All Results</a>
     </div>
 
     <!-- ===== MENU PANEL ===== -->
@@ -1123,8 +1126,8 @@
     <aside class="menu-panel" id="menuPanel" role="dialog" aria-label="Site menu">
 
         <div class="menu-panel__top">
-            <a class="menu-panel__brand" href="../../index.html">
-                <img src="../../images/logo-mvn.png" alt="MVN Group logo">
+            <a class="menu-panel__brand" href="../index.html">
+                <img src="../images/logo-mvn.png" alt="MVN Group logo">
             </a>
             <button type="button" class="menu-panel__close" id="menuCloseBtn" aria-label="Close menu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
@@ -1135,11 +1138,11 @@
         </div>
 
         <nav class="menu-panel__nav">
-            <a href="../../index.html">Home</a>
-            <a href="../../about-us/">About</a>
-            <a href="../../our-projects/">Projects</a>
-            <a href="../../contact-us/">Contact</a>
-            <a href="../" class="active">News</a>
+            <a href="../index.html">Home</a>
+            <a href="../about-us/">About</a>
+            <a href="./" class="active">Projects</a>
+            <a href="../contact-us/">Contact</a>
+            <a href="../news/">News</a>
         </nav>
 
         <div class="menu-panel__footer">
@@ -1179,11 +1182,11 @@
     <footer>
         <div class="footer__container">
             <nav class="footer__nav">
-                <a href="../../index.html" class="footer__link">HOME</a>
-                <a href="../../about-us/" class="footer__link">ABOUT</a>
-                <a href="../../our-projects/" class="footer__link">PROJECTS</a>
-                <a href="../../contact-us/" class="footer__link">CONTACT</a>
-                <a href="../" class="footer__link footer__link--active">NEWS</a>
+                <a href="../index.html" class="footer__link">HOME</a>
+                <a href="../about-us/" class="footer__link">ABOUT</a>
+                <a href="./" class="footer__link footer__link--active">PROJECTS</a>
+                <a href="../contact-us/" class="footer__link">CONTACT</a>
+                <a href="../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
                 <a href="#">PRIVACY POLICY</a>
