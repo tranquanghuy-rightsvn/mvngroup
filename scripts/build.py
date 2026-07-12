@@ -17,7 +17,7 @@ Output:
   html/news/index.html                 # danh sách tất cả bài (CMS + legacy)
   html/our-projects/<slug>/index.html  # chỉ cho dự án CMS
   html/our-projects/index.html         # danh sách tất cả dự án (CMS + legacy)
-  html/index.html                      # trang chủ: latest news + search overlay
+  html/index.html                      # trang chủ: latest news + 6 công trình mới nhất + search overlay
   html/sitemap.xml                     # URL bài viết + dự án
 
 Chạy local để thử: python3 scripts/build.py
@@ -102,23 +102,24 @@ def search_card(p):
 
 
 
-def project_card(p):
-    """Card trong html/our-projects/index.html (catalog grid, có data-tags để filter)."""
+def project_card(p, prefix=""):
+    """Card dự án (catalog grid /our-projects/ với prefix rỗng; trang chủ với prefix "/our-projects/")."""
     cats = p.get("categories") or []
+    href = prefix + p["slug"] + "/"
     cat_spans = "\n".join('                        <span class="project-card__cat">%s</span>' % esc(c) for c in cats)
     return """                <article class="project-card" data-tags="%s">
-                    <a href="%s/"><img class="project-card__image" loading="lazy" alt="%s" src="%s"></a>
+                    <a href="%s"><img class="project-card__image" loading="lazy" alt="%s" src="%s"></a>
                     <div class="project-card__body">
-                        <h3 class="project-card__title"><a href="%s/">%s</a></h3>
+                        <h3 class="project-card__title"><a href="%s">%s</a></h3>
                         <div class="project-card__cats">
 %s
                     </div>
                         <div class="project-card__footer">
-                            <a class="project-card__link" href="%s/" aria-label="View %s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg></a>
+                            <a class="project-card__link" href="%s" aria-label="View %s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg></a>
                         </div>
                     </div>
-                </article>""" % (esc("|".join(cats)), p["slug"], esc(p["title"]), project_cover_of(p),
-                                p["slug"], esc(p["title"]), cat_spans, p["slug"], esc(p["title"]))
+                </article>""" % (esc("|".join(cats)), href, esc(p["title"]), project_cover_of(p),
+                                href, esc(p["title"]), cat_spans, href, esc(p["title"]))
 
 
 def project_cover_of(p):
@@ -261,8 +262,15 @@ def update_homepage(merged, projects_merged):
         lambda m: m.group(1) + "\n" + searchprj + "\n            " + m.group(2),
         s, count=1, flags=re.S,
     )
+    # "Những công trình mới nhất": 6 dự án mới nhất trong dải kéo ngang
+    scroller = "\n\n".join(project_card(p, "/our-projects/") for p in projects_merged[:6])
+    s = re.sub(
+        r'(<div class="projects__scroller">).*?(</div>\s*</section>)',
+        lambda m: m.group(1) + "\n\n" + scroller + "\n\n        " + m.group(2),
+        s, count=1, flags=re.S,
+    )
     path.write_text(s, encoding="utf-8")
-    print("built html/index.html (latest news + search overlay)")
+    print("built html/index.html (latest news + 6 công trình mới nhất + search overlay)")
 
 
 def build_sitemap(merged, projects_merged):
