@@ -2,18 +2,15 @@
 
 Thư mục này là "database" bài viết của site. **Không sửa tay** — Google Apps Script CMS tự commit vào đây mỗi khi editor bấm Lưu/Xoá bài.
 
-## Cấu trúc
+## Phân công thư mục
 
-```
-content/
-  posts.json                  # index toàn bộ bài viết (metadata, không có content)
-  news/
-    <slug>/
-      post.json               # metadata + content HTML của 1 bài
-      images/
-        cover.<ext>           # ảnh đại diện
-        01.<ext>, 02.<ext>... # ảnh trong bài, theo thứ tự xuất hiện
-```
+| Đường dẫn | Ai ghi | Nội dung |
+|---|---|---|
+| `content/posts.json` | CMS | Index metadata toàn bộ bài viết |
+| `content/news/<slug>/post.json` | CMS | Metadata + content HTML của 1 bài |
+| `html/news/<slug>/images/*` | CMS | Cover + ảnh trong bài — ghi **thẳng vào site** để không duplicate ảnh |
+| `html/news/<slug>/index.html` | CI/CD | Trang bài viết, generate từ `post.json` |
+| `html/` còn lại | CI/CD | Website chính |
 
 ## Format
 
@@ -35,10 +32,11 @@ content/
 
 `news/<slug>/post.json` — như trên, thêm 2 field:
 
-- `content`: HTML của bài. Ảnh trong content có `src` là đường dẫn tương đối `news/<slug>/images/NN.<ext>`; ảnh có caption nằm trong `<figure class="image"><img><figcaption>`.
+- `content`: HTML của bài. Ảnh trong content có `src` là đường dẫn tương đối `news/<slug>/images/NN.<ext>` — trùng khớp vị trí thật của ảnh dưới `html/`, nên build không phải xử lý gì về ảnh; ảnh có caption nằm trong `<figure class="image"><img><figcaption>`.
 - `images`: mảng đường dẫn ảnh của bài.
 
 ## Ghi chú cho script build (CI/CD)
 
-- Build đọc `posts.json` + từng `post.json`, generate HTML tĩnh vào `html/` (thư mục `html/` do CI/CD quản lý, CMS không đụng vào).
-- Ảnh copy từ `content/news/<slug>/images/` sang vị trí tương ứng dưới `html/` sao cho đường dẫn `news/<slug>/images/NN.<ext>` trong content resolve đúng.
+- Build đọc `posts.json` + từng `post.json`, generate `html/news/<slug>/index.html` (+ trang index/sitemap nếu cần).
+- **Không đụng vào `html/news/<slug>/images/`** — ảnh đã nằm đúng chỗ do CMS ghi.
+- CMS xoá bài / đổi slug sẽ tự xoá `content/news/<slug>` và `html/news/<slug>` tương ứng (kể cả `index.html` do CI tạo — CI build lại là xong).
