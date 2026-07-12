@@ -142,6 +142,31 @@ def build_news_index(merged, tpl):
     print("built html/news/index.html")
 
 
+def update_homepage(merged):
+    """Cập nhật tại chỗ 2 khối trên trang chủ: grid LATEST NEWS + search overlay (3 bài mới nhất).
+    Phần còn lại của html/index.html giữ nguyên (trang chủ vẫn sửa tay được)."""
+    path = HTML / "index.html"
+    if not path.exists():
+        return
+    s = path.read_text(encoding="utf-8")
+    top3 = merged[:3]
+
+    cards = "\n\n".join(related_card(p) for p in top3)
+    s = re.sub(
+        r'(<section class="section--news">.*?<div class="news__grid">).*?(</div>)',
+        lambda m: m.group(1) + "\n" + cards + "\n            " + m.group(2),
+        s, count=1, flags=re.S,
+    )
+    search = "\n".join(search_card(p) for p in top3)
+    s = re.sub(
+        r'(<h4>Latest News</h4>\s*<div class="search-overlay__grid">).*?(</div>\s*</div>)',
+        lambda m: m.group(1) + "\n" + search + "\n            " + m.group(2),
+        s, count=1, flags=re.S,
+    )
+    path.write_text(s, encoding="utf-8")
+    print("built html/index.html (latest news + search overlay)")
+
+
 def build_sitemap(merged):
     path = HTML / "sitemap.xml"
     s = path.read_text(encoding="utf-8")
@@ -180,6 +205,7 @@ def main():
         built += 1
 
     build_news_index(merged, index_tpl)
+    update_homepage(merged)
     build_sitemap(merged)
     print("Done: %d bài CMS, %d bài tổng (gồm %d legacy)" % (built, len(merged), len(legacy)))
 
