@@ -1010,16 +1010,19 @@
                     </div>
                 </div>
 
-                <!-- Form lien he -->
-                <form class="contact-form" action="mailto:congtycpdtmvn@gmail.com" method="post" enctype="text/plain">
+                <!-- Form lien he: submit qua fetch() vao GAS (sheet Contacts), khong dung mailto: nua -->
+                <form class="contact-form" id="contactForm">
                     <input type="text" name="your-name" placeholder="Your Name" maxlength="400" required>
                     <input type="email" name="your-email" placeholder="Your Email" maxlength="400" required>
                     <input type="text" name="your-subject" placeholder="Your Subject" maxlength="400" required>
                     <textarea name="your-message" placeholder="Your Message" maxlength="2000"></textarea>
-                    <button type="submit">
+                    <!-- honeypot chống bot: ẩn khỏi mắt người dùng, bot form-filler vẫn điền vào -->
+                    <input type="text" name="your-website" id="contactHp" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
+                    <button type="submit" id="contactSubmitBtn">
                         <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect y="5" width="12" height="2"></rect><rect x="5" width="2" height="12"></rect></svg>
                         Send
                     </button>
+                    <p class="contact-form__msg" id="contactFormMsg" style="margin-top:12px; font-size:14px;"></p>
                 </form>
 
             </div>
@@ -1307,6 +1310,53 @@
             const isOpen = chatWidget.classList.toggle('open');
             chatToggle.setAttribute('aria-expanded', isOpen);
         });
+    </script>
+
+    <script>
+        /* Submit form lien he vao GAS (sheet Contacts) qua fetch().
+           Content-Type: text/plain de tranh CORS preflight (GAS khong xu ly duoc OPTIONS). */
+        (function () {
+            var GAS_URL = 'https://script.google.com/macros/s/AKfycbwpfI62DNVmNNMNnMN1jGsnCUNAyYIc9cXicKBgW5CVFxXz8EP3eD7C4nxrNfXxyKDJ/exec';
+            var form = document.getElementById('contactForm');
+            var msgEl = document.getElementById('contactFormMsg');
+            var btn = document.getElementById('contactSubmitBtn');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var payload = {
+                    name: form['your-name'].value.trim(),
+                    email: form['your-email'].value.trim(),
+                    subject: form['your-subject'].value.trim(),
+                    message: form['your-message'].value.trim(),
+                    hp: document.getElementById('contactHp').value,
+                };
+                btn.disabled = true;
+                msgEl.style.color = '';
+                msgEl.textContent = 'Đang gửi...';
+
+                fetch(GAS_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(payload),
+                })
+                    .then(function (r) { return r.json(); })
+                    .then(function (res) {
+                        if (res && res.ok) {
+                            msgEl.style.color = '#2e7d32';
+                            msgEl.textContent = 'Cảm ơn bạn! Chúng tôi đã nhận được liên hệ và sẽ phản hồi sớm nhất.';
+                            form.reset();
+                        } else {
+                            msgEl.style.color = '#c62828';
+                            msgEl.textContent = (res && res.error) || 'Có lỗi xảy ra, vui lòng thử lại.';
+                        }
+                    })
+                    .catch(function () {
+                        msgEl.style.color = '#c62828';
+                        msgEl.textContent = 'Không thể gửi liên hệ lúc này, vui lòng thử lại sau.';
+                    })
+                    .finally(function () { btn.disabled = false; });
+            });
+        })();
     </script>
 
 </body>
