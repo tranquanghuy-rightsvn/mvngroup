@@ -18,6 +18,7 @@ Output:
   html/our-projects/<slug>/index.html  # chỉ cho dự án CMS
   html/our-projects/index.html         # danh sách tất cả dự án (CMS + legacy)
   html/index.html                      # trang chủ: latest news + 6 công trình mới nhất + search overlay
+  html/search/index.html                # danh sách search (client-side filter theo title/description)
   html/sitemap.xml                     # URL bài viết + dự án
 
 Chạy local để thử: python3 scripts/build.py
@@ -138,6 +139,48 @@ def search_project_card(p):
                         <p>%s</p>
                     </div>
                 </a>""" % (p["slug"], esc(p["title"]), project_cover_of(p), esc(p["title"]), esc(truncate(p.get("description", ""))))
+
+
+def search_item(p, kind):
+    """
+    Item trong html/search/index.html. data-search quyết định phạm vi khớp của ô tìm kiếm:
+    - news: title + description
+    - project: CHỈ title (theo yêu cầu nghiệp vụ)
+    """
+    if kind == "project":
+        href = "/our-projects/" + p["slug"] + "/"
+        img = project_cover_of(p)
+        search_text = p["title"]
+    else:
+        href = "/news/" + p["slug"] + "/"
+        img = cover_of(p)
+        search_text = p["title"] + " " + (p.get("description") or "")
+    return """        <a class="sr__item" data-kind="%s" data-search="%s" href="%s">
+            <img loading="lazy" src="%s" alt="%s">
+            <div>
+                <h5>%s</h5>
+                <p>%s</p>
+            </div>
+        </a>""" % (kind, esc(search_text), href, img, esc(p["title"]), esc(p["title"]), esc(p.get("description") or ""))
+
+
+def build_search_page(merged, projects_merged):
+    path = HTML / "search" / "index.html"
+    if not path.exists():
+        return
+    s = path.read_text(encoding="utf-8")
+    items = [search_item(p, "news") for p in merged] + [search_item(p, "project") for p in projects_merged]
+    block = "\n".join(items)
+    s, n = re.subn(
+        r'(<div id="srList">).*?(\n\s*</div>\s*<p class="sr__empty")',
+        lambda m: m.group(1) + "\n" + block + m.group(2),
+        s, count=1, flags=re.S,
+    )
+    if not n:
+        print("WARN: không tìm thấy #srList trong html/search/index.html — bỏ qua")
+        return
+    path.write_text(s, encoding="utf-8")
+    print("built html/search/index.html (%d bài, %d dự án)" % (len(merged), len(projects_merged)))
 
 
 # ---------- content transform ----------
@@ -337,6 +380,7 @@ def main():
 
     build_news_index(merged, projects_merged, index_tpl)
     build_projects_index(projects_merged, merged, projects_index_tpl)
+    build_search_page(merged, projects_merged)
     update_homepage(merged, projects_merged)
     build_sitemap(merged, projects_merged)
     print("Done: %d bài + %d dự án CMS | tổng %d bài, %d dự án" % (built, built_prj, len(merged), len(projects_merged)))
