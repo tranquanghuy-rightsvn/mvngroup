@@ -1,42 +1,42 @@
 {
   "redirects": [
     {
-      "source": "/portfolio-item/modern-2-storey-house-nha-2-tang-hien-dai",
+      "source": "/portfolio-item/modern-2-storey-house-nha-2-tang-hien-dai/?",
       "destination": "/our-projects/villa-hien-dai-2-tang/",
       "permanent": true
     },
     {
-      "source": "/portfolio-item/:slug",
+      "source": "/portfolio-item/:slug/?",
       "destination": "/our-projects/:slug/",
       "permanent": true
     },
     {
-      "source": "/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug",
+      "source": "/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug/?",
       "destination": "/news/:slug/",
       "permanent": true
     },
     {
-      "source": "/portfolio-category/:slug",
+      "source": "/portfolio-category/:slug/?",
       "destination": "/our-projects/",
       "permanent": true
     },
     {
-      "source": "/portfolio-tag/:slug",
+      "source": "/portfolio-tag/:slug/?",
       "destination": "/our-projects/",
       "permanent": true
     },
     {
-      "source": "/clients-category/:slug",
+      "source": "/clients-category/:slug/?",
       "destination": "/our-projects/",
       "permanent": true
     },
     {
-      "source": "/team-category/:slug",
+      "source": "/team-category/:slug/?",
       "destination": "/about-us/",
       "permanent": true
     },
     {
-      "source": "/blog",
+      "source": "/blog/?",
       "destination": "/news/",
       "permanent": true
     }
