@@ -1047,7 +1047,8 @@
         }
 
         .partners__marquee--left .partners__track {
-            animation: partners-marq-left 137.5s linear infinite;
+            /* 9 logo (thay vi 25) -> giam duration theo ti le 9/25 de toc do (px/s) bang hang duoi */
+            animation: partners-marq-left 49.5s linear infinite;
         }
 
         .partners__marquee--right .partners__track {
@@ -2280,22 +2281,8 @@ Thiết kế kiến trúc bền vững, tối ưu công năng và mang dấu ấ
     <!-- Build marquee logo doi tac (danh sach lay tu index.html goc) -->
     <script>
         (function () {
-            // hang 1 (troi trai)
-            const row1 = [
-                '5433e164fba44d14b946c61beceaa7ce', '221b72dc85a9437e9aafa5f30cf2e29e',
-                'b7da2af310ba475e92da2d48824af4eb', '555fcb54e1494e07b7f02f618f350c5b',
-                '4442f13f676d4d4e9a5a82938a7679bd', 'd7a01d47dcf742cd88a5165d9cb7e9ef',
-                '500a2dccd12d43d993af90c7d41c76c0', '6171a1e321da493b8a584aff26acb51c',
-                'eb1db9691eb34ad8a0d1fc1dc566c57c', '690a478cdb9440be86ebcd8d1a45c59a',
-                '50a5e3bb6202446c922ed4c6d9777920', 'ec5c74ab348148fca37105e84bec821b',
-                'b7995a004e994542acb9023bba615fd4', '67759ffa8ff648bea66792d8088c02dc',
-                '88a11cc4955b481aa49e56dc1f93dfc7', '8e978505368f49a584d670181ed9dcfb',
-                '9cb162adb6c64261b587b214c265a36d', '781b8017b3ee47c6baf2b833c0cd6c2a',
-                'd21b30dff0054e65b1640ff3dbec4ea5', '889368d5f32643ec97febbcae1cf2643',
-                '10c52c05748a468d951125f1afed8685', 'b347400121634d45ad622c6d76766b0c',
-                '80858fad67af40369381885273fbc122', '66c7cf4d9cac405b851f4a8fee7756be',
-                '03763202da58426f86d238845d858c62'
-            ];
+            // hang 1 (troi trai) - 9 logo partner moi
+            const row1 = ['png01', 'png02', 'png03', 'png04', 'png05', 'png06', 'png07', 'png08', 'png09'];
             // hang 2 (troi phai)
             const row2 = [
                 '41f59a142bf14d40b4bfb2604f7c59d2', 'a36efd648af94716b9e5a682e6b7463c',
@@ -2345,7 +2332,16 @@ Thiết kế kiến trúc bền vững, tối ưu công năng và mang dấu ấ
                 '35ddce8c87cb471e96825d687d603549': 'images/partners/29.avif',
                 '4fc991e0403f4a878e20527c74efce9e': 'images/partners/30.avif',
                 'ba635ef683f54d5bbf3d63f0287c9469': 'images/partners/31.avif',
-                'a002f7b6b3834566b547a7a23fd33412': 'images/partners/32.avif'
+                'a002f7b6b3834566b547a7a23fd33412': 'images/partners/32.avif',
+                'png01': 'images/partners/01.png',
+                'png02': 'images/partners/02.png',
+                'png03': 'images/partners/03.png',
+                'png04': 'images/partners/04.png',
+                'png05': 'images/partners/05.png',
+                'png06': 'images/partners/06.png',
+                'png07': 'images/partners/07.png',
+                'png08': 'images/partners/08.png',
+                'png09': 'images/partners/09.png'
             };
 
             function itemHtml(id) {
