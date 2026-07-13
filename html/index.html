@@ -1896,7 +1896,9 @@
             </div>
         </div>
     </header>
+    <!-- Tạm ẩn decor-triangles (bỏ comment để hiện lại):
     <img src="images/decor-triangles.svg" alt="" class="hero__decor" aria-hidden="true">
+    -->
 
 
     <!-- ===== WHAT WE DO (Carousel) ===== -->
@@ -2197,10 +2199,7 @@ Thiết kế kiến trúc bền vững, tối ưu công năng và mang dấu ấ
 
     <!-- ===== PRIZE (LATEST AWARDS) ===== -->
     <section class="section--prize">
-        <video class="prize__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"
-            poster="images/prize-poster.jpg">
-            <source src="videos/prize2.mp4" type="video/mp4">
-        </video>
+        <img class="prize__video" src="images/news-bg.jpg" alt="" aria-hidden="true">
 
         <div class="prize__content">
             <p class="prize__label">Latest Awards</p>
@@ -2217,9 +2216,7 @@ Thiết kế kiến trúc bền vững, tối ưu công năng và mang dấu ấ
 
             <!-- Panel chi tiet giai thuong (prize3.png) — xuat hien duoi button -->
             <div class="prize__panel" id="prizePanel">
-                <video class="prize__panel-video" muted loop playsinline preload="metadata">
-                    <source src="videos/prize.mp4" type="video/mp4">
-                </video>
+                <img class="prize__panel-video" src="images/news-bg.jpg" alt="">
                 <div class="prize__panel-body">
                     <p>The People&rsquo;s Committee of B&igrave;nh Định Province has recently announced the results of the &ldquo;Design &amp; Planning Competition for the Quy Nhơn City Square&rdquo; in April 2025.</p>
                     <p>Taking the top honor, the winning design "A Shining Gem Amidst the Flow of History" by MVN Ggroup Company Limited - PA8888 impressed the jury with its bold creativity, strong feasibility, outstanding optimization of public space, and an appealing investment efficiency index. Brimming with potential, the project is envisioned to become a striking architectural landmark &mdash; a seamless fusion of art, the rich cultural heritage of the region, and a vibrant spirit of community connection.</p>
@@ -2233,16 +2230,10 @@ Thiết kế kiến trúc bền vững, tối ưu công năng và mang dấu ấ
         /* Toggle panel giai thuong: + xoay thanh X, panel truot tu duoi len */
         const prizeSection = document.querySelector('.section--prize');
         const prizeBtn = document.getElementById('prizeBtn');
-        const prizePanelVideo = document.querySelector('.prize__panel-video');
 
         prizeBtn.addEventListener('click', () => {
             const isOpen = prizeSection.classList.toggle('is-open');
             prizeBtn.setAttribute('aria-expanded', isOpen);
-            if (isOpen) {
-                prizePanelVideo.play();
-            } else {
-                prizePanelVideo.pause();
-            }
         });
     </script>
 

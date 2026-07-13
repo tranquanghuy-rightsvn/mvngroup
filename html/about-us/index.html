@@ -140,12 +140,15 @@
             overflow: hidden;
         }
 
-        .hero__video {
+        /* Anh hien tron ven chieu ngang (khong bi cover cat 2 ben),
+           phan du chieu doc bi hero (overflow: hidden) cat deu 2 phia */
+        .hero__banner {
             position: absolute;
-            inset: 0;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             z-index: 0;
         }
 
@@ -218,38 +221,6 @@
             border-radius: 50%;
             background: var(--gold);
         }
-
-        /* Nut pause/play giua video */
-        .hero__playpause {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            border: none;
-            background: transparent;
-            color: var(--white);
-            cursor: pointer;
-            padding: 12px;
-            opacity: .85;
-            transition: opacity .3s ease, transform .3s ease;
-        }
-
-        .hero__playpause:hover {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1.12);
-        }
-
-        .hero__playpause svg {
-            width: 34px;
-            height: 34px;
-            display: block;
-            filter: drop-shadow(0 1px 6px rgba(0, 0, 0, .35));
-        }
-
-        .hero__playpause .icon-play { display: none; }
-        .hero__playpause.paused .icon-pause { display: none; }
-        .hero__playpause.paused .icon-play { display: block; }
 
         @media (max-width: 900px) {
             .hero { height: 56vh; }
@@ -1047,12 +1018,10 @@
 
 <body>
 
-    <!-- ===== HERO (video nen) ===== -->
+    <!-- ===== HERO (banner anh) ===== -->
     <header class="hero">
 
-        <video class="hero__video" autoplay muted loop playsinline preload="metadata" id="heroVideo">
-            <source src="../videos/about.mp4" type="video/mp4">
-        </video>
+        <img class="hero__banner" src="../images/projects-bg.jpg" alt="MVN Group">
 
         <!-- Thanh tren -->
         <div class="hero__bar">
@@ -1083,17 +1052,6 @@
             </div>
 
         </div>
-
-        <!-- Nut pause/play video -->
-        <button type="button" class="hero__playpause" id="heroPlayPause" aria-label="Pause video">
-            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <rect x="6" y="4" width="4" height="16"></rect>
-                <rect x="14" y="4" width="4" height="16"></rect>
-            </svg>
-            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M8 5v14l11-7z"></path>
-            </svg>
-        </button>
 
     </header>
 
@@ -1492,24 +1450,6 @@
         window.addEventListener('scroll', () => {
             logo.classList.toggle('hidden', window.scrollY > scrollThreshold);
         }, { passive: true });
-    </script>
-
-    <!-- Video hero: pause / play -->
-    <script>
-        const heroVideo = document.getElementById('heroVideo');
-        const heroPlayPause = document.getElementById('heroPlayPause');
-
-        heroPlayPause.addEventListener('click', () => {
-            if (heroVideo.paused) {
-                heroVideo.play();
-                heroPlayPause.classList.remove('paused');
-                heroPlayPause.setAttribute('aria-label', 'Pause video');
-            } else {
-                heroVideo.pause();
-                heroPlayPause.classList.add('paused');
-                heroPlayPause.setAttribute('aria-label', 'Play video');
-            }
-        });
     </script>
 
     <!-- Menu panel: mo / dong -->
