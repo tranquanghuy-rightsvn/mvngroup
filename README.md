@@ -40,3 +40,31 @@ repo này: data/ (nguồn dữ liệu) ──► GitHub Actions build ──► 
 4. **Tối ưu gốc (độc lập với 1-3):** GAS chuyển từ Contents API sang **Git Data API (trees)** → 1 thao tác = 1 commit atomic, upload blob song song. Trade-off: code phức tạp hơn nhiều + phải xử lý retry khi ref bị đua (CI push cùng lúc) + tự quản lý xoá file trong tree.
 
 **Khuyến nghị đang treo:** nếu viết nhiều → phương án 2 (Cloudflare) hoặc 3 (Pro); nhịp hiện tại thì chưa cần đổi gì.
+
+## Mô hình kinh doanh nhiều khách hàng (ghi chú 2026-07-13 — định hướng, chưa triển khai)
+
+Mục tiêu: nhân bản mô hình này cho nhiều KH, **mọi hạ tầng đứng tên mình**, thu phí vận hành/năm (managed service).
+
+### Stack chuẩn cho mỗi khách (chi phí biến đổi ≈ 0đ/khách)
+
+| Mảnh | Cách làm | Lý do / quota |
+|---|---|---|
+| GitHub | 1 account của mình + **mỗi KH 1 organization free** (mình sở hữu) | Org free không giới hạn, hợp lệ ToS (KHÔNG lập nhiều account cá nhân — vi phạm, rủi ro khoá dây chuyền). Mỗi org có 2.000 phút Actions/tháng riêng → repo private thoải mái (~2-4k build/tháng/KH). Repo public = Actions không giới hạn nhưng lộ source/design — hỏi KH trước. |
+| Hosting | **Cloudflare Pages**, 1 account của mình, mỗi KH 1 project | Free cho phép thương mại + bandwidth KHÔNG giới hạn (khoá rủi ro lớn nhất của phí cố định/năm). Deploy bằng wrangler từ Actions → không ăn quota build. Giới hạn ~100 project/account → gần đủ 100 KH thì mở account pháp nhân thứ hai. Cần chuyển vercel.json → `_redirects` khi migrate. |
+| Google (GAS/Sheets/Drive) | Bắt đầu: 1 account của mình cho mọi KH (mỗi KH 1 GAS project + 1 spreadsheet) | OTP chỉ gửi lúc login (token 30 ngày) → ~1-2 mail/editor/tháng, quota 100/ngày đủ cho ~50 KH. Nút thắt thật: **Drive 15GB chứa ảnh mọi KH** → Google One 100GB (~50k/th) hoặc Workspace ($7/th, 1.500 mail/ngày + mail domain riêng). Đây là chi phí hạ tầng duy nhất. |
+| GitHub Pages / Vercel Hobby | ❌ Loại cho kinh doanh | Pages cấm hosting thương mại + giới hạn 1GB; Vercel Hobby phi thương mại. Vercel Pro ($20/th) là phương án trả phí thay CF nếu muốn DX. |
+
+### Hai việc bắt buộc khi mọi trứng trong giỏ của mình
+
+1. **Chống single point of failure**: 1 account bị khoá = mọi KH sập. Bắt buộc 2FA mọi account + **backup tự động** (mirror toàn bộ repo git + export spreadsheet định kỳ về nơi thứ hai). Có backup thì kịch bản xấu nhất = vài giờ dựng lại trên account mới.
+2. **Chuẩn hoá khuôn onboarding KH mới** (~1-2h/KH): template repo (data/ + templates/ + scripts/ + workflow) → tạo org → clone → đổi design template → clasp push GAS mới → điền Script Properties (GITHUB_TOKEN/REPO/BRANCH) → tạo CF Pages project → trỏ domain KH. Script hoá được phần lớn.
+
+### Kinh tế
+
+Chi phí biến đổi ≈ 0đ/KH; cố định ~50-150k/tháng (Google One/Workspace dùng chung). Phí vận hành/năm thu của KH ≈ biên ròng — giá trị bán là CMS + cập nhật + monitoring + backup + support, không phải giá hạ tầng.
+
+### Việc treo khi bắt đầu KH đầu tiên
+
+- [ ] Migrate mvngroup sang Cloudflare Pages làm bản khuôn (wrangler trong workflow + `_redirects`)
+- [ ] Script mirror backup repos + spreadsheets
+- [ ] Checklist/script onboarding KH mới
