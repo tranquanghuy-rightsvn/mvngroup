@@ -242,9 +242,13 @@ def build_project_page(prj, posts_merged, projects_merged, tpl):
     images = prj.get("images") or []
 
     vt_name = "vt-proj-" + slug
+    # Slide dau la anh LCP + doi tuong cua view-transition morph -> phai eager/uu tien cao,
+    # KHONG duoc lazy (lazy se lam trinh duyet cham bat dau tai anh dung luc can no nhat).
     slides = "\n".join(
-        '                    <img%s loading="lazy" src="/%s" alt="%s %d"%s>'
-        % (' class="is-active"' if i == 0 else "", img, esc(prj["title"]), i + 1,
+        '                    <img%s%s src="/%s" alt="%s %d"%s>'
+        % (' class="is-active"' if i == 0 else "",
+           ' loading="eager" fetchpriority="high"' if i == 0 else ' loading="lazy"',
+           img, esc(prj["title"]), i + 1,
            ' style="view-transition-name: %s"' % vt_name if i == 0 else "")
         for i, img in enumerate(images)
     )
