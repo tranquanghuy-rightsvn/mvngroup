@@ -1226,6 +1226,13 @@
       ]
     }
     </script>
+    <!-- Bat hieu ung chuyen trang mem (View Transitions, cross-document).
+         Bat buoc co o CA 2 trang (di + den) moi kich hoat. Chrome/Edge; trinh duyet khac bo qua, khong loi. -->
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
 </head>
 
 <body>
@@ -1288,7 +1295,7 @@
 
                 <div class="pslider" id="pslider">
             <div class="pslider__slides">
-                    <img class="is-active" loading="lazy" src="images/01.jpg" alt="VILLA KHU ĐÔ THỊ MỚI 1">
+                    <img class="is-active" loading="lazy" src="images/01.jpg" alt="VILLA KHU ĐÔ THỊ MỚI 1" style="view-transition-name: vt-proj-villa-khu-do-thi-moi">
                     <img loading="lazy" src="images/02.jpg" alt="VILLA KHU ĐÔ THỊ MỚI 2">
                     <img loading="lazy" src="images/03.jpg" alt="VILLA KHU ĐÔ THỊ MỚI 3">
                     <img loading="lazy" src="images/04.jpg" alt="VILLA KHU ĐÔ THỊ MỚI 4">

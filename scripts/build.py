@@ -104,12 +104,14 @@ def search_card(p):
 
 
 def project_card(p, prefix=""):
-    """Card dự án (catalog grid /our-projects/ với prefix rỗng; trang chủ với prefix "/our-projects/")."""
+    """Card dự án (catalog grid /our-projects/ với prefix rỗng; trang chủ với prefix "/our-projects/").
+    Ảnh cover mang view-transition-name để morph mượt sang ảnh đầu slider ở trang chi tiết (xem build_project_page)."""
     cats = p.get("categories") or []
     href = prefix + p["slug"] + "/"
+    vt_name = "vt-proj-" + p["slug"]
     cat_spans = "\n".join('                        <span class="project-card__cat">%s</span>' % esc(c) for c in cats)
     return """                <article class="project-card" data-tags="%s">
-                    <a href="%s"><img class="project-card__image" loading="lazy" alt="%s" src="%s"></a>
+                    <a href="%s"><img class="project-card__image" loading="lazy" alt="%s" src="%s" style="view-transition-name: %s"></a>
                     <div class="project-card__body">
                         <h3 class="project-card__title"><a href="%s">%s</a></h3>
                         <div class="project-card__cats">
@@ -119,7 +121,7 @@ def project_card(p, prefix=""):
                             <a class="project-card__link" href="%s" aria-label="View %s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg></a>
                         </div>
                     </div>
-                </article>""" % (esc("|".join(cats)), href, esc(p["title"]), project_cover_of(p),
+                </article>""" % (esc("|".join(cats)), href, esc(p["title"]), project_cover_of(p), vt_name,
                                 href, esc(p["title"]), cat_spans, href, esc(p["title"]))
 
 
@@ -239,9 +241,11 @@ def build_project_page(prj, posts_merged, projects_merged, tpl):
     ext = cover.rsplit(".", 1)[-1].lower() if "." in cover else "jpg"
     images = prj.get("images") or []
 
+    vt_name = "vt-proj-" + slug
     slides = "\n".join(
-        '                    <img%s loading="lazy" src="/%s" alt="%s %d">'
-        % (' class="is-active"' if i == 0 else "", img, esc(prj["title"]), i + 1)
+        '                    <img%s loading="lazy" src="/%s" alt="%s %d"%s>'
+        % (' class="is-active"' if i == 0 else "", img, esc(prj["title"]), i + 1,
+           ' style="view-transition-name: %s"' % vt_name if i == 0 else "")
         for i, img in enumerate(images)
     )
     cats = prj.get("categories") or []
