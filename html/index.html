@@ -1839,6 +1839,18 @@
         }
 
     </style>
+    <!-- Prerender link bai viet/du an khi hover/nham vao -> chuyen trang gan nhu tuc thi.
+         Chi Chrome/Edge ho tro (Speculation Rules API); trinh duyet khac tu bo qua, khong loi, khong anh huong SEO. -->
+    <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "where": { "href_matches": ["/news/*", "/our-projects/*"] },
+          "eagerness": "moderate"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
