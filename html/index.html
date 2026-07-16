@@ -1857,6 +1857,12 @@
       @view-transition {
         navigation: auto;
       }
+      /* Crossfade mac dinh nhanh qua (~250ms) -> tang de nguoi dung kip cam nhan hieu ung.
+         Rieng phan morph anh du an (vt-proj-*) khong bi anh huong boi rule nay. */
+      ::view-transition-old(root),
+      ::view-transition-new(root) {
+        animation-duration: 400ms;
+      }
     </style>
 </head>
 
