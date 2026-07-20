@@ -278,22 +278,6 @@
     "updated_at": "2025-07-22T00:00:00.000Z"
   },
   {
-    "id": "legacy-solea-house",
-    "slug": "solea-house",
-    "title": "Solea House",
-    "description": "Phong cách Địa Trung Hải được biết đến không chỉ là sự kết hợp hài hòa giữa kiến trúc và thiên nhiên, mà còn là biểu tượng của một lối sống thanh bình, nơi con người tận hưởng sự giao thoa giữa ánh sáng, gió biển và…",
-    "architect": "KTS Vũ Đức Cảnh",
-    "location": "Sơn Trà, Đà Nẵng",
-    "date": "2025-07-22",
-    "categories": [
-      "Cảnh quan",
-      "Housing"
-    ],
-    "cover": "our-projects/solea-house/images/cover.jpg",
-    "created_at": "2025-07-22T00:00:00.000Z",
-    "updated_at": "2025-07-22T00:00:00.000Z"
-  },
-  {
     "id": "legacy-studio-wedding-van-phong-tiec-cuoi",
     "slug": "studio-wedding-van-phong-tiec-cuoi",
     "title": "WEDDING STUDIO – VĂN PHÒNG TIỆC CƯỚI",
