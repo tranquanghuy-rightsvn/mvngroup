@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
+    "slug": "kien-truc-chung-cu-cao-tang",
+    "title": "Kiến trúc chung cư cao tầng",
+    "description": "Tại MVN GROUP, ch&uacute;ng t&ocirc;i tin rằng kiến tr&uacute;c cao tầng phải tạo ra nhiều hơn một kh&ocirc;ng gian để ở. Đ&oacute; phải l&agrave; một hệ sinh th&aacute;i sống &ndash; nơi con người, thi&ecirc;n nhi&ecirc",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "TP Huế",
+    "date": "2026-07-17",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ"
+    ],
+    "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
+    "created_at": "2026-07-20T16:27:09.775Z",
+    "updated_at": "2026-07-20T16:31:51.920Z"
+  }
+]
