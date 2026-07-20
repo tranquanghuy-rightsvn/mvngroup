@@ -399,8 +399,8 @@
             color: #8a8a86;
         }
 
-        .team .slider-arrow--prev { left: -8px; }
-        .team .slider-arrow--next { right: -8px; }
+        .team .slider-arrow--prev { left: -54px; }
+        .team .slider-arrow--next { right: -54px; }
 
         .team__fraction {
             margin-top: 28px;
@@ -462,6 +462,19 @@
             font-size: 13px;
             font-weight: 400;
             color: #8a8a86;
+        }
+
+        .quotes .slider-arrow--prev { left: -54px; }
+        .quotes .slider-arrow--next { right: -54px; }
+
+        /* Mobile: mui ten -54px lam tran ra ngoai vung nhin (thanh truot ngang).
+           Tra ve gia tri goc (truoc khi giai rong cho desktop) o man hinh nho. */
+        @media (max-width: 900px) {
+            /* Gia tri da test tren console (DevTools responsive), khong gay thanh truot ngang. */
+            .team .slider-arrow--prev { left: -25px; }
+            .team .slider-arrow--next { right: -20px; }
+            .quotes .slider-arrow--prev { left: -25px; }
+            .quotes .slider-arrow--next { right: -20px; }
         }
 
         /* --- CTA --- */
@@ -1115,24 +1128,19 @@
                             <p>Founder</p>
                         </div>
                         <div class="team__member">
-                            <img loading="lazy" src="images/team-02.jpg" alt="Trần Đình Bình">
-                            <h5>Trần Đình Bình</h5>
-                            <p>Kỹ sư</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-03.jpg" alt="Vũ Đức Cảnh">
-                            <h5>Vũ Đức Cảnh</h5>
+                            <img loading="lazy" src="images/team-02.jpg" alt="Nguyễn Hữu Thắng">
+                            <h5>Nguyễn Hữu Thắng</h5>
                             <p>Kiến trúc sư</p>
                         </div>
                         <div class="team__member">
-                            <img loading="lazy" src="images/team-04.jpg" alt="Nguyễn Nhị Thiên">
-                            <h5>Nguyễn Nhị Thiên</h5>
+                            <img loading="lazy" src="images/team-03.jpg" alt="Huỳnh Thanh Dũng">
+                            <h5>Huỳnh Thanh Dũng</h5>
                             <p>Kiến trúc sư</p>
                         </div>
                         <div class="team__member">
-                            <img loading="lazy" src="images/team-05.jpg" alt="Trần Kim Trung">
-                            <h5>Trần Kim Trung</h5>
-                            <p>Kỹ sư</p>
+                            <img loading="lazy" src="images/team-04.jpg" alt="Nguyễn Quân">
+                            <h5>Nguyễn Quân</h5>
+                            <p>Kiến trúc sư</p>
                         </div>
                         <div class="team__member">
                             <img loading="lazy" src="images/team-06.jpg" alt="Đỗ Tấn Đạt">
@@ -1147,7 +1155,7 @@
                 <button type="button" class="slider-arrow slider-arrow--next" data-dir="1" aria-label="Next slide">
                     <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="15.2" y1="4.8" x2="0" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="10.9,0.6 15,4.8 10.9,8.9"></polyline></g></svg>
                 </button>
-                <div class="team__fraction" id="teamFraction">01/06</div>
+                <div class="team__fraction" id="teamFraction">01/05</div>
             </div>
 
             <!-- Quotes slide -->
@@ -1156,12 +1164,12 @@
                     <div class="quotes__slide is-active">
                         <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
                         <p class="quotes__text">"Kiến trúc không phải là việc xây nên những công trình — mà là tạo ra những không gian biết lắng nghe con người. Ở đó, ánh sáng không chỉ để nhìn, vật liệu không chỉ để chạm, mà mọi đường nét đều mang trong mình một câu chuyện – về ký ức, về mơ ước, và về cách chúng ta muốn sống trong thế giới này."</p>
-                        <p class="quotes__author">Nguyễn Nhị Thiên <span>Kiến trúc sư</span></p>
+                        <p class="quotes__author">Nguyễn Hữu Thắng <span>Kiến trúc sư</span></p>
                     </div>
                     <div class="quotes__slide">
                         <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
                         <p class="quotes__text">Một công trình đẹp có thể khiến người ta ngước nhìn. Nhưng một không gian chạm đến tâm hồn – mới khiến người ta muốn ở lại.</p>
-                        <p class="quotes__author">Trần Đình Bình <span>Kỹ sư</span></p>
+                        <p class="quotes__author">Huỳnh Thanh Dũng <span>Kiến trúc sư</span></p>
                     </div>
                     <div class="quotes__slide">
                         <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
