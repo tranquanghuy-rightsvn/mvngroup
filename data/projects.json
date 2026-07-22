@@ -14,5 +14,22 @@
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
     "created_at": "2026-07-20T16:27:09.775Z",
     "updated_at": "2026-07-20T16:31:51.920Z"
+  },
+  {
+    "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
+    "slug": "the-red-mountain-nha-nui-do",
+    "title": "The Red Mountain - Nhà Núi Đỏ",
+    "description": "Ng&ocirc;i nh&agrave; n&agrave;y kh&ocirc;ng chỉ l&agrave; một biểu tượng của sự đẹp mắt, m&agrave; c&ograve;n thể hiện sự kết hợp tinh tế giữa kiến tr&uacute;c truyền thống v&agrave; bền vững. Sự chăm chỉ nghi&ecirc;n c",
+    "architect": "Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2024-04-02",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
+    "created_at": "2026-07-22T08:05:37.683Z",
+    "updated_at": "2026-07-22T08:05:37.683Z"
   }
 ]
