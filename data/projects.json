@@ -84,5 +84,21 @@
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-23T09:13:08.442Z"
+  },
+  {
+    "id": "1461842a-6159-426e-9a14-276016c10eb1",
+    "slug": "tam-giao-house",
+    "title": "TAM GIAO HOUSE",
+    "description": "Tam Giao House được h&igrave;nh th&agrave;nh từ triết l&yacute; \"Tam Giao\" với ba gi&aacute; trị cốt l&otilde;i xuy&ecirc;n suốt qu&aacute; tr&igrave;nh thiết kế: Giao h&ograve;a giữa cũ v&agrave; mới. Giao thoa của &aac",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-04-14",
+    "categories": [
+      "Housing",
+      "Nội thất"
+    ],
+    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "created_at": "2026-07-23T09:25:36.267Z",
+    "updated_at": "2026-07-23T09:25:36.267Z"
   }
 ]
