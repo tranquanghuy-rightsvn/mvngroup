@@ -101,6 +101,11 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/the-red-mountain-nha-nui-do/</loc>
+        <lastmod>2026-07-23</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/toa-nha-le-huu-trac-le-huu-trac-building/</loc>
         <lastmod>2026-05-21</lastmod>
         <priority>0.6</priority>
@@ -183,11 +188,6 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
         <lastmod>2025-07-20</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/the-red-mountain-nha-nui-do/</loc>
-        <lastmod>2026-07-22</lastmod>
         <priority>0.6</priority>
     </url>
 </urlset>
