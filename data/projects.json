@@ -1,5 +1,25 @@
 [
   {
+    "id": "acd5e8c8-1d55-4b98-9ffa-4f1a9ea5af36",
+    "slug": "vertical-hue-lang-hue-tren-cao",
+    "title": "VERTICAL HUE – LÀNG HUẾ TRÊN CAO",
+    "description": "Vertical Hue l&agrave; phương &aacute;n kiến tr&uacute;c nh&agrave; ở x&atilde; hội do C&ocirc;ng ty CP Đầu tư Kiến tr&uacute;c &amp; X&acirc;y dựng MVN thực hiện, xuất sắc gi&agrave;nh Qu&aacute;n qu&acirc;n hạng mục Pr",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "TP Huế",
+    "date": "2006-06-01",
+    "categories": [
+      "Cảnh quan",
+      "Công trình công cộng",
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
+    "order": 1,
+    "created_at": "2026-07-25T03:59:05.501Z",
+    "updated_at": "2026-07-25T03:59:05.501Z"
+  },
+  {
     "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
     "slug": "kien-truc-chung-cu-cao-tang",
     "title": "Kiến trúc chung cư cao tầng",
@@ -12,7 +32,7 @@
       "Nhà ở - Dịch vụ"
     ],
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
-    "order": 1,
+    "order": 2,
     "created_at": "2026-07-20T16:27:09.775Z",
     "updated_at": "2026-07-25T02:52:43.493Z"
   },
@@ -31,7 +51,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 2,
+    "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-23T09:33:21.423Z"
   },
@@ -50,7 +70,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 3,
+    "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-23T09:33:04.749Z"
   },
@@ -68,7 +88,7 @@
       "Nội thất"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 4,
+    "order": 5,
     "created_at": "2026-07-23T09:17:13.869Z",
     "updated_at": "2026-07-23T10:37:55.881Z"
   },
@@ -86,7 +106,7 @@
       "Nội thất"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 5,
+    "order": 6,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-23T09:34:45.947Z"
   },
@@ -104,7 +124,7 @@
       "Nội thất"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 6,
+    "order": 7,
     "created_at": "2026-07-23T09:25:36.267Z",
     "updated_at": "2026-07-23T09:44:20.859Z"
   },
@@ -123,7 +143,7 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 7,
+    "order": 8,
     "created_at": "2026-07-23T10:00:08.925Z",
     "updated_at": "2026-07-25T02:58:51.470Z"
   }
