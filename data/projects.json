@@ -3,9 +3,10 @@
     "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
     "slug": "kien-truc-chung-cu-cao-tang",
     "title": "Kiến trúc chung cư cao tầng",
-    "description": "Tại MVN GROUP, ch&uacute;ng t&ocirc;i tin rằng kiến tr&uacute;c cao tầng phải tạo ra nhiều hơn một kh&ocirc;ng gian để ở. Đ&oacute; phải l&agrave; một hệ sinh th&aacute;i sống &ndash; nơi con người, thi&ecirc;n nhi&ecirc",
+    "description": "Tại MVN GROUP, chúng tôi tin rằng kiến trúc cao tầng phải tạo ra nhiều hơn một không gian để ở. Đó phải là một hệ sinh thái sống – nơi con người, thiên nhiên và đô thị được kết nối hài hòa. Dự án được phát triển với định",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "TP Huế",
+    "area": "62 m²",
     "date": "2026-05-30",
     "categories": [
       "Housing",
@@ -14,16 +15,16 @@
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
     "order": 1,
     "created_at": "2026-07-20T16:27:09.775Z",
-    "updated_at": "2026-07-25T02:52:43.493Z",
-    "area": "191 ha"
+    "updated_at": "2026-07-25T02:52:43.493Z"
   },
   {
     "id": "acd5e8c8-1d55-4b98-9ffa-4f1a9ea5af36",
     "slug": "vertical-hue-lang-hue-tren-cao",
     "title": "VERTICAL HUE – LÀNG HUẾ TRÊN CAO",
-    "description": "Vertical Hue l&agrave; phương &aacute;n kiến tr&uacute;c nh&agrave; ở x&atilde; hội do C&ocirc;ng ty CP Đầu tư Kiến tr&uacute;c &amp; X&acirc;y dựng MVN thực hiện, xuất sắc gi&agrave;nh Qu&aacute;n qu&acirc;n hạng mục Pr",
+    "description": "Vertical Hue là phương án kiến trúc nhà ở xã hội do Công ty CP Đầu tư Kiến trúc & Xây dựng MVN thực hiện, xuất sắc giành Quán quân hạng mục Professional tại cuộc thi Genesis Green Living Challenge 2026. Lấy cảm hứng từ m",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "TP Huế",
+    "area": "55 ha",
     "date": "2006-06-01",
     "categories": [
       "Landscape",
@@ -35,16 +36,16 @@
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
     "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
-    "updated_at": "2026-07-25T03:59:05.501Z",
-    "area": "127 m²"
+    "updated_at": "2026-07-25T03:59:05.501Z"
   },
   {
     "id": "2ea3ccef-747c-4bc3-92d0-0da104b537c5",
     "slug": "my-dinh-pearl",
     "title": "MỸ ĐÌNH PEARL",
-    "description": "Lấy cảm hứng từ phong c&aacute;ch sống hiện đại v&agrave; tinh thần nghỉ dưỡng giữa đ&ocirc; thị, kh&ocirc;ng gian sảnh Mỹ Đ&igrave;nh Pearl được định hướng trở th&agrave;nh điểm chạm đầu ti&ecirc;n thể hiện đẳng cấp của",
+    "description": "Lấy cảm hứng từ phong cách sống hiện đại và tinh thần nghỉ dưỡng giữa đô thị, không gian sảnh Mỹ Đình Pearl được định hướng trở thành điểm chạm đầu tiên thể hiện đẳng cấp của toàn bộ dự án. Thiết kế hướng đến sự sang trọ",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Hà Nội",
+    "area": "68 ha",
     "date": "2026-05-29",
     "categories": [
       "Landscape",
@@ -55,16 +56,16 @@
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
     "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
-    "updated_at": "2026-07-23T09:33:21.423Z",
-    "area": "75 ha"
+    "updated_at": "2026-07-23T09:33:21.423Z"
   },
   {
     "id": "f218feb3-459d-4cb4-9b61-5d2d0d82fff0",
     "slug": "the-diamond-bvlgravia",
     "title": "The Diamond bvlgravia",
-    "description": "Diamond Bvlgarvia được định hướng trở th&agrave;nh một khu căn hộ cao tầng hiện đại, nơi kh&ocirc;ng gian sống, thương mại v&agrave; tiện &iacute;ch được t&iacute;ch hợp trong một tổng thể đồng bộ. Dự &aacute;n hướng đến",
+    "description": "Diamond Bvlgarvia được định hướng trở thành một khu căn hộ cao tầng hiện đại, nơi không gian sống, thương mại và tiện ích được tích hợp trong một tổng thể đồng bộ. Dự án hướng đến việc kiến tạo một cộng đồng cư dân văn m",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Lô 11 – Thửa D14, Khu tái định cư Bắc Sông Cấm, xã Dương Quan, huyện Thủy Nguyên, TP. Hải Phòng",
+    "area": "128 ha",
     "date": "2026-05-30",
     "categories": [
       "Landscape",
@@ -75,16 +76,16 @@
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
     "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
-    "updated_at": "2026-07-23T09:33:04.749Z",
-    "area": "104 ha"
+    "updated_at": "2026-07-23T09:33:04.749Z"
   },
   {
     "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
     "slug": "gao-lut-house",
     "title": "GẠO LỨT HOUSE",
-    "description": "Nh&agrave; Gạo Lứt được lấy cảm hứng từ c&acirc;u chuyện của một gia đ&igrave;nh trẻ sinh sống v&agrave; l&agrave;m việc tại Đ&agrave; Nẵng. T&ecirc;n gọi \"Gạo Lứt\" vừa gợi nhắc đến loại gạo gi&agrave;u dinh dưỡng với vẻ",
+    "description": "Nhà Gạo Lứt được lấy cảm hứng từ câu chuyện của một gia đình trẻ sinh sống và làm việc tại Đà Nẵng. Tên gọi \"Gạo Lứt\" vừa gợi nhắc đến loại gạo giàu dinh dưỡng với vẻ đẹp mộc mạc, vừa là tên thân mật của cô con gái trong",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
+    "area": "73 m²",
     "date": "2026-05-27",
     "categories": [
       "Housing",
@@ -94,35 +95,36 @@
     "cover": "our-projects/gao-lut-house/images/01.jpg",
     "order": 5,
     "created_at": "2026-07-23T09:17:13.869Z",
-    "updated_at": "2026-07-23T10:37:55.881Z",
-    "area": "48 m²"
+    "updated_at": "2026-07-23T10:37:55.881Z"
   },
   {
-    "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
-    "slug": "the-red-mountain-nha-nui-do",
-    "title": "The Red Mountain - Nhà Núi Đỏ",
-    "description": "Ng&ocirc;i nh&agrave; n&agrave;y kh&ocirc;ng chỉ l&agrave; một biểu tượng của sự đẹp mắt, m&agrave; c&ograve;n thể hiện sự kết hợp tinh tế giữa kiến tr&uacute;c truyền thống v&agrave; bền vững. Sự chăm chỉ nghi&ecirc;n c",
+    "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
+    "slug": "toi-gian-dam-chat-nhiet-doi",
+    "title": "Tổi giản đậm chất nhiệt đới",
+    "description": "Công trình được phát triển theo phong cách Brutalism hiện đại, kết hợp vẻ đẹp thô mộc của bê tông với hệ lam gỗ tối giản và không gian xanh nhiệt đới. Thiết kế hướng đến một môi trường sống hiện đại, nơi kiến Bối cảnh dự",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Đà Nẵng",
-    "date": "2026-05-22",
+    "area": "81 m²",
+    "date": "2026-03-10",
     "categories": [
       "Housing",
       "Residential - Service",
-      "Interior"
+      "Interior",
+      "Structure"
     ],
-    "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
+    "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
     "order": 6,
-    "created_at": "2026-07-22T08:05:37.683Z",
-    "updated_at": "2026-07-23T09:34:45.947Z",
-    "area": "123 m²"
+    "created_at": "2026-07-23T10:00:08.925Z",
+    "updated_at": "2026-07-25T02:58:51.470Z"
   },
   {
     "id": "1461842a-6159-426e-9a14-276016c10eb1",
     "slug": "tam-giao-house",
     "title": "TAM GIAO HOUSE",
-    "description": "Tam Giao House được h&igrave;nh th&agrave;nh từ triết l&yacute; \"Tam Giao\" với ba gi&aacute; trị cốt l&otilde;i xuy&ecirc;n suốt qu&aacute; tr&igrave;nh thiết kế: Giao h&ograve;a giữa cũ v&agrave; mới. Giao thoa của &aac",
+    "description": "Tam Giao House được hình thành từ triết lý \"Tam Giao\" với ba giá trị cốt lõi xuyên suốt quá trình thiết kế: Giao hòa giữa cũ và mới. Giao thoa của ánh sáng, gió và nước. Giao hòa giữa con người với con người. Công trình ",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "",
+    "area": "59 m²",
     "date": "2026-04-14",
     "categories": [
       "Housing",
@@ -132,27 +134,25 @@
     "cover": "our-projects/tam-giao-house/images/01.jpg",
     "order": 7,
     "created_at": "2026-07-23T09:25:36.267Z",
-    "updated_at": "2026-07-23T09:44:20.859Z",
-    "area": "197 ha"
+    "updated_at": "2026-07-23T09:44:20.859Z"
   },
   {
-    "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
-    "slug": "toi-gian-dam-chat-nhiet-doi",
-    "title": "Tổi giản đậm chất nhiệt đới",
-    "description": "C&ocirc;ng tr&igrave;nh được ph&aacute;t triển theo phong c&aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&ocirc; mộc của b&ecirc; t&ocirc;ng với hệ lam gỗ tối giản v&agrave; kh&ocirc;ng gian xanh nhiệt đới. Thiết kế hư",
+    "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
+    "slug": "the-red-mountain-nha-nui-do",
+    "title": "The Red Mountain - Nhà Núi Đỏ",
+    "description": "Ngôi nhà này không chỉ là một biểu tượng của sự đẹp mắt, mà còn thể hiện sự kết hợp tinh tế giữa kiến trúc truyền thống và bền vững. Sự chăm chỉ nghiên cứu của các Kts MVN trong việc sử dụng vật liệu địa phương và công n",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Đà Nẵng",
-    "date": "2026-03-10",
+    "area": "51 m²",
+    "date": "2026-05-22",
     "categories": [
       "Housing",
       "Residential - Service",
-      "Interior",
-      "Structure"
+      "Interior"
     ],
-    "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
+    "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
     "order": 8,
-    "created_at": "2026-07-23T10:00:08.925Z",
-    "updated_at": "2026-07-25T02:58:51.470Z",
-    "area": "165 m²"
+    "created_at": "2026-07-22T08:05:37.683Z",
+    "updated_at": "2026-07-23T09:34:45.947Z"
   }
 ]
