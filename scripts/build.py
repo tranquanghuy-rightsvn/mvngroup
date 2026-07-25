@@ -347,11 +347,21 @@ def build_sitemap(merged, projects_merged):
     print("built html/sitemap.xml (%d bài viết, %d dự án)" % (len(post_blocks), len(prj_blocks)))
 
 
-def merge_by_slug(legacy, cms, sort_key):
+# Dự án legacy (không có "order" trong data) luôn bị coi là vị trí rất lớn -> luôn xếp cuối,
+# sau mọi dự án CMS đã được đánh order.
+LEGACY_PROJECT_ORDER = 10 ** 9
+
+
+def merge_by_slug(legacy, cms, sort_key, reverse=True):
     by_slug = {}
     for p in legacy + cms:  # CMS ghi đè legacy nếu trùng slug
         by_slug[p["slug"]] = p
-    return sorted(by_slug.values(), key=sort_key, reverse=True)
+    return sorted(by_slug.values(), key=sort_key, reverse=reverse)
+
+
+def project_sort_key(p):
+    order = p.get("order")
+    return order if isinstance(order, (int, float)) else LEGACY_PROJECT_ORDER
 
 
 def main():
@@ -361,7 +371,8 @@ def main():
 
     cms_projects = load_json(DATA / "projects.json", [])
     legacy_projects = load_json(DATA / "legacy-projects.json", [])
-    projects_merged = merge_by_slug(legacy_projects, cms_projects, lambda p: str(p.get("date") or p["created_at"]))
+    # Sắp theo order tăng dần (1 -> 2 -> 3 ...); legacy luôn ở cuối.
+    projects_merged = merge_by_slug(legacy_projects, cms_projects, project_sort_key, reverse=False)
 
     post_tpl = (ROOT / "templates" / "post.html").read_text(encoding="utf-8")
     index_tpl = (ROOT / "templates" / "index.html").read_text(encoding="utf-8")
