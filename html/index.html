@@ -1687,7 +1687,14 @@
         .carousel__track {
             display: flex;
             gap: 28px;
-            transition: transform .55s ease; /* hieu ung truot */
+            transition: transform .55s ease; /* hieu ung truot khi bam nut prev/next */
+        }
+
+        /* Tat transition luc dang tu troi (requestAnimationFrame tu cap nhat transform moi frame,
+           de CSS transition vao se bi giat/lag), va luc nhay am tham ve vi tri that sau khi wrap
+           qua vung ban sao (xem carousel JS) */
+        .carousel__track.no-transition {
+            transition: none;
         }
 
         /* Man to nhat: 3 slide */
@@ -2423,42 +2430,142 @@ Sustainable architectural design that optimizes function and brings a distinctiv
         const track = document.getElementById('carouselTrack');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
-        let currentIndex = 0;
+        const CAROUSEL_GAP = 28;
+        const DRIFT_SPEED_PX_PER_SEC = 18; // toc do troi cham luc moi vao trang
 
-        function getItemsPerView() {
-            const width = window.innerWidth;
-            if (width > 992) return 3; /* man to nhat: toi da 3 slide */
-            if (width > 576) return 2;
-            return 1;
+        // Carousel vo han: nhan ban toan bo slide that, 1 bo dan TRUOC + 1 bo dan SAU.
+        // -> track thuc te = [clone(0..N-1), that(0..N-1), clone(0..N-1)], "that" nam giua.
+        // Next/prev luon di chuyen dung 1 huong (transition binh thuong) ke ca khi buoc qua
+        // vung ban sao; ngay sau khi transition ket thuc o vung ban sao, nhay am tham (khong
+        // transition) ve dung vi tri that tuong ung -> nguoi dung khong thay giat nguoc.
+        const REAL_COUNT = track.children.length;
+        Array.from(track.children).forEach((el) => {
+            const clone = el.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+        Array.from(track.children).slice(0, REAL_COUNT).reverse().forEach((el) => {
+            const clone = el.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.insertBefore(clone, track.firstChild);
+        });
+
+        let domIndex = REAL_COUNT; // vi tri "da dung" (so nguyen) tren toan bo track da nhan ban
+        let autoDriftRAF = null;
+        let driftPos = REAL_COUNT; // vi tri (so thuc, don vi "slide") dang troi — chi dung luc autoDriftRAF con chay
+        let idleResumeTimer = null;
+        const IDLE_RESUME_MS = 3000; // dung click 3s thi tu troi tiep
+
+        function slideStepPx() {
+            return track.children[0].offsetWidth + CAROUSEL_GAP;
         }
 
-        function updateSlide() {
-            const itemsPerView = getItemsPerView();
-            const totalSlides = track.children.length;
-            const maxIndex = Math.max(0, totalSlides - itemsPerView);
-            currentIndex = Math.min(currentIndex, maxIndex);
+        /** Doi transform ngay (khong hoat hinh) toi domIndex cho truoc — dung sau khi wrap qua vung ban sao. */
+        function jumpTo(idx) {
+            domIndex = idx;
+            track.classList.add('no-transition');
+            track.style.transform = `translateX(${-domIndex * slideStepPx()}px)`;
+            void track.offsetHeight; // ep reflow de transition:none co hieu luc truoc khi doi transform
+            requestAnimationFrame(() => track.classList.remove('no-transition'));
+        }
 
-            const slideWidth = track.children[0].offsetWidth;
-            const gap = 28;
-            const offset = -currentIndex * (slideWidth + gap);
-            track.style.transform = `translateX(${offset}px)`;
+        /** Truot co hoat hinh (transition CSS binh thuong) toi domIndex cho truoc. */
+        function slideTo(idx) {
+            domIndex = idx;
+            track.style.transform = `translateX(${-domIndex * slideStepPx()}px)`;
+        }
+
+        /** Sau khi truot, neu domIndex dang o vung ban sao thi doi transition xong roi nhay am tham ve vung that. */
+        function resetIfInCloneZone() {
+            if (domIndex >= 2 * REAL_COUNT) {
+                scheduleJumpAfterTransition(domIndex - REAL_COUNT);
+            } else if (domIndex < REAL_COUNT) {
+                scheduleJumpAfterTransition(domIndex + REAL_COUNT);
+            }
+        }
+
+        function scheduleJumpAfterTransition(resetTo) {
+            function onEnd(e) {
+                if (e.target !== track || e.propertyName !== 'transform') return;
+                track.removeEventListener('transitionend', onEnd);
+                jumpTo(resetTo);
+            }
+            track.addEventListener('transitionend', onEnd);
+        }
+
+        function stopAutoDrift() {
+            if (autoDriftRAF) {
+                cancelAnimationFrame(autoDriftRAF);
+                autoDriftRAF = null;
+            }
+            track.classList.remove('no-transition');
+        }
+
+        /**
+         * Dang tu troi thi dung lai, tra ve domIndex (so thap phan, da tinh ca offset REAL_COUNT)
+         * de nut prev/next chuyen ngay sang nhay full-item TU DIEM DANG TROI DO — khong phai
+         * nhay 1 luc het toan bo.
+         */
+        function interruptAutoDrift() {
+            if (!autoDriftRAF) return null;
+            const pos = driftPos;
+            stopAutoDrift();
+            domIndex = Math.round(pos);
+            return pos;
+        }
+
+        /**
+         * Tu troi lien tuc (khong dung lai) tu vi tri fromPos — troi het 1 vong (qua vung ban sao)
+         * thi tru lien tuc REAL_COUNT de "lap vo han", khong can cho transition vi day la
+         * requestAnimationFrame tu doi transform tung frame (da tat CSS transition).
+         */
+        function startAutoDrift(fromPos) {
+            driftPos = fromPos;
+            track.classList.add('no-transition');
+            let lastTs = null;
+
+            function step(timestamp) {
+                if (lastTs === null) lastTs = timestamp;
+                const dt = (timestamp - lastTs) / 1000;
+                lastTs = timestamp;
+                driftPos += (DRIFT_SPEED_PX_PER_SEC / slideStepPx()) * dt;
+                while (driftPos >= 2 * REAL_COUNT) driftPos -= REAL_COUNT; // lap vo han
+                track.style.transform = `translateX(${-driftPos * slideStepPx()}px)`;
+                domIndex = Math.round(driftPos);
+                autoDriftRAF = requestAnimationFrame(step);
+            }
+            autoDriftRAF = requestAnimationFrame(step);
+        }
+
+        function scheduleIdleResume() {
+            clearTimeout(idleResumeTimer);
+            idleResumeTimer = setTimeout(() => startAutoDrift(domIndex), IDLE_RESUME_MS);
         }
 
         prevBtn.addEventListener('click', () => {
-            currentIndex = Math.max(0, currentIndex - 1);
-            updateSlide();
+            clearTimeout(idleResumeTimer);
+            const pos = interruptAutoDrift();
+            slideTo(pos !== null ? Math.ceil(pos) - 1 : domIndex - 1);
+            resetIfInCloneZone();
+            scheduleIdleResume();
         });
 
         nextBtn.addEventListener('click', () => {
-            const itemsPerView = getItemsPerView();
-            const totalSlides = track.children.length;
-            const maxIndex = Math.max(0, totalSlides - itemsPerView);
-            currentIndex = Math.min(currentIndex + 1, maxIndex);
-            updateSlide();
+            clearTimeout(idleResumeTimer);
+            const pos = interruptAutoDrift();
+            slideTo(pos !== null ? Math.floor(pos) + 1 : domIndex + 1);
+            resetIfInCloneZone();
+            scheduleIdleResume();
         });
 
-        window.addEventListener('resize', updateSlide);
-        updateSlide();
+        window.addEventListener('resize', () => {
+            if (!autoDriftRAF) jumpTo(domIndex);
+        });
+
+        // Dat vi tri ban dau truc tiep: day la lan render dau tien cua trang, truoc khi trinh
+        // duyet paint nen se khong hoat hinh.
+        track.style.transform = `translateX(${-domIndex * slideStepPx()}px)`;
+        startAutoDrift(domIndex);
     </script>
 
     <!-- Logo: an khi cuon qua 1000px, hien lai khi cuon len -->
