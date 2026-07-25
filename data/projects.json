@@ -17,61 +17,6 @@
     "updated_at": "2026-07-25T02:52:43.493Z"
   },
   {
-    "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
-    "slug": "toi-gian-dam-chat-nhiet-doi",
-    "title": "Tổi giản đậm chất nhiệt đới",
-    "description": "C&ocirc;ng tr&igrave;nh được ph&aacute;t triển theo phong c&aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&ocirc; mộc của b&ecirc; t&ocirc;ng với hệ lam gỗ tối giản v&agrave; kh&ocirc;ng gian xanh nhiệt đới. Thiết kế hư",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Đà Nẵng",
-    "date": "2026-03-10",
-    "categories": [
-      "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
-      "Structure"
-    ],
-    "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 2,
-    "created_at": "2026-07-23T10:00:08.925Z",
-    "updated_at": "2026-07-25T02:58:51.470Z"
-  },
-  {
-    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
-    "slug": "gao-lut-house",
-    "title": "GẠO LỨT HOUSE",
-    "description": "Nh&agrave; Gạo Lứt được lấy cảm hứng từ c&acirc;u chuyện của một gia đ&igrave;nh trẻ sinh sống v&agrave; l&agrave;m việc tại Đ&agrave; Nẵng. T&ecirc;n gọi \"Gạo Lứt\" vừa gợi nhắc đến loại gạo gi&agrave;u dinh dưỡng với vẻ",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
-    "date": "2026-05-27",
-    "categories": [
-      "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
-    ],
-    "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 3,
-    "created_at": "2026-07-23T09:17:13.869Z",
-    "updated_at": "2026-07-23T10:37:55.881Z"
-  },
-  {
-    "id": "1461842a-6159-426e-9a14-276016c10eb1",
-    "slug": "tam-giao-house",
-    "title": "TAM GIAO HOUSE",
-    "description": "Tam Giao House được h&igrave;nh th&agrave;nh từ triết l&yacute; \"Tam Giao\" với ba gi&aacute; trị cốt l&otilde;i xuy&ecirc;n suốt qu&aacute; tr&igrave;nh thiết kế: Giao h&ograve;a giữa cũ v&agrave; mới. Giao thoa của &aac",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "",
-    "date": "2026-04-14",
-    "categories": [
-      "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
-    ],
-    "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 4,
-    "created_at": "2026-07-23T09:25:36.267Z",
-    "updated_at": "2026-07-23T09:44:20.859Z"
-  },
-  {
     "id": "2ea3ccef-747c-4bc3-92d0-0da104b537c5",
     "slug": "my-dinh-pearl",
     "title": "MỸ ĐÌNH PEARL",
@@ -86,7 +31,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 5,
+    "order": 2,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-23T09:33:21.423Z"
   },
@@ -105,9 +50,27 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 6,
+    "order": 3,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-23T09:33:04.749Z"
+  },
+  {
+    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
+    "slug": "gao-lut-house",
+    "title": "GẠO LỨT HOUSE",
+    "description": "Nh&agrave; Gạo Lứt được lấy cảm hứng từ c&acirc;u chuyện của một gia đ&igrave;nh trẻ sinh sống v&agrave; l&agrave;m việc tại Đ&agrave; Nẵng. T&ecirc;n gọi \"Gạo Lứt\" vừa gợi nhắc đến loại gạo gi&agrave;u dinh dưỡng với vẻ",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
+    "date": "2026-05-27",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/gao-lut-house/images/01.jpg",
+    "order": 4,
+    "created_at": "2026-07-23T09:17:13.869Z",
+    "updated_at": "2026-07-23T10:37:55.881Z"
   },
   {
     "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
@@ -123,8 +86,45 @@
       "Nội thất"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 7,
+    "order": 5,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-23T09:34:45.947Z"
+  },
+  {
+    "id": "1461842a-6159-426e-9a14-276016c10eb1",
+    "slug": "tam-giao-house",
+    "title": "TAM GIAO HOUSE",
+    "description": "Tam Giao House được h&igrave;nh th&agrave;nh từ triết l&yacute; \"Tam Giao\" với ba gi&aacute; trị cốt l&otilde;i xuy&ecirc;n suốt qu&aacute; tr&igrave;nh thiết kế: Giao h&ograve;a giữa cũ v&agrave; mới. Giao thoa của &aac",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "date": "2026-04-14",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất"
+    ],
+    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "order": 6,
+    "created_at": "2026-07-23T09:25:36.267Z",
+    "updated_at": "2026-07-23T09:44:20.859Z"
+  },
+  {
+    "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
+    "slug": "toi-gian-dam-chat-nhiet-doi",
+    "title": "Tổi giản đậm chất nhiệt đới",
+    "description": "C&ocirc;ng tr&igrave;nh được ph&aacute;t triển theo phong c&aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&ocirc; mộc của b&ecirc; t&ocirc;ng với hệ lam gỗ tối giản v&agrave; kh&ocirc;ng gian xanh nhiệt đới. Thiết kế hư",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "date": "2026-03-10",
+    "categories": [
+      "Housing",
+      "Nhà ở - Dịch vụ",
+      "Nội thất",
+      "Structure"
+    ],
+    "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
+    "order": 7,
+    "created_at": "2026-07-23T10:00:08.925Z",
+    "updated_at": "2026-07-25T02:58:51.470Z"
   }
 ]
