@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://mvngroup.vn/our-projects/villa-hien-dai-2-tang/">
 
     <!-- ===== Open Graph (social thumbnail) ===== -->
-    <meta property="og:locale" content="vi_VN">
+    <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="MVN Group">
     <meta property="og:title" content="VILLA HIỆN ĐẠI 2 TẦNG – MVN Group">
@@ -53,17 +53,17 @@
             {
               "@type": "PostalAddress",
               "streetAddress": "906 Tôn Đức Thắng",
-              "addressLocality": "Đà Nẵng",
+              "addressLocality": "Da Nang",
               "addressCountry": "VN"
             },
             {
               "@type": "PostalAddress",
               "streetAddress": "33 Phạm Nhữ Tăng",
-              "addressLocality": "Đà Nẵng",
+              "addressLocality": "Da Nang",
               "addressCountry": "VN"
             }
           ],
-          "areaServed": ["Đà Nẵng", "Miền Trung", "Việt Nam"],
+          "areaServed": ["Da Nang", "Central Vietnam", "Vietnam"],
           "sameAs": ["https://www.facebook.com/1168673783215404"]
         },
         {
@@ -72,7 +72,7 @@
           "url": "https://mvngroup.vn/",
           "name": "MVN Group",
           "publisher": { "@id": "https://mvngroup.vn/#organization" },
-          "inLanguage": "vi-VN"
+          "inLanguage": "en-US"
         },
         {
           "@type": "BreadcrumbList",
@@ -81,13 +81,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Trang chủ",
+              "name": "Home",
               "item": "https://mvngroup.vn/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Dự án",
+              "name": "Projects",
               "item": "https://mvngroup.vn/our-projects/"
             },
             {
@@ -117,6 +117,37 @@
             font-weight: 100 900;
             font-display: swap;
         }
+
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('../../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('../../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica W01 Light';
+            src: url('../../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff2') format('woff2'),
+                 url('../../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff') format('woff'),
+                 url('../../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        h1, h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-variant-numeric: lining-nums;
+        }
     </style>
 
     <style>
@@ -133,7 +164,7 @@
 
         body {
             margin: 0;
-            font-family: 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            font-family: 'Helvetica W01 Light', 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
         }
 
         /* ===== HERO (banner anh our-projects.avif, full man hinh) ===== */
@@ -188,7 +219,7 @@
         }
 
         .hero__logo img {
-            width: 72px;
+            width: 54px;
             height: auto;
             display: block;
             animation: spin-y 6s linear infinite;
@@ -258,10 +289,10 @@
 
         .hero__caption-title {
             margin: 0;
-            font-size: clamp(27px, 3.9vw, 56px);
+            font-size: clamp(32px, 4.68vw, 67px);
             font-weight: 300;
             letter-spacing: 1px;
-            line-height: 1.15;
+            line-height: 0.65em;
         }
 
         .hero__caption-title em {
@@ -352,10 +383,10 @@
 
         .detail__title {
             margin: 0 0 24px;
-            font-size: clamp(26px, 3.2vw, 40px);
+            font-size: clamp(31px, 3.84vw, 48px);
             font-weight: 400;
             letter-spacing: 1px;
-            line-height: 1.25;
+            line-height: 0.65em;
             color: var(--dark);
             text-transform: uppercase;
         }
@@ -510,9 +541,9 @@
 
         .post__title {
             margin: 0 0 40px;
-            font-size: clamp(28px, 3.6vw, 44px);
+            font-size: clamp(34px, 4.32vw, 53px);
             font-weight: 400;
-            line-height: 1.3;
+            line-height: 0.65em;
             color: var(--dark);
         }
 
@@ -627,9 +658,10 @@
             max-width: 1216px;
             margin: 80px auto 36px;
             padding: 0 12px;
-            font-size: clamp(24px, 3vw, 34px);
+            font-size: clamp(29px, 3.6vw, 41px);
             font-weight: 300;
             letter-spacing: 1px;
+            line-height: 0.85;
             color: #8f8f8a;
         }
 
@@ -649,10 +681,10 @@
 
         .news__title {
             margin: 24px 0 0;
-            font-size: clamp(27px, 4.2vw, 46px);
+            font-size: clamp(32px, 5.04vw, 55px);
             font-weight: 300;
             letter-spacing: 1px;
-            line-height: 1.25;
+            line-height: 0.85;
             color: #8f8f8a;
         }
 
@@ -1250,7 +1282,7 @@
 
             <!-- Logo (mark tam giac) -->
             <a class="hero__logo" href="../../index.html" aria-label="MVN Ggroup - Home">
-                <img src="../../images/logo.avif" alt="MVN Ggroup" style="width: 72px; height: auto; display: block;">
+                <img src="../../images/logo.avif" alt="MVN Ggroup" style="width: 54px; height: auto; display: block;">
             </a>
 
             <!-- Actions: Search + Menu -->
@@ -1329,11 +1361,11 @@
                 </div>
                 <div>
                     <h5>Date:</h5>
-                    <p>12 Tháng 3, 2026</p>
+                    <p>March 12, 2026</p>
                 </div>
                 <div>
                     <h5>Category:</h5>
-                    <p>Housing · Nhà ở - Dịch vụ · Nội thất</p>
+                    <p>Housing · Residential - Service · Interior</p>
                 </div>
                 <div>
                     <h5>Share:</h5>
@@ -1490,11 +1522,11 @@
         </div>
 
         <nav class="menu-panel__nav">
-            <a href="../../index.html">Trang chủ</a>
-            <a href="../../about-us/">Giới thiệu</a>
-            <a href="../" class="active">Dự án</a>
-            <a href="../../contact-us/">Liên hệ</a>
-            <a href="../../news/">Tin tức</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../about-us/">About</a>
+            <a href="../" class="active">Projects</a>
+            <a href="../../contact-us/">Contact</a>
+            <a href="../../news/">News</a>
         </nav>
 
         <div class="menu-panel__footer">
@@ -1516,8 +1548,8 @@
                 </a>
             </div>
             <p class="menu-panel__copyright">
-                Bản quyền @2026. Đã đăng ký bản quyền<br>
-                Bởi MVN Group Limited
+                Copyright @2026. All rights reserved<br>
+                By MVN Group Limited
             </p>
         </div>
 
@@ -1527,16 +1559,16 @@
     <footer>
         <div class="footer__container">
             <nav class="footer__nav">
-                <a href="../../index.html" class="footer__link">TRANG CHỦ</a>
-                <a href="../../about-us/" class="footer__link">GIỚI THIỆU</a>
-                <a href="../" class="footer__link footer__link--active">DỰ ÁN</a>
-                <a href="../../contact-us/" class="footer__link">LIÊN HỆ</a>
-                <a href="../../news/" class="footer__link">TIN TỨC</a>
+                <a href="../../index.html" class="footer__link">HOME</a>
+                <a href="../../about-us/" class="footer__link">ABOUT</a>
+                <a href="../" class="footer__link footer__link--active">PROJECTS</a>
+                <a href="../../contact-us/" class="footer__link">CONTACT</a>
+                <a href="../../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
-                <a href="#">CHÍNH SÁCH BẢO MẬT</a>
-                <a href="#">TUYÊN BỐ KHẢ NĂNG TIẾP CẬN</a>
-                <span>© 2026 BỞI MVN GROUP. ĐÃ ĐĂNG KÝ BẢN QUYỀN.</span>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">ACCESSIBILITY STATEMENT</a>
+                <span>© 2026 BY MVN GROUP. ALL RIGHTS RESERVED.</span>
             </div>
         </div>
     </footer>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Không tìm thấy trang – MVN Group</title>
+    <title>Page Not Found – MVN Group</title>
     <meta name="robots" content="noindex, follow">
 
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
@@ -19,11 +19,42 @@
             font-display: swap;
         }
 
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('/fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('/fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica W01 Light';
+            src: url('/fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff2') format('woff2'),
+                 url('/fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff') format('woff'),
+                 url('/fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        h1, h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-variant-numeric: lining-nums;
+        }
+
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
-            font-family: 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            font-family: 'Helvetica W01 Light', 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -36,7 +67,7 @@
         }
 
         .nf__logo img {
-            width: 72px;
+            width: 54px;
             height: auto;
             display: block;
             margin: 0 auto 40px;
@@ -44,10 +75,10 @@
 
         .nf__code {
             margin: 0;
-            font-size: clamp(80px, 14vw, 160px);
+            font-size: clamp(96px, 16.8vw, 192px);
             font-weight: 200;
             letter-spacing: 6px;
-            line-height: 1;
+            line-height: 0.65em;
             color: #8f8f8a;
         }
 
@@ -106,21 +137,21 @@
 
 <body>
 
-    <a class="nf__logo" href="/" aria-label="MVN Group - Trang chủ">
+    <a class="nf__logo" href="/" aria-label="MVN Group - Home">
         <img src="/images/logo.avif" alt="MVN Group">
     </a>
 
     <h1 class="nf__code">404</h1>
-    <p class="nf__title">Không tìm thấy trang bạn yêu cầu</p>
-    <p class="nf__text">Trang có thể đã được di chuyển sang địa chỉ mới hoặc không còn tồn tại. Hãy quay về trang chủ hoặc khám phá các mục bên dưới.</p>
+    <p class="nf__title">The page you requested was not found</p>
+    <p class="nf__text">This page may have moved to a new address or no longer exists. Return to the homepage or explore the sections below.</p>
 
-    <a class="nf__btn" href="/">Về trang chủ</a>
+    <a class="nf__btn" href="/">Back to Home</a>
 
     <nav class="nf__links">
-        <a href="/about-us/">Giới thiệu</a>
-        <a href="/our-projects/">Dự án</a>
-        <a href="/news/">Tin tức</a>
-        <a href="/contact-us/">Liên hệ</a>
+        <a href="/about-us/">About</a>
+        <a href="/our-projects/">Projects</a>
+        <a href="/news/">News</a>
+        <a href="/contact-us/">Contact</a>
     </nav>
 
 </body>

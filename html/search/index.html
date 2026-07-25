@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -31,6 +31,37 @@
             font-weight: 100 900;
             font-display: swap;
         }
+
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Cormorant Garamond';
+            src: url('../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 300 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica W01 Light';
+            src: url('../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff2') format('woff2'),
+                 url('../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff') format('woff'),
+                 url('../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        h1, h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-variant-numeric: lining-nums;
+        }
     </style>
 
     <style>
@@ -47,7 +78,7 @@
 
         body {
             margin: 0;
-            font-family: 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            font-family: 'Helvetica W01 Light', 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
         }
 
         /* ===== HERO (banner anh our-projects.avif, full man hinh) ===== */
@@ -102,7 +133,7 @@
         }
 
         .hero__logo img {
-            width: 72px;
+            width: 54px;
             height: auto;
             display: block;
             animation: spin-y 6s linear infinite;
@@ -172,10 +203,10 @@
 
         .hero__caption-title {
             margin: 0;
-            font-size: clamp(27px, 3.9vw, 56px);
+            font-size: clamp(32px, 4.68vw, 67px);
             font-weight: 300;
             letter-spacing: 1px;
-            line-height: 1.15;
+            line-height: 0.65em;
         }
 
         .hero__caption-title em {
@@ -221,9 +252,10 @@
         .sr__heading {
             margin: 0 0 48px;
             text-align: center;
-            font-size: clamp(30px, 4vw, 46px);
+            font-size: clamp(36px, 4.8vw, 55px);
             font-weight: 300;
             letter-spacing: 1px;
+            line-height: 0.65em;
             color: #8f8f8a;
         }
 
@@ -374,9 +406,9 @@
 
         .post__title {
             margin: 0 0 40px;
-            font-size: clamp(28px, 3.6vw, 44px);
+            font-size: clamp(34px, 4.32vw, 53px);
             font-weight: 400;
-            line-height: 1.3;
+            line-height: 0.65em;
             color: var(--dark);
         }
 
@@ -491,9 +523,10 @@
             max-width: 1216px;
             margin: 80px auto 36px;
             padding: 0 12px;
-            font-size: clamp(24px, 3vw, 34px);
+            font-size: clamp(29px, 3.6vw, 41px);
             font-weight: 300;
             letter-spacing: 1px;
+            line-height: 0.85;
             color: #8f8f8a;
         }
 
@@ -513,10 +546,10 @@
 
         .news__title {
             margin: 24px 0 0;
-            font-size: clamp(27px, 4.2vw, 46px);
+            font-size: clamp(32px, 5.04vw, 55px);
             font-weight: 300;
             letter-spacing: 1px;
-            line-height: 1.25;
+            line-height: 0.85;
             color: #8f8f8a;
         }
 
@@ -1114,7 +1147,7 @@
 
             <!-- Logo (mark tam giac) -->
             <a class="hero__logo" href="../index.html" aria-label="MVN Ggroup - Home">
-                <img src="../images/logo.avif" alt="MVN Ggroup" style="width: 72px; height: auto; display: block;">
+                <img src="../images/logo.avif" alt="MVN Ggroup" style="width: 54px; height: auto; display: block;">
             </a>
 
             <!-- Actions: Search + Menu -->
@@ -1247,56 +1280,56 @@
             <img loading="lazy" src="/our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg" alt="Kiến trúc chung cư cao tầng">
             <div>
                 <h5>Kiến trúc chung cư cao tầng</h5>
-                <p>Tại MVN GROUP, ch&amp;uacute;ng t&amp;ocirc;i tin rằng kiến tr&amp;uacute;c cao tầng phải tạo ra nhiều hơn một kh&amp;ocirc;ng gian để ở. Đ&amp;oacute; phải l&amp;agrave; một hệ sinh th&amp;aacute;i sống &amp;ndash; nơi con người, thi&amp;ecirc;n nhi&amp;ecirc</p>
+                <p>Tại MVN GROUP, chúng tôi tin rằng kiến trúc cao tầng phải tạo ra nhiều hơn một không gian để ở. Đó phải là một hệ sinh thái sống – nơi con người, thiên nhiê</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="VERTICAL HUE – LÀNG HUẾ TRÊN CAO" href="/our-projects/vertical-hue-lang-hue-tren-cao/">
             <img loading="lazy" src="/our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg" alt="VERTICAL HUE – LÀNG HUẾ TRÊN CAO">
             <div>
                 <h5>VERTICAL HUE – LÀNG HUẾ TRÊN CAO</h5>
-                <p>Vertical Hue l&amp;agrave; phương &amp;aacute;n kiến tr&amp;uacute;c nh&amp;agrave; ở x&amp;atilde; hội do C&amp;ocirc;ng ty CP Đầu tư Kiến tr&amp;uacute;c &amp;amp; X&amp;acirc;y dựng MVN thực hiện, xuất sắc gi&amp;agrave;nh Qu&amp;aacute;n qu&amp;acirc;n hạng mục Pr</p>
+                <p>Vertical Hue là phương án kiến trúc nhà ở xã hội do Công ty CP Đầu tư Kiến trúc &amp; Xây dựng MVN thực hiện, xuất sắc giành Quán quân hạng mục Pr</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="MỸ ĐÌNH PEARL" href="/our-projects/my-dinh-pearl/">
             <img loading="lazy" src="/our-projects/my-dinh-pearl/images/01.jpg" alt="MỸ ĐÌNH PEARL">
             <div>
                 <h5>MỸ ĐÌNH PEARL</h5>
-                <p>Lấy cảm hứng từ phong c&amp;aacute;ch sống hiện đại v&amp;agrave; tinh thần nghỉ dưỡng giữa đ&amp;ocirc; thị, kh&amp;ocirc;ng gian sảnh Mỹ Đ&amp;igrave;nh Pearl được định hướng trở th&amp;agrave;nh điểm chạm đầu ti&amp;ecirc;n thể hiện đẳng cấp của</p>
+                <p>Lấy cảm hứng từ phong cách sống hiện đại và tinh thần nghỉ dưỡng giữa đô thị, không gian sảnh Mỹ Đình Pearl được định hướng trở thành điểm chạm đầu tiên thể hiện đẳng cấp của</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="The Diamond bvlgravia" href="/our-projects/the-diamond-bvlgravia/">
             <img loading="lazy" src="/our-projects/the-diamond-bvlgravia/images/01.jpg" alt="The Diamond bvlgravia">
             <div>
                 <h5>The Diamond bvlgravia</h5>
-                <p>Diamond Bvlgarvia được định hướng trở th&amp;agrave;nh một khu căn hộ cao tầng hiện đại, nơi kh&amp;ocirc;ng gian sống, thương mại v&amp;agrave; tiện &amp;iacute;ch được t&amp;iacute;ch hợp trong một tổng thể đồng bộ. Dự &amp;aacute;n hướng đến</p>
+                <p>Diamond Bvlgarvia được định hướng trở thành một khu căn hộ cao tầng hiện đại, nơi không gian sống, thương mại và tiện ích được tích hợp trong một tổng thể đồng bộ. Dự án hướng đến</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="GẠO LỨT HOUSE" href="/our-projects/gao-lut-house/">
             <img loading="lazy" src="/our-projects/gao-lut-house/images/01.jpg" alt="GẠO LỨT HOUSE">
             <div>
                 <h5>GẠO LỨT HOUSE</h5>
-                <p>Nh&amp;agrave; Gạo Lứt được lấy cảm hứng từ c&amp;acirc;u chuyện của một gia đ&amp;igrave;nh trẻ sinh sống v&amp;agrave; l&amp;agrave;m việc tại Đ&amp;agrave; Nẵng. T&amp;ecirc;n gọi &quot;Gạo Lứt&quot; vừa gợi nhắc đến loại gạo gi&amp;agrave;u dinh dưỡng với vẻ</p>
+                <p>Nhà Gạo Lứt được lấy cảm hứng từ câu chuyện của một gia đình trẻ sinh sống và làm việc tại Đà Nẵng. Tên gọi &quot;Gạo Lứt&quot; vừa gợi nhắc đến loại gạo giàu dinh dưỡng với vẻ</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="The Red Mountain - Nhà Núi Đỏ" href="/our-projects/the-red-mountain-nha-nui-do/">
             <img loading="lazy" src="/our-projects/the-red-mountain-nha-nui-do/images/01.jpg" alt="The Red Mountain - Nhà Núi Đỏ">
             <div>
                 <h5>The Red Mountain - Nhà Núi Đỏ</h5>
-                <p>Ng&amp;ocirc;i nh&amp;agrave; n&amp;agrave;y kh&amp;ocirc;ng chỉ l&amp;agrave; một biểu tượng của sự đẹp mắt, m&amp;agrave; c&amp;ograve;n thể hiện sự kết hợp tinh tế giữa kiến tr&amp;uacute;c truyền thống v&amp;agrave; bền vững. Sự chăm chỉ nghi&amp;ecirc;n c</p>
+                <p>Ngôi nhà này không chỉ là một biểu tượng của sự đẹp mắt, mà còn thể hiện sự kết hợp tinh tế giữa kiến trúc truyền thống và bền vững. Sự chăm chỉ nghiên c</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="TAM GIAO HOUSE" href="/our-projects/tam-giao-house/">
             <img loading="lazy" src="/our-projects/tam-giao-house/images/01.jpg" alt="TAM GIAO HOUSE">
             <div>
                 <h5>TAM GIAO HOUSE</h5>
-                <p>Tam Giao House được h&amp;igrave;nh th&amp;agrave;nh từ triết l&amp;yacute; &quot;Tam Giao&quot; với ba gi&amp;aacute; trị cốt l&amp;otilde;i xuy&amp;ecirc;n suốt qu&amp;aacute; tr&amp;igrave;nh thiết kế: Giao h&amp;ograve;a giữa cũ v&amp;agrave; mới. Giao thoa của &amp;aac</p>
+                <p>Tam Giao House được hình thành từ triết lý &quot;Tam Giao&quot; với ba giá trị cốt lõi xuyên suốt quá trình thiết kế: Giao hòa giữa cũ và mới. Giao thoa của &amp;aac</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="Tổi giản đậm chất nhiệt đới" href="/our-projects/toi-gian-dam-chat-nhiet-doi/">
             <img loading="lazy" src="/our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg" alt="Tổi giản đậm chất nhiệt đới">
             <div>
                 <h5>Tổi giản đậm chất nhiệt đới</h5>
-                <p>C&amp;ocirc;ng tr&amp;igrave;nh được ph&amp;aacute;t triển theo phong c&amp;aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&amp;ocirc; mộc của b&amp;ecirc; t&amp;ocirc;ng với hệ lam gỗ tối giản v&amp;agrave; kh&amp;ocirc;ng gian xanh nhiệt đới. Thiết kế hư</p>
+                <p>Công trình được phát triển theo phong cách Brutalism hiện đại, kết hợp vẻ đẹp thô mộc của bê tông với hệ lam gỗ tối giản và không gian xanh nhiệt đới. Thiết kế hư</p>
             </div>
         </a>
         <a class="sr__item" data-kind="project" data-search="Toà nhà Lê Hữu Trác – Lê Hữu Trác Building" href="/our-projects/toa-nha-le-huu-trac-le-huu-trac-building/">
@@ -1420,7 +1453,7 @@
         </a>
             </div>
 
-            <p class="sr__empty" id="srEmpty">Không tìm thấy kết quả phù hợp.</p>
+            <p class="sr__empty" id="srEmpty">No matching results found.</p>
 
         </div>
     </section>
@@ -1563,11 +1596,11 @@
         </div>
 
         <nav class="menu-panel__nav">
-            <a href="../index.html">Trang chủ</a>
-            <a href="../about-us/">Giới thiệu</a>
-            <a href="../our-projects/">Dự án</a>
-            <a href="../contact-us/">Liên hệ</a>
-            <a href="../news/">Tin tức</a>
+            <a href="../index.html">Home</a>
+            <a href="../about-us/">About</a>
+            <a href="../our-projects/">Projects</a>
+            <a href="../contact-us/">Contact</a>
+            <a href="../news/">News</a>
         </nav>
 
         <div class="menu-panel__footer">
@@ -1589,8 +1622,8 @@
                 </a>
             </div>
             <p class="menu-panel__copyright">
-                Bản quyền @2026. Đã đăng ký bản quyền<br>
-                Bởi MVN Group Limited
+                Copyright @2026. All rights reserved<br>
+                By MVN Group Limited
             </p>
         </div>
 
@@ -1600,16 +1633,16 @@
     <footer>
         <div class="footer__container">
             <nav class="footer__nav">
-                <a href="../index.html" class="footer__link">TRANG CHỦ</a>
-                <a href="../about-us/" class="footer__link">GIỚI THIỆU</a>
-                <a href="../our-projects/" class="footer__link">DỰ ÁN</a>
-                <a href="../contact-us/" class="footer__link">LIÊN HỆ</a>
-                <a href="../news/" class="footer__link">TIN TỨC</a>
+                <a href="../index.html" class="footer__link">HOME</a>
+                <a href="../about-us/" class="footer__link">ABOUT</a>
+                <a href="../our-projects/" class="footer__link">PROJECTS</a>
+                <a href="../contact-us/" class="footer__link">CONTACT</a>
+                <a href="../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
-                <a href="#">CHÍNH SÁCH BẢO MẬT</a>
-                <a href="#">TUYÊN BỐ KHẢ NĂNG TIẾP CẬN</a>
-                <span>© 2026 BỞI MVN GROUP. ĐÃ ĐĂNG KÝ BẢN QUYỀN.</span>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">ACCESSIBILITY STATEMENT</a>
+                <span>© 2026 BY MVN GROUP. ALL RIGHTS RESERVED.</span>
             </div>
         </div>
     </footer>

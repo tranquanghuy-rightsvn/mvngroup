@@ -8,15 +8,16 @@
     "location": "TP Huế",
     "date": "2026-06-01",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/cover.jpg",
     "created_at": "2026-06-01T00:00:00.000Z",
-    "updated_at": "2026-06-01T00:00:00.000Z"
+    "updated_at": "2026-06-01T00:00:00.000Z",
+    "area": "175 m²"
   },
   {
     "id": "legacy-toa-nha-le-huu-trac-le-huu-trac-building",
@@ -28,12 +29,13 @@
     "date": "2026-05-21",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/toa-nha-le-huu-trac-le-huu-trac-building/images/cover.jpg",
     "created_at": "2026-05-21T00:00:00.000Z",
-    "updated_at": "2026-05-21T00:00:00.000Z"
+    "updated_at": "2026-05-21T00:00:00.000Z",
+    "area": "59 ha"
   },
   {
     "id": "legacy-villa-hien-dai-2",
@@ -45,12 +47,13 @@
     "date": "2026-04-06",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
+      "Residential - Service",
       "villa"
     ],
     "cover": "our-projects/villa-hien-dai-2/images/cover.jpg",
     "created_at": "2026-04-06T00:00:00.000Z",
-    "updated_at": "2026-04-06T00:00:00.000Z"
+    "updated_at": "2026-04-06T00:00:00.000Z",
+    "area": "105 ha"
   },
   {
     "id": "legacy-villa-hien-dai-2-tang",
@@ -62,12 +65,13 @@
     "date": "2026-03-12",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/villa-hien-dai-2-tang/images/cover.jpg",
     "created_at": "2026-03-12T00:00:00.000Z",
-    "updated_at": "2026-03-12T00:00:00.000Z"
+    "updated_at": "2026-03-12T00:00:00.000Z",
+    "area": "57 m²"
   },
   {
     "id": "legacy-khu-san-pickleball-to-hop-the-thao",
@@ -78,14 +82,15 @@
     "location": "",
     "date": "2026-03-09",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing",
       "Structure"
     ],
     "cover": "our-projects/khu-san-pickleball-to-hop-the-thao/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "90 ha"
   },
   {
     "id": "legacy-nha-3-tang-hien-dai",
@@ -97,12 +102,13 @@
     "date": "2026-03-09",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/nha-3-tang-hien-dai/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "177 m²"
   },
   {
     "id": "legacy-nha-o-ket-hop-cho-thue",
@@ -114,13 +120,14 @@
     "date": "2026-03-09",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
+      "Residential - Service",
+      "Interior",
       "Structure"
     ],
     "cover": "our-projects/nha-o-ket-hop-cho-thue/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "64 m²"
   },
   {
     "id": "legacy-to-hop-van-hoa-hon-kem-da-dung",
@@ -131,13 +138,14 @@
     "location": "",
     "date": "2026-03-09",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing"
     ],
     "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "157 ha"
   },
   {
     "id": "legacy-villa-hien-dai",
@@ -149,13 +157,14 @@
     "date": "2026-03-09",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
+      "Residential - Service",
+      "Interior",
       "villa"
     ],
     "cover": "our-projects/villa-hien-dai/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "69 ha"
   },
   {
     "id": "legacy-villa-khu-do-thi-moi",
@@ -167,12 +176,13 @@
     "date": "2026-03-09",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
+      "Residential - Service",
       "Structure"
     ],
     "cover": "our-projects/villa-khu-do-thi-moi/images/cover.jpg",
     "created_at": "2026-03-09T00:00:00.000Z",
-    "updated_at": "2026-03-09T00:00:00.000Z"
+    "updated_at": "2026-03-09T00:00:00.000Z",
+    "area": "48 m²"
   },
   {
     "id": "legacy-my-dinh-pearl",
@@ -183,15 +193,16 @@
     "location": "",
     "date": "2026-03-03",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing",
-      "Nhà ở - Dịch vụ",
+      "Residential - Service",
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/cover.jpg",
     "created_at": "2026-03-03T00:00:00.000Z",
-    "updated_at": "2026-03-03T00:00:00.000Z"
+    "updated_at": "2026-03-03T00:00:00.000Z",
+    "area": "181 ha"
   },
   {
     "id": "legacy-truong-hoc-lien-cap-integrated-school",
@@ -202,14 +213,15 @@
     "location": "",
     "date": "2026-03-02",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing",
       "Structure"
     ],
     "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/cover.jpg",
     "created_at": "2026-03-02T00:00:00.000Z",
-    "updated_at": "2026-03-02T00:00:00.000Z"
+    "updated_at": "2026-03-02T00:00:00.000Z",
+    "area": "143 ha"
   },
   {
     "id": "legacy-golden-villa",
@@ -221,12 +233,13 @@
     "date": "2025-12-26",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/golden-villa/images/cover.jpg",
     "created_at": "2025-12-26T00:00:00.000Z",
-    "updated_at": "2025-12-26T00:00:00.000Z"
+    "updated_at": "2025-12-26T00:00:00.000Z",
+    "area": "109 ha"
   },
   {
     "id": "legacy-mam-house-nha-o-ket-hop-cho-thue",
@@ -238,13 +251,14 @@
     "date": "2025-09-18",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
+      "Residential - Service",
+      "Interior",
       "Structure"
     ],
     "cover": "our-projects/mam-house-nha-o-ket-hop-cho-thue/images/cover.jpg",
     "created_at": "2025-09-18T00:00:00.000Z",
-    "updated_at": "2025-09-18T00:00:00.000Z"
+    "updated_at": "2025-09-18T00:00:00.000Z",
+    "area": "46 m²"
   },
   {
     "id": "legacy-cong-vien-vui-choi-cong-dong-o-hoi-an",
@@ -255,12 +269,13 @@
     "location": "Hội An",
     "date": "2025-07-24",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng"
+      "Landscape",
+      "Public Works"
     ],
     "cover": "our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/images/cover.jpg",
     "created_at": "2025-07-24T00:00:00.000Z",
-    "updated_at": "2025-07-24T00:00:00.000Z"
+    "updated_at": "2025-07-24T00:00:00.000Z",
+    "area": "178 ha"
   },
   {
     "id": "legacy-canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
@@ -271,11 +286,12 @@
     "location": "Đà Nẵng",
     "date": "2025-07-22",
     "categories": [
-      "Cảnh quan"
+      "Landscape"
     ],
     "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/cover.jpg",
     "created_at": "2025-07-22T00:00:00.000Z",
-    "updated_at": "2025-07-22T00:00:00.000Z"
+    "updated_at": "2025-07-22T00:00:00.000Z",
+    "area": "68 m²"
   },
   {
     "id": "legacy-studio-wedding-van-phong-tiec-cuoi",
@@ -286,13 +302,14 @@
     "location": "Liên chiểu, Đà Nẵng",
     "date": "2025-07-22",
     "categories": [
-      "Công trình công cộng",
+      "Public Works",
       "Housing",
-      "Nội thất"
+      "Interior"
     ],
     "cover": "our-projects/studio-wedding-van-phong-tiec-cuoi/images/cover.jpg",
     "created_at": "2025-07-22T00:00:00.000Z",
-    "updated_at": "2025-07-22T00:00:00.000Z"
+    "updated_at": "2025-07-22T00:00:00.000Z",
+    "area": "67 ha"
   },
   {
     "id": "legacy-trung-tam-thuong-mai-ket-hop-van-phong",
@@ -303,13 +320,14 @@
     "location": "Đà Nẵng",
     "date": "2025-07-22",
     "categories": [
-      "Công trình công cộng",
+      "Public Works",
       "Housing",
-      "Nội thất"
+      "Interior"
     ],
     "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/cover.jpg",
     "created_at": "2025-07-22T00:00:00.000Z",
-    "updated_at": "2025-07-22T00:00:00.000Z"
+    "updated_at": "2025-07-22T00:00:00.000Z",
+    "area": "128 ha"
   },
   {
     "id": "legacy-terra-verde-serviced-apartment",
@@ -321,12 +339,13 @@
     "date": "2025-07-20",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
+      "Residential - Service",
+      "Interior",
       "Structure"
     ],
     "cover": "our-projects/terra-verde-serviced-apartment/images/cover.jpg",
     "created_at": "2025-07-20T00:00:00.000Z",
-    "updated_at": "2025-07-20T00:00:00.000Z"
+    "updated_at": "2025-07-20T00:00:00.000Z",
+    "area": "96 m²"
   }
 ]

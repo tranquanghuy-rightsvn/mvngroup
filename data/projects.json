@@ -9,12 +9,13 @@
     "date": "2026-05-30",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ"
+      "Residential - Service"
     ],
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
     "order": 1,
     "created_at": "2026-07-20T16:27:09.775Z",
-    "updated_at": "2026-07-25T02:52:43.493Z"
+    "updated_at": "2026-07-25T02:52:43.493Z",
+    "area": "191 ha"
   },
   {
     "id": "acd5e8c8-1d55-4b98-9ffa-4f1a9ea5af36",
@@ -25,16 +26,17 @@
     "location": "TP Huế",
     "date": "2006-06-01",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
+      "Landscape",
+      "Public Works",
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
     "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
-    "updated_at": "2026-07-25T03:59:05.501Z"
+    "updated_at": "2026-07-25T03:59:05.501Z",
+    "area": "127 m²"
   },
   {
     "id": "2ea3ccef-747c-4bc3-92d0-0da104b537c5",
@@ -45,15 +47,16 @@
     "location": "Hà Nội",
     "date": "2026-05-29",
     "categories": [
-      "Cảnh quan",
+      "Landscape",
       "Housing",
-      "Nhà ở - Dịch vụ",
+      "Residential - Service",
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
     "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
-    "updated_at": "2026-07-23T09:33:21.423Z"
+    "updated_at": "2026-07-23T09:33:21.423Z",
+    "area": "75 ha"
   },
   {
     "id": "f218feb3-459d-4cb4-9b61-5d2d0d82fff0",
@@ -64,15 +67,16 @@
     "location": "Lô 11 – Thửa D14, Khu tái định cư Bắc Sông Cấm, xã Dương Quan, huyện Thủy Nguyên, TP. Hải Phòng",
     "date": "2026-05-30",
     "categories": [
-      "Cảnh quan",
-      "Công trình công cộng",
-      "Nhà ở - Dịch vụ",
+      "Landscape",
+      "Public Works",
+      "Residential - Service",
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
     "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
-    "updated_at": "2026-07-23T09:33:04.749Z"
+    "updated_at": "2026-07-23T09:33:04.749Z",
+    "area": "104 ha"
   },
   {
     "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
@@ -84,13 +88,14 @@
     "date": "2026-05-27",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
     "order": 5,
     "created_at": "2026-07-23T09:17:13.869Z",
-    "updated_at": "2026-07-23T10:37:55.881Z"
+    "updated_at": "2026-07-23T10:37:55.881Z",
+    "area": "48 m²"
   },
   {
     "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
@@ -102,13 +107,14 @@
     "date": "2026-05-22",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
     "order": 6,
     "created_at": "2026-07-22T08:05:37.683Z",
-    "updated_at": "2026-07-23T09:34:45.947Z"
+    "updated_at": "2026-07-23T09:34:45.947Z",
+    "area": "123 m²"
   },
   {
     "id": "1461842a-6159-426e-9a14-276016c10eb1",
@@ -120,13 +126,14 @@
     "date": "2026-04-14",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất"
+      "Residential - Service",
+      "Interior"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
     "order": 7,
     "created_at": "2026-07-23T09:25:36.267Z",
-    "updated_at": "2026-07-23T09:44:20.859Z"
+    "updated_at": "2026-07-23T09:44:20.859Z",
+    "area": "197 ha"
   },
   {
     "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
@@ -138,13 +145,14 @@
     "date": "2026-03-10",
     "categories": [
       "Housing",
-      "Nhà ở - Dịch vụ",
-      "Nội thất",
+      "Residential - Service",
+      "Interior",
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
     "order": 8,
     "created_at": "2026-07-23T10:00:08.925Z",
-    "updated_at": "2026-07-25T02:58:51.470Z"
+    "updated_at": "2026-07-25T02:58:51.470Z",
+    "area": "165 m²"
   }
 ]

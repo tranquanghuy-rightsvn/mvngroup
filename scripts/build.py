@@ -38,7 +38,16 @@ MIME = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png", "webp": "
 
 
 def esc(s):
-    return htmllib.escape(s or "", quote=True)
+    # unescape (lặp tới khi ổn định) trước khi escape lại, tránh double/triple-encode khi nội dung
+    # gốc lỡ chứa entity dạng chữ (VD dán từ Facebook: "&amp;uacute;" thay vì "ú") — unescape
+    # một chuỗi đã sạch là no-op, an toàn; cap 5 vòng để không lặp vô hạn với text hợp lệ.
+    s = s or ""
+    for _ in range(5):
+        unescaped = htmllib.unescape(s)
+        if unescaped == s:
+            break
+        s = unescaped
+    return htmllib.escape(s, quote=True)
 
 
 def load_json(path, default):
@@ -52,9 +61,13 @@ def parse_iso(s):
         return datetime(2021, 1, 1, tzinfo=timezone.utc)
 
 
+MONTH_NAMES_EN = ["January", "February", "March", "April", "May", "June",
+                   "July", "August", "September", "October", "November", "December"]
+
+
 def date_display(iso):
     d = parse_iso(iso)
-    return "%d Tháng %d, %d" % (d.day, d.month, d.year)
+    return "%s %d, %d" % (MONTH_NAMES_EN[d.month - 1], d.day, d.year)
 
 
 def cover_of(p):
@@ -103,26 +116,54 @@ def search_card(p):
 
 
 
+AREA_ICON = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
+             'stroke-linejoin="round" aria-hidden="true">'
+             '<g transform="rotate(45 12 12)">'
+             '<rect x="1" y="10" width="22" height="4" rx="1"></rect>'
+             '<line x1="6" y1="10" x2="6" y2="12.5"></line>'
+             '<line x1="10.5" y1="10" x2="10.5" y2="12.5"></line>'
+             '<line x1="15" y1="10" x2="15" y2="12.5"></line>'
+             '<line x1="19.5" y1="10" x2="19.5" y2="12.5"></line>'
+             '</g>'
+             '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>'
+             '</svg>')
+LOCATION_ICON = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+                  'stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">'
+                  '</path><circle cx="12" cy="10" r="3"></circle></svg>')
+
+
 def project_card(p, prefix=""):
     """Card dự án (catalog grid /our-projects/ với prefix rỗng; trang chủ với prefix "/our-projects/").
-    Ảnh cover mang view-transition-name để morph mượt sang ảnh đầu slider ở trang chi tiết (xem build_project_page)."""
+    Ảnh cover mang view-transition-name để morph mượt sang ảnh đầu slider ở trang chi tiết (xem build_project_page).
+    data-tags vẫn giữ nguyên (dùng cho filter ở /our-projects/), dù không còn hiện badge category trên card."""
     cats = p.get("categories") or []
     href = prefix + p["slug"] + "/"
     vt_name = "vt-proj-" + p["slug"]
-    cat_spans = "\n".join('                        <span class="project-card__cat">%s</span>' % esc(c) for c in cats)
+
+    # Luôn render khung .project-card__meta / .project-card__desc (kể cả rỗng) để giữ đúng
+    # min-height CSS -> tiêu đề/diện tích-địa điểm/mô tả thẳng hàng giữa các card, dù dự án
+    # nào đó thiếu area/location/description.
+    meta_spans = []
+    if p.get("area"):
+        meta_spans.append("<span>%s%s</span>" % (AREA_ICON, esc(p["area"])))
+    if p.get("location"):
+        meta_spans.append("<span>%s%s</span>" % (LOCATION_ICON, esc(p["location"])))
+    meta_html = ('\n                        <div class="project-card__meta">\n                            '
+                 + "\n                            ".join(meta_spans) + "\n                        </div>")
+
+    desc = truncate(p.get("description", ""), 200)
+    desc_html = '\n                        <p class="project-card__desc">%s</p>' % esc(desc)
+
     return """                <article class="project-card" data-tags="%s">
                     <a href="%s"><img class="project-card__image" loading="lazy" alt="%s" src="%s" style="view-transition-name: %s"></a>
                     <div class="project-card__body">
-                        <h3 class="project-card__title"><a href="%s">%s</a></h3>
-                        <div class="project-card__cats">
-%s
-                    </div>
+                        <h3 class="project-card__title"><a href="%s">%s</a></h3>%s%s
                         <div class="project-card__footer">
                             <a class="project-card__link" href="%s" aria-label="View %s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg></a>
                         </div>
                     </div>
                 </article>""" % (esc("|".join(cats)), href, esc(p["title"]), project_cover_of(p), vt_name,
-                                href, esc(p["title"]), cat_spans, href, esc(p["title"]))
+                                href, esc(p["title"]), meta_html, desc_html, href, esc(p["title"]))
 
 
 def project_cover_of(p):
