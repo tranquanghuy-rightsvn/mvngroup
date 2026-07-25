@@ -25,19 +25,30 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: master   # luôn build từ HEAD mới nhất (kể cả khi run bị xếp hàng)
+          fetch-depth: 0   # full history — bắt buộc để retry-loop bên dưới reset/fetch an toàn,
+                           # tránh lỗi "mất commit" khi rebase trên shallow clone lúc có commit mới chen vào
 
-      - name: Build
-        run: python3 scripts/build.py
-
-      - name: Commit & push
+      - name: Build & push (retry nếu có commit mới chen vào giữa lúc build)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add html
-          if git diff --staged --quiet; then
-            echo "Không có thay đổi."
-          else
+          for i in 1 2 3 4 5; do
+            python3 scripts/build.py
+            git add html
+            if git diff --staged --quiet; then
+              echo "Không có thay đổi."
+              break
+            fi
             git commit -m "CI: build html from data"
-            git pull --rebase origin master
-            git push origin master
-          fi
+            if git push origin HEAD:master; then
+              echo "Push thành công (lần $i)."
+              break
+            fi
+            if [ "$i" = "5" ]; then
+              echo "::error::Push thất bại sau 5 lần thử — có commit mới liên tục chen vào."
+              exit 1
+            fi
+            echo "Push bị từ chối (có commit mới trên master) — fetch lại và build lại từ dữ liệu mới nhất (lần $i)..."
+            git fetch origin master
+            git reset --hard origin/master
+          done
