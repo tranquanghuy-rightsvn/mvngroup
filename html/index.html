@@ -351,11 +351,11 @@
 
         .hero__subtitle {
             margin: 0 0 44px;
-            font-size: clamp(15px, 1.5vw, 20px);
-            letter-spacing: 2px;
-            line-height: 1.7;
+            font-family: 'Inter Tight', 'Helvetica W01 Light', sans-serif;
+            font-size: clamp(25px, 1.5vw, 30px);
+            line-height: 1.3;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 230;
             animation: blur-in 1.1s ease .35s backwards;
         }
 
@@ -830,6 +830,11 @@
             text-transform: uppercase;
         }
 
+        /* Ban sao cua nut Explore Now, chi hien tren mobile, nam duoi cac card (xem @media 768px) */
+        .projects__cta--mobile {
+            display: none;
+        }
+
         /* ---- Dai card cuon ngang bang thanh truot ---- */
         .projects__scroller {
             display: flex;
@@ -872,22 +877,23 @@
             scroll-snap-align: start;
             background: var(--white);
             border-radius: 18px;
-            padding: 10px 10px 24px;
+            padding: 0 0 24px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
 
         .project-card__image {
             width: 100%;
             aspect-ratio: 4 / 3; /* doc hon */
             object-fit: cover;
-            border-radius: 12px;
+            border-radius: 18px;
             display: block;
         }
 
         .project-card__body {
-            padding: 20px 14px 0;
+            padding: 20px 24px 0;
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -906,6 +912,7 @@
             min-height: 49px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -944,6 +951,7 @@
             min-height: 72px;
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -1016,10 +1024,21 @@
         @media (max-width: 768px) {
             .section--projects { padding: 60px 0 70px; }
             .projects__head { flex-direction: column; gap: 0; }
-            .projects__cta { margin-top: 32px; }
-            .projects__scroller { gap: 20px; margin-top: 44px; }
+            .projects__cta--desktop { display: none; }
+            .projects__cta--mobile {
+                display: inline-flex;
+                margin: 32px max(12px, calc(50vw - 608px)) 0;
+            }
+            .projects__scroller {
+                gap: 20px;
+                margin-top: 44px;
+                scrollbar-width: none;      /* Firefox: an thanh truot, van cuon duoc */
+                -ms-overflow-style: none;   /* IE/Edge cu */
+            }
+            .projects__scroller::-webkit-scrollbar { display: none; } /* WebKit: an thanh truot, van cuon duoc */
             .project-card { border-radius: 18px; }
             .project-card__meta { gap: 24px; flex-wrap: wrap; }
+            .project-card__footer { display: none; } /* bo nut "vao xem chi tiet" */
         }
 
         /* ===== CUSTOMERS & PARTNERS ===== */
@@ -1370,19 +1389,69 @@
             color: #8f8f8f;
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             flex: 1; /* text vung het chieu cao con lai */
         }
 
+        .news__slider {
+            position: relative;
+        }
+
+        .news__viewport {
+            overflow: visible;
+        }
+
+        /* Nut prev/next: dinh nghia rieng, khong dung chung .carousel__nav
+           (tranh bi rule "@media 768px .carousel__nav{display:none}" cua carousel What-We-Do an mat) */
+        .news__nav {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .9);
+            color: var(--dark);
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: background .2s ease, transform .2s ease;
+        }
+
+        .news__nav:hover {
+            background: var(--gold);
+        }
+
         @media (max-width: 768px) {
             .section--news { padding: 60px 0 70px; }
-            .news__grid { grid-template-columns: 1fr; gap: 32px; margin-top: 48px; }
+            .news__viewport {
+                overflow: hidden;
+                margin-top: 48px;
+            }
+            .news__grid {
+                display: flex;
+                grid-template-columns: none;
+                gap: 0;
+                margin-top: 0;
+                transition: transform .5s ease; /* slide dang truot */
+            }
+            .news-card { flex: 0 0 100%; }
+            .news__nav {
+                display: flex;
+                width: 40px;
+                height: 40px;
+            }
+            .news__nav--prev { left: 4px; }
+            .news__nav--next { right: 4px; }
         }
 
         /* ===== FOOTER ===== */
         footer {
             padding: 24px 0;
+            margin-bottom: 10px;
         }
 
         .footer__container {
@@ -1400,9 +1469,11 @@
         }
 
         .footer__link {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
             text-decoration: none;
             color: #2c2c2c;
-            font-size: 11px;
+            font-size: 17px;
             letter-spacing: 0.8px;
             text-transform: uppercase;
             transition: color .3s ease;
@@ -1420,10 +1491,11 @@
         }
 
         .footer__meta {
+            font-family: 'Helvetica W01 Light', sans-serif;
             display: flex;
             gap: 8px 20px;
             align-items: center;
-            font-size: 10px;
+            font-size: 12px;
             color: #999;
             letter-spacing: 0.4px;
             flex-wrap: wrap; /* cho phep xuong hang, tranh tran ngang o tablet */
@@ -1450,8 +1522,21 @@
                 gap: 24px;
                 padding: 0 24px;
             }
-            .footer__nav { gap: 14px 20px; flex-direction: row; flex-wrap: wrap; align-items: center; }
-            .footer__meta { justify-content: flex-start; font-size: 11px; }
+            .footer__nav {
+                gap: 8px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-between; /* cach deu, chu dau/cuoi sat 2 canh (tru padding container) */
+                width: 100%;
+                overflow-x: auto;
+                scrollbar-width: none;      /* Firefox: an thanh truot, van cuon duoc neu qua chat */
+                -ms-overflow-style: none;   /* IE/Edge cu */
+            }
+            .footer__nav::-webkit-scrollbar { display: none; } /* WebKit */
+            .footer__link { font-size: 13px; }
+            .footer__meta { justify-content: center; font-size: 11px; margin-left: 0; }
+            .footer__meta a { display: none; } /* an Privacy Policy / Accessibility Statement */
         }
 
         /* ===== MENU PANEL (truot tu ben phai) ===== */
@@ -1665,7 +1750,7 @@
             font-weight: 600;
             letter-spacing: .5px;
             line-height: 0.85;
-            color: var(--dark);
+            color: #717171;
             font-family: 'Cormorant Garamond', serif;
         }
 
@@ -1761,7 +1846,7 @@
             right: -24px;
         }
 
-        /* Responsive (breakpoint kieu Bootstrap: lg 992, sm 576) */
+        /* Responsive (breakpoint kieu Bootstrap: lg 992, mobile 768) */
         @media (max-width: 992px) {
             .carousel__slide { flex: 0 0 calc(50% - 14px); }
             .carousel__nav--prev { left: 0; }
@@ -1772,8 +1857,12 @@
             }
         }
 
-        @media (max-width: 576px) {
-            .carousel__slide { flex: 0 0 100%; }
+        @media (max-width: 768px) {
+            .carousel__nav { display: none; }
+            /* Tran ra het chieu ngang man hinh, bo qua padding cua .section (16px) + .section__container (12px) */
+            .carousel { margin-left: -28px; margin-right: -28px; }
+            /* Anh vuong, crop tu trung tam, lay chieu cao lam chuan */
+            .carousel__image { aspect-ratio: 1 / 1; object-position: center; }
             .section { padding: 40px 16px; }
         }
 
@@ -1892,6 +1981,31 @@
             .chat-action--whatsapp { transform: translateX(138px); }
             .chat-action--phone    { transform: translateX(92px); }
             .chat-action--email    { transform: translateX(46px); }
+        }
+
+        /* Man rat lon (4K, ultra-wide...): cac khung noi dung dang max-width co dinh + margin:auto
+           se de lai khoang trong 2 ben qua lon (vd 1240px tren man 3840px -> ~1300px moi ben).
+           Tu 1920px tro len, bo cap max-width co dinh, thay bang can le % (co gioi han tran qua
+           clamp) de khoang le luon "vua phai", khong phinh to vo han theo man hinh. Cac grid/flex
+           ben trong da dung don vi tuong doi (fr, %, calc(%)) nen tu dong gian ra dung ty le,
+           khong bi vo layout. Cac kich thuoc <1920px giu nguyen, khong doi. */
+        @media (min-width: 1920px) {
+            .section__container {
+                max-width: none;
+                padding-left: clamp(48px, 6vw, 160px);
+                padding-right: clamp(48px, 6vw, 160px);
+            }
+
+            .prize__content {
+                max-width: none;
+                padding-left: clamp(48px, 6vw, 160px);
+                padding-right: clamp(48px, 6vw, 160px);
+            }
+
+            .projects__scroller {
+                margin-left: clamp(48px, 6vw, 160px);
+                padding-right: clamp(48px, 6vw, 160px);
+            }
         }
 
     </style>
@@ -2135,7 +2249,7 @@ Sustainable architectural design that optimizes function and brings a distinctiv
                     <p class="projects__subtitle">A curated selection of our latest projects in housing, commercial, and high-rise developments, showcasing MVN's commitment to quality, functionality, and architectural value.</p>
                 </div>
 
-                <a class="projects__cta" href="our-projects/">
+                <a class="projects__cta projects__cta--desktop" href="our-projects/">
                     <span class="projects__cta-arrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -2242,37 +2356,18 @@ Sustainable architectural design that optimizes function and brings a distinctiv
                     </div>
                 </article>
 
-        </div>
-    </section>
+        </div><!-- /projects__scroller -->
 
-    <!-- ===== CUSTOMERS & PARTNERS ===== -->
-    <section class="section--partners">
-        <div class="section__container">
-
-            <div class="section__label">
-                <svg viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path fill="#717171" d="M7.999 2.667 13.332 8l-5.333 5.333H2.665V2.667z"></path>
+        <a class="projects__cta projects__cta--mobile" href="our-projects/">
+            <span class="projects__cta-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <polyline points="14,6 20,12 14,18"></polyline>
                 </svg>
-                CUSTOMERS &amp; PARTNERS
-            </div>
-
-            <div class="partners__head">
-                <h2 class="partners__title"><em>Building Together</em> <br>Sustainable Value</h2>
-                <p class="partners__text">
-                    Trusted by investors, businesses, and organizations, MVN builds long-term partnerships grounded in professional expertise, reliability, and sustainable value.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Hang 1: troi sang TRAI -->
-        <div class="partners__marquee partners__marquee--left" aria-hidden="true">
-            <div class="partners__track" id="partnersRow1"></div>
-        </div>
-        <!-- Hang 2: troi sang PHAI -->
-        <div class="partners__marquee partners__marquee--right" aria-hidden="true">
-            <div class="partners__track" id="partnersRow2"></div>
-        </div>
+            </span>
+            <span class="projects__cta-label">Explore Now</span>
+        </a>
     </section>
 
     <!-- ===== PRIZE (LATEST AWARDS) ===== -->
@@ -2321,7 +2416,9 @@ Sustainable architectural design that optimizes function and brings a distinctiv
 
             <h2 class="news__title"><em>Discover</em><br>THE LATEST NEWS</h2>
 
-            <div class="news__grid">
+            <div class="news__slider">
+            <div class="news__viewport">
+            <div class="news__grid" id="newsGrid">
                 <a href="/news/chi-phi-xay-nha-tron-goi-da-nang-2026/" class="news-card">
                     <img class="news-card__image" loading="lazy" alt="Chi phí xây nhà trọn gói tại Đà Nẵng năm 2026 gồm những hạng mục nào?"
                         src="/news/chi-phi-xay-nha-tron-goi-da-nang-2026/images/cover.jpg">
@@ -2342,7 +2439,20 @@ Sustainable architectural design that optimizes function and brings a distinctiv
                     <span class="news-card__date">June 1, 2026</span>
                     <h3 class="news-card__title">Vinh danh Quán quân bảng Professional cho phương án &quot;Vertical Hue&quot;</h3>
                 </a>
-            </div>
+            </div><!-- /news__grid -->
+            </div><!-- /news__viewport -->
+
+            <button class="news__nav news__nav--prev" id="newsPrevBtn" aria-label="Previous news">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="24" height="24">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="news__nav news__nav--next" id="newsNextBtn" aria-label="Next news">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="24" height="24">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            </div><!-- /news__slider -->
 
         </div>
     </section>
@@ -2566,6 +2676,32 @@ Sustainable architectural design that optimizes function and brings a distinctiv
         // duyet paint nen se khong hoat hinh.
         track.style.transform = `translateX(${-domIndex * slideStepPx()}px)`;
         startAutoDrift(domIndex);
+    </script>
+
+    <!-- News slider (mobile): truot tung the bang transform khi bam prev/next -->
+    <script>
+        (function () {
+            const grid = document.getElementById('newsGrid');
+            const prevBtn = document.getElementById('newsPrevBtn');
+            const nextBtn = document.getElementById('newsNextBtn');
+            if (!grid || !prevBtn || !nextBtn) return;
+
+            const slides = grid.querySelectorAll('.news-card');
+            let index = 0;
+
+            function render() {
+                grid.style.transform = `translateX(${-index * 100}%)`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                index = Math.max(0, index - 1);
+                render();
+            });
+            nextBtn.addEventListener('click', () => {
+                index = Math.min(slides.length - 1, index + 1);
+                render();
+            });
+        })();
     </script>
 
     <!-- Logo: an khi cuon qua 1000px, hien lai khi cuon len -->

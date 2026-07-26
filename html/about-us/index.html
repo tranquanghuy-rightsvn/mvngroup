@@ -988,6 +988,7 @@
         /* ===== FOOTER ===== */
         footer {
             padding: 24px 0;
+            margin-bottom: 10px;
         }
 
         .footer__container {
@@ -1005,9 +1006,11 @@
         }
 
         .footer__link {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
             text-decoration: none;
             color: #2c2c2c;
-            font-size: 11px;
+            font-size: 17px;
             letter-spacing: 0.8px;
             text-transform: uppercase;
             transition: color .3s ease;
@@ -1025,13 +1028,14 @@
         }
 
         .footer__meta {
+            font-family: 'Helvetica W01 Light', sans-serif;
             display: flex;
             gap: 8px 20px;
             align-items: center;
-            font-size: 10px;
+            font-size: 12px;
             color: #999;
             letter-spacing: 0.4px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* cho phep xuong hang, tranh tran ngang o tablet */
             justify-content: flex-end;
             margin-left: auto;
             min-width: 0;
@@ -1055,8 +1059,21 @@
                 gap: 24px;
                 padding: 0 24px;
             }
-            .footer__nav { gap: 14px 20px; flex-direction: row; flex-wrap: wrap; align-items: center; }
-            .footer__meta { justify-content: flex-start; font-size: 11px; }
+            .footer__nav {
+                gap: 8px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-between; /* cach deu, chu dau/cuoi sat 2 canh (tru padding container) */
+                width: 100%;
+                overflow-x: auto;
+                scrollbar-width: none;      /* Firefox: an thanh truot, van cuon duoc neu qua chat */
+                -ms-overflow-style: none;   /* IE/Edge cu */
+            }
+            .footer__nav::-webkit-scrollbar { display: none; } /* WebKit */
+            .footer__link { font-size: 13px; }
+            .footer__meta { justify-content: center; font-size: 11px; margin-left: 0; }
+            .footer__meta a { display: none; } /* an Privacy Policy / Accessibility Statement */
         }
     </style>
 </head>

@@ -357,7 +357,7 @@ def update_homepage(merged, projects_merged):
     # "Những công trình mới nhất": 6 dự án mới nhất trong dải kéo ngang
     scroller = "\n\n".join(project_card(p, "/our-projects/") for p in projects_merged[:6])
     s = re.sub(
-        r'(<div class="projects__scroller">).*?(</div>\s*</section>)',
+        r'(<div class="projects__scroller">).*?(</div>\s*<!-- /projects__scroller -->)',
         lambda m: m.group(1) + "\n\n" + scroller + "\n\n        " + m.group(2),
         s, count=1, flags=re.S,
     )
