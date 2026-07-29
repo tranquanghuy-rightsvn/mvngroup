@@ -1,10 +1,11 @@
 {
   "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
   "slug": "toi-gian-dam-chat-nhiet-doi",
-  "title": "Tổi giản đậm chất nhiệt đới",
-  "description": "C&ocirc;ng tr&igrave;nh được ph&aacute;t triển theo phong c&aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&ocirc; mộc của b&ecirc; t&ocirc;ng với hệ lam gỗ tối giản v&agrave; kh&ocirc;ng gian xanh nhiệt đới. Thiết kế hư",
+  "title": "Tropical Minimalism",
+  "description": "The project adopts a contemporary Brutalist language, combining the raw beauty of concrete with minimalist timber screens and lush tropical greenery. The design seeks to create a contemporary living environment. Conceive",
   "architect": "Ths. KTS Trương Anh Vương",
   "location": "Đà Nẵng",
+  "area": "81 m²",
   "date": "2026-03-10",
   "categories": [
     "Housing",
@@ -13,9 +14,9 @@
     "Structure"
   ],
   "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-  "order": 1,
+  "order": 7,
   "created_at": "2026-07-23T10:00:08.925Z",
-  "updated_at": "2026-07-25T02:58:51.470Z",
+  "updated_at": "2026-07-29T18:22:34.849Z",
   "images": [
     "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
     "our-projects/toi-gian-dam-chat-nhiet-doi/images/02.jpg",
@@ -25,6 +26,5 @@
     "our-projects/toi-gian-dam-chat-nhiet-doi/images/06.jpg",
     "our-projects/toi-gian-dam-chat-nhiet-doi/images/07.jpg"
   ],
-  "content": "<p dir=\"ltr\" role=\"presentation\">C&ocirc;ng tr&igrave;nh được ph&aacute;t triển theo phong c&aacute;ch Brutalism hiện đại, kết hợp vẻ đẹp th&ocirc; mộc của b&ecirc; t&ocirc;ng với hệ lam gỗ tối giản v&agrave; kh&ocirc;ng gian xanh nhiệt đới. Thiết kế hướng đến một m&ocirc;i trường sống hiện đại, nơi kiến Bối cảnh dự &aacute;n. L&agrave; m&ocirc; h&igrave;nh nh&agrave; ở kết hợp thương mại trong khu đ&ocirc; thị xanh, c&ocirc;ng tr&igrave;nh được định hướng tối ưu hiệu quả khai th&aacute;c, đồng thời tạo ra kh&ocirc;ng gian sinh hoạt v&agrave; kinh doanh h&agrave;i h&ograve;a với cảnh quan xung quanh.. Kiến tr&uacute;c, thi&ecirc;n nhi&ecirc;n v&agrave; c&ocirc;ng năng được dung h&ograve;a, mang lại trải nghiệm nghỉ dưỡng ngay trong đ&ocirc;&nbsp; thị.&nbsp;</p>\n<p dir=\"ltr\" role=\"presentation\">&nbsp;</p>",
-  "area": "165 m²"
+  "content": "<p dir=\"ltr\" role=\"presentation\">The project adopts a contemporary Brutalist language, combining the raw beauty of concrete with minimalist timber screens and lush tropical greenery. The design seeks to create a contemporary living environment. Conceived as a mixed-use residential and commercial model within a green urban district, the project is planned to optimize operational efficiency while creating living and business spaces that harmonize with the surrounding landscape. Architecture, nature, and function are carefully balanced to offer a resort-like experience in the heart of the city.</p>"
 }
