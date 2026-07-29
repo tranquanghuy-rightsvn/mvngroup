@@ -2,9 +2,10 @@
   "id": "f218feb3-459d-4cb4-9b61-5d2d0d82fff0",
   "slug": "the-diamond-bvlgravia",
   "title": "The Diamond bvlgravia",
-  "description": "Diamond Bvlgarvia được định hướng trở th&agrave;nh một khu căn hộ cao tầng hiện đại, nơi kh&ocirc;ng gian sống, thương mại v&agrave; tiện &iacute;ch được t&iacute;ch hợp trong một tổng thể đồng bộ. Dự &aacute;n hướng đến",
+  "description": "Diamond Bvlgarvia được định hướng trở thành một khu căn hộ cao tầng hiện đại, nơi không gian sống, thương mại và tiện ích được tích hợp trong một tổng thể đồng bộ. Dự án hướng đến việc kiến tạo một cộng đồng cư dân văn m",
   "architect": "Ths. KTS Trương Anh Vương",
   "location": "Lô 11 – Thửa D14, Khu tái định cư Bắc Sông Cấm, xã Dương Quan, huyện Thủy Nguyên, TP. Hải Phòng",
+  "area": "1.5 ha",
   "date": "2026-05-30",
   "categories": [
     "Landscape",
@@ -13,8 +14,9 @@
     "Structure"
   ],
   "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
+  "order": 4,
   "created_at": "2026-07-23T08:45:07.761Z",
-  "updated_at": "2026-07-23T09:33:04.749Z",
+  "updated_at": "2026-07-29T04:09:39.859Z",
   "images": [
     "our-projects/the-diamond-bvlgravia/images/01.jpg",
     "our-projects/the-diamond-bvlgravia/images/02.jpg",
@@ -47,6 +49,5 @@
     "our-projects/the-diamond-bvlgravia/images/29.jpg",
     "our-projects/the-diamond-bvlgravia/images/30.jpg"
   ],
-  "content": "<p dir=\"ltr\" role=\"presentation\">Diamond Bvlgarvia được định hướng trở th&agrave;nh một khu căn hộ cao tầng hiện đại, nơi kh&ocirc;ng gian sống, thương mại v&agrave; tiện &iacute;ch được t&iacute;ch hợp trong một tổng thể đồng bộ. Dự &aacute;n hướng đến việc kiến tạo một cộng đồng cư d&acirc;n văn minh với m&ocirc;i trường sống chất lượng, c&acirc;n bằng giữa tiện nghi đ&ocirc; thị, cảnh quan xanh v&agrave; khả năng khai th&aacute;c thương mại.&nbsp;Lấy con người l&agrave;m trung t&acirc;m, c&ocirc;ng tr&igrave;nh được thiết kế nhằm mang đến trải nghiệm sống hiện đại với hệ thống tiện &iacute;ch đa dạng, kh&ocirc;ng gian mở v&agrave; kết nối thuận tiện, g&oacute;p phần h&igrave;nh th&agrave;nh một điểm nhấn kiến tr&uacute;c mới tại khu đ&ocirc; thị Bắc S&ocirc;ng Cấm.</p>\n<p>&nbsp;</p>",
-  "area": "104 ha"
+  "content": "<p dir=\"ltr\" role=\"presentation\">Diamond Bvlgarvia được định hướng trở th&agrave;nh một khu căn hộ cao tầng hiện đại, nơi kh&ocirc;ng gian sống, thương mại v&agrave; tiện &iacute;ch được t&iacute;ch hợp trong một tổng thể đồng bộ. Dự &aacute;n hướng đến việc kiến tạo một cộng đồng cư d&acirc;n văn minh với m&ocirc;i trường sống chất lượng, c&acirc;n bằng giữa tiện nghi đ&ocirc; thị, cảnh quan xanh v&agrave; khả năng khai th&aacute;c thương mại.&nbsp;Lấy con người l&agrave;m trung t&acirc;m, c&ocirc;ng tr&igrave;nh được thiết kế nhằm mang đến trải nghiệm sống hiện đại với hệ thống tiện &iacute;ch đa dạng, kh&ocirc;ng gian mở v&agrave; kết nối thuận tiện, g&oacute;p phần h&igrave;nh th&agrave;nh một điểm nhấn kiến tr&uacute;c mới tại khu đ&ocirc; thị Bắc S&ocirc;ng Cấm.</p>\n<p>&nbsp;</p>"
 }
