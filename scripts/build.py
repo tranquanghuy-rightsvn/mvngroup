@@ -338,7 +338,7 @@ def update_homepage(merged, projects_merged):
 
     cards = "\n\n".join(related_card(p) for p in top3)
     s = re.sub(
-        r'(<section class="section--news">.*?<div class="news__grid">).*?(</div>)',
+        r'(<section class="section--news">.*?<div class="news__grid"[^>]*>).*?(</div>)',
         lambda m: m.group(1) + "\n" + cards + "\n            " + m.group(2),
         s, count=1, flags=re.S,
     )
