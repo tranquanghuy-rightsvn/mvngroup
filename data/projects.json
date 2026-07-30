@@ -1,5 +1,24 @@
 [
   {
+    "id": "aeb09b35-02b6-47c5-81ba-bef67365e324",
+    "slug": "trung-tam-thuong-mai-ket-hop-van-phong",
+    "title": "TRUNG TÂM THƯƠNG MẠI KẾT HỢP VĂN PHÒNG",
+    "description": "Dự án tổ hợp cao tầng này được quy hoạch như một trung tâm đa chức năng giữa lòng đô thị, bao gồm văn phòng, khách sạn, thương mại và khu công cộng. Thiết kế tổng thể nhấn mạnh tính kết nối giữa các khối công trình thông",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Từ Liêm, Hà Nội",
+    "area": "3.8 ha",
+    "date": "2025-06-22",
+    "categories": [
+      "Public Works",
+      "Residential - Service",
+      "Structure"
+    ],
+    "cover": "",
+    "order": 1,
+    "created_at": "2026-07-30T06:54:46.656Z",
+    "updated_at": "2026-07-30T06:58:40.966Z"
+  },
+  {
     "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
     "slug": "kien-truc-chung-cu-cao-tang",
     "title": "High-Rise Residential Architecture",
@@ -13,7 +32,7 @@
       "Residential - Service"
     ],
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
-    "order": 1,
+    "order": 2,
     "created_at": "2026-07-20T16:27:09.775Z",
     "updated_at": "2026-07-29T18:10:12.911Z"
   },
@@ -34,7 +53,7 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 2,
+    "order": 3,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
@@ -54,7 +73,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 3,
+    "order": 4,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-30T06:37:59.544Z"
   },
@@ -74,7 +93,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 4,
+    "order": 5,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
@@ -93,7 +112,7 @@
       "Interior"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 5,
+    "order": 6,
     "created_at": "2026-07-23T09:17:13.869Z",
     "updated_at": "2026-07-29T18:20:30.535Z"
   },
@@ -112,7 +131,7 @@
       "Interior"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 6,
+    "order": 7,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-29T18:21:32.620Z"
   },
@@ -132,7 +151,7 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 7,
+    "order": 8,
     "created_at": "2026-07-23T10:00:08.925Z",
     "updated_at": "2026-07-29T18:22:34.849Z"
   },
@@ -151,7 +170,7 @@
       "Interior"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 8,
+    "order": 9,
     "created_at": "2026-07-23T09:25:36.267Z",
     "updated_at": "2026-07-29T18:23:37.674Z"
   }
