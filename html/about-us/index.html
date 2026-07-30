@@ -4,12 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About us – MVN Group</title>
+    <title>About us (New) – MVN Group</title>
 
-    <!-- ===== SEO co ban ===== -->
-    <meta name="description" content="Learn about MVN Group, an architecture and construction firm experienced in delivering residential, service, interior, and landscape projects in Da Nang.">
-    <meta name="robots" content="max-image-preview:large">
-    <link rel="canonical" href="https://mvngroup.vn/about-us/">
+    <!-- Trang draft, chua public: khong index -->
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- ===== Open Graph (social thumbnail) ===== -->
     <meta property="og:locale" content="en_US">
@@ -130,6 +128,23 @@
             font-display: swap;
         }
 
+        /* File static rieng cho Light, dung cho .stat__value */
+        @font-face {
+            font-family: 'Cormorant Garamond Light';
+            src: url('../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/static/CormorantGaramond-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Cormorant Garamond Light';
+            src: url('../fonts/Cormorant_Garamond-and-Inter_Tight/Cormorant_Garamond/static/CormorantGaramond-LightItalic.ttf') format('truetype');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
         @font-face {
             font-family: 'Helvetica W01 Light';
             src: url('../fonts/Helvetica%20W01%20Light/Web%20Fonts/e89eb1cff9eb261b0d77a4dea27f1ef1.woff2') format('woff2'),
@@ -140,9 +155,20 @@
             font-display: swap;
         }
 
-        h1, h2 {
+        h1, h2, h3.content__heading {
             font-family: 'Cormorant Garamond', serif;
             font-variant-numeric: lining-nums;
+        }
+
+        h1.content__heading,
+        h3.content__heading {
+            font-size: 4em;
+        }
+
+        /* Cong them 20px tren/duoi so voi hien tai (dang la 0) rieng cho "BOLD IDEAS..." */
+        h1.content__heading {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     </style>
 
@@ -266,11 +292,12 @@
         /* ===== CONTENT (tham khao mvngroup.vn) ===== */
         .section--content {
             background: var(--white);
-            padding: 100px 48px 90px;
+            padding: 60px 60px 90px;
         }
 
         .content__container {
-            max-width: var(--max-width);
+            /* Bo gioi han max-width — le trai/phai luon co dinh 100px (padding cua
+               .section--content) du man hinh rong bao nhieu, khong con phu thuoc calc/vw. */
             margin: 0 auto;
         }
 
@@ -283,229 +310,509 @@
             color: #8f8f8a;
         }
 
-        /* --- 3 cot: Ve chung toi / Muc tieu / Giai thuong --- */
-        .info-grid {
+        /* --- Tieu de + gioi thieu (2 cot, tham khao apaconsultant.com/about-us) --- */
+        .split-row {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 48px;
-            margin-bottom: 100px;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 64px;
+            margin-bottom: 90px;
         }
 
-        .info-grid h5 {
+        /* Khoi "End-to-end SOLUTIONS": cach tren/duoi gap doi so voi cac split-row khac
+           cho rong rai hon — margin-top bu them 100px (gap doi khoang cach 100px tao ra
+           tu margin-bottom cua stats-grid phia truoc), margin-bottom gap doi 90 -> 180. */
+        .split-row--mission {
+            margin-top: 100px;
+            margin-bottom: 180px;
+        }
+
+        .split-row .content__heading {
+            margin: 0;
+        }
+
+        .content__heading em {
+            font-style: italic;
+        }
+
+        /* Icon nho dang "co/mui ten" truoc nhan eyebrow, tham khao ABOUT/OUR MISSION cua APA */
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin: 0 0 18px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            color: var(--dark);
+            color: #8f8f8a;
         }
 
-        .info-grid p {
+        /* Mui ten chevron dac (khac hinh co/5 canh) — tham khao meet-mvn-team.png */
+        .eyebrow__icon {
+            display: inline-block;
+            width: 14px;
+            height: 15px;
+            background: var(--gold);
+            clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%, 30% 50%);
+            flex-shrink: 0;
+        }
+
+        .eyebrow--muted { color: #8a8a86; }
+        .eyebrow__icon--muted { background: #8a8a86; }
+
+        .split-row__side p {
             margin: 0 0 16px;
             font-size: 16px;
             line-height: 1.7;
             color: #6f6f6b;
         }
 
-        .info-grid .u {
-            text-decoration: underline;
+        .split-row__side p:last-child {
+            margin-bottom: 0;
         }
 
-        /* --- Gallery slide (fade) + Mission --- */
-        .values-grid {
+        /* --- Stats: 5 cot, duong ke doc, gia tri so le tren/duoi (tham khao APA) --- */
+        .stats-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 64px;
-            align-items: center;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            min-height: 600px;
+            padding: 0;
             margin-bottom: 100px;
+            border-top: 1px solid #e5e5e2;
+            border-bottom: 1px solid #e5e5e2;
         }
 
-        .gallery {
-            position: relative;
+        /* PC: keo stats-grid tran full man hinh, 5 cot chia deu, thoat khoi content__container (max-width 1200px) */
+        @media (min-width: 1025px) {
+            .stats-grid {
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                margin-left: -50vw;
+            }
         }
 
-        .gallery__slides {
-            display: grid;
+        .stat {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 28px;
+            border-right: 1px solid #e5e5e2;
         }
 
-        .gallery__slides img {
-            grid-area: 1 / 1;
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
-            opacity: 0;
-            transition: opacity .8s ease;
+        .stat:last-child {
+            border-right: none;
         }
 
-        .gallery__slides img.is-active {
-            opacity: 1;
+        .stat:nth-child(1),
+        .stat:nth-child(5) {
+            justify-content: flex-end;
         }
 
-        .slider-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 2;
-            width: 44px;
-            height: 44px;
-            border: none;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, .85);
-            color: var(--dark);
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
+        .stat:nth-child(2),
+        .stat:nth-child(4) {
+            justify-content: flex-start;
+        }
+
+        .stat:nth-child(3) {
             justify-content: center;
-            transition: background .3s ease;
         }
 
-        .slider-arrow:hover {
-            background: var(--gold);
-            color: var(--white);
+        .stat__value {
+            display: block;
+            font-size: 4em;
+            font-family: 'Cormorant Garamond Light', 'Cormorant Garamond', serif;
+            font-weight: 300;
+            color: #6f6f6b;
+            line-height: 1;
         }
 
-        .slider-arrow svg {
-            width: 18px;
-            height: 11px;
+        /*
+            PC: "MVN" (stat dau tien) dinh sticky khi cach top vien port 200px, truot
+            them cho den khi cach bottom cua .stat 100px thi dung (margin-bottom tren
+            chinh .stat__sticky tao "diem chan" do — day la co che chuan cua
+            position: sticky, khong can JS).
+        */
+        @media (min-width: 1025px) {
+            /*
+               MVN va Partners & Customers dung chung co che sticky (.stat__sticky ben
+               duoi: top 200px, nha khi cach bottom .stat 100px) nhung vi tri ban dau
+               (padding-top) khac nhau — Partners & Customers bat dau thap hon (150px so
+               voi 100px cua MVN) nen se cham nguong sticky (200px) TRE HON, tuc la khi
+               cuon toi dung luc no "bang voi vi tri cua MVN luc dang sticky" thi no cung
+               lap tuc dinh theo — day la hanh vi tu nhien cua position: sticky, khong can
+               logic rieng.
+            */
+            .stat:nth-child(1) {
+                justify-content: flex-start;
+                padding-top: 100px;
+                /*
+                   Can trai "MVN" khop voi le trai co dinh cua content__container
+                   (.section--content padding-left: 60px). Container gio la hang so co
+                   dinh (khong con max-width+auto-margin phu thuoc vw) nen dung thang
+                   60px la an toan o moi be rong man hinh.
+                */
+                padding-left: 60px;
+            }
+
+            .stat:nth-child(5) {
+                justify-content: flex-start;
+                padding-top: 150px;
+            }
+
+            /* Cac cot con lai: vi tri cach top cua .stat theo yeu cau rieng tung cot */
+            .stat:nth-child(2) {
+                justify-content: flex-start;
+                padding-top: 200px;
+            }
+
+            .stat:nth-child(3) {
+                justify-content: flex-start;
+                padding-top: 350px;
+            }
+
+            .stat:nth-child(4) {
+                justify-content: flex-start;
+                padding-top: 250px;
+            }
+
+            /*
+                Sticky: dinh khi cach top viewport 200px (dung chung cho MVN va
+                Partners & Customers). Diem nha khac nhau: MVN nha khi cach bottom
+                .stat 100px, Partners & Customers nha khi cach bottom .stat 50px —
+                margin-bottom tren chinh .stat__sticky lam "diem chan" do, co che
+                chuan cua position: sticky, khong can JS.
+            */
+            .stat__sticky {
+                display: flex;
+                flex-direction: column;
+                position: sticky;
+                top: 200px;
+                margin-bottom: 100px;
+            }
+
+            .stat:nth-child(5) .stat__sticky {
+                margin-bottom: 50px;
+            }
         }
 
-        .slider-arrow--prev { left: 14px; }
-        .slider-arrow--next { right: 14px; }
+        .stat__label {
+            display: inline-block;
+            align-self: flex-start;
+            margin-top: 14px;
+            padding: 6px 16px;
+            border: 1px solid #d8d8d4;
+            border-radius: 999px;
+            font-size: 13px;
+            letter-spacing: .3px;
+            color: #8a8a86;
+            white-space: nowrap;
+        }
 
-        .values__title {
+        .content__heading--sm {
             margin: 0 0 24px;
-            font-size: clamp(34px, 4.08vw, 53px);
+            font-size: clamp(30px, 3.6vw, 46px);
             font-weight: 300;
             letter-spacing: 1px;
-            line-height: 0.85;
+            line-height: 0.95;
             color: #8f8f8a;
-            text-transform: uppercase;
         }
 
-        .values__text {
-            margin: 0;
-            font-size: 17px;
+        .split-row__side .eyebrow:not(:first-child) {
+            margin-top: 0;
+        }
+
+        .awards-list p {
+            margin: 0 0 12px;
+            font-size: 16px;
             line-height: 1.7;
             color: #6f6f6b;
         }
 
-        /* --- Team slide --- */
-        .team {
-            position: relative;
-            margin-bottom: 100px;
+        .awards-list .u {
+            text-decoration: underline;
         }
 
-        .team__viewport {
-            overflow: hidden;
+        /* --- Team (grid tinh) --- */
+        /* Dung chung luoi 2 cot voi .split-row (gap 64px) de "06 Team Members" thang
+           le voi "Our Mission" o hang tren, can giua theo chieu doc voi heading. */
+        .section-heading-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 64px;
+            align-items: center;
+            margin-bottom: 60px;
         }
 
-        .team__track {
-            display: flex;
+        .section-heading-row .eyebrow {
+            margin: 0;
+        }
+
+        .section-heading-row .content__heading {
+            margin: 0;
+            /* Dung chung format (font-size) voi "End-to-end SOLUTIONS" (h3.content__heading) */
+            font-size: 4em;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 40px;
-            transition: transform .6s ease;
+            /* Gap doi khoang cach duoi (100 -> 200) cho rong rai hon, tuong tu khoi mission */
+            margin-bottom: 200px;
         }
 
-        .team__member {
-            flex: 0 0 calc((100% - 120px) / 4); /* 4 cot, 3 gap 40px */
-            min-width: 0;
-        }
-
-        .team__member img {
+        .team-grid .team__member img {
             width: 100%;
             aspect-ratio: 3 / 4.2;
             object-fit: cover;
             display: block;
         }
 
-        .team__member h5 {
+        .team-grid .team__member h5 {
             margin: 18px 0 4px;
             font-size: 17px;
             font-weight: 600;
             color: var(--dark);
         }
 
-        .team__member p {
+        .team-grid .team__member p {
             margin: 0;
             font-size: 14px;
             color: #8a8a86;
         }
 
-        .team .slider-arrow--prev { left: -54px; }
-        .team .slider-arrow--next { right: -54px; }
-
-        .team__fraction {
-            margin-top: 28px;
-            text-align: center;
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: #8a8a86;
-        }
-
-        /* --- Quotes slide --- */
-        .quotes {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto 100px;
-            text-align: center;
-        }
-
-        .quotes__slides {
+        /* --- Ho so nang luc (placeholder tu APA, xem ghi chu trong HTML) --- */
+        .legal-block {
             display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 64px;
+            align-items: center;
+            padding: 40px 0;
+            margin-bottom: 90px;
         }
 
-        .quotes__slide {
-            grid-area: 1 / 1;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity .7s ease;
+        .legal-block__left .content__heading {
+            margin: 0 0 28px;
+            /* Dung chung format (font-size 4em) voi "End-to-end SOLUTIONS" */
+            font-size: 4em;
         }
 
-        .quotes__slide.is-active {
-            opacity: 1;
-            visibility: visible;
+        .legal-block__actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
         }
 
-        .quotes__slide svg {
-            width: 26px;
-            height: 20px;
-            fill: var(--gold);
-            margin-bottom: 20px;
+        .pill-btn {
+            display: inline-block;
+            padding: 14px 34px;
+            border: 1px solid var(--dark);
+            border-radius: 999px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 15px;
+            letter-spacing: .5px;
+            transition: background .3s ease, color .3s ease;
         }
 
-        .quotes__text {
-            margin: 0 0 24px;
-            font-size: clamp(18px, 2vw, 24px);
-            font-weight: 300;
-            line-height: 1.6;
+        .pill-btn:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .legal-block__info {
+            margin: 0;
+        }
+
+        .legal-block__info > div {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 18px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .legal-block__info > div:first-child {
+            border-top: 1px solid #ddd;
+        }
+
+        .legal-block__info dt {
+            margin: 0;
+            font-size: 16px;
             color: #6f6f6b;
         }
 
-        .quotes__author {
+        .legal-block__info dd {
             margin: 0;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 16px;
             color: var(--dark);
+            text-align: right;
         }
 
-        .quotes__author span {
-            display: block;
-            margin-top: 4px;
-            font-size: 13px;
+        /* --- Head office / Contact + ban do --- */
+        /* MVN GROUP chiem 1/2, 2 cot con lai chia doi phan con lai (1/4 moi cot) */
+        .office-block {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+
+        .office-block__name {
+            margin: 0 0 14px;
+            font-family: 'Cormorant Garamond', serif;
             font-weight: 400;
-            color: #8a8a86;
+            /* Gap 1.7 lan so voi truoc (24/2.4/32 -> 41/4.08/54) */
+            font-size: clamp(41px, 4.08vw, 54px);
+            letter-spacing: 1px;
+            line-height: 1.15;
+            color: #8f8f8a;
         }
 
-        .quotes .slider-arrow--prev { left: -54px; }
-        .quotes .slider-arrow--next { right: -54px; }
+        .office-block h5 {
+            margin: 0 0 14px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #8f8f8a;
+        }
 
-        /* Mobile: mui ten -54px lam tran ra ngoai vung nhin (thanh truot ngang).
-           Tra ve gia tri goc (truoc khi giai rong cho desktop) o man hinh nho. */
+        .office-block p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #6f6f6b;
+        }
+
+        .office-block a {
+            color: #6f6f6b;
+            text-decoration: none;
+        }
+
+        .office-block a:hover {
+            color: var(--gold);
+        }
+
+        .map-embed {
+            height: clamp(260px, 30vw, 420px);
+            margin-bottom: 70px;
+            background: #e9e8e4;
+        }
+
+        .map-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        /* hr ngan cach "End-to-end SOLUTIONS" voi phan Team tro xuong.
+           Gap doi khoang cach duoi (90 -> 180) = khoang cach tren cua khoi "Meet MVN
+           Team", cho rong rai hon tuong tu khoi mission. */
+        /* Full man hinh: thoat khoi content__container */
+        .section-hr {
+            border: none;
+            border-top: 1px solid #e5e5e2;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            margin-left: -50vw;
+            margin-top: 0;
+            margin-bottom: 180px;
+        }
+
+        /* Mark logo nho trong legal-block, ngay duoi ENG/VIE (tham khao dung vi tri APA) */
+        .legal-block__mark {
+            margin-top: 32px;
+        }
+
+        .legal-block__mark img {
+            width: 28px;
+            height: auto;
+            opacity: .85;
+        }
+
+        /*
+           hr giua "View Profile" va "MVN GROUP", le trai/phai 40px. Logo nam TREN
+           duong hr (khong de len), chay 1 chieu: mat hut o mep phai roi xuat hien lai
+           tu mep trai (khong phai bounce qua lai) — overflow: hidden tren wrapper de
+           cat logo dung luc no ra khoi 2 mep.
+        */
+        /* Full man hinh: thoat khoi content__container, khong con le 2 ben */
+        .mark-hr {
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            margin-left: -50vw;
+            height: 110px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+
+        .mark-hr__line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #e5e5e2;
+        }
+
+        .mark-hr__icon {
+            position: absolute;
+            bottom: 20px;
+            left: -88px;
+            width: 88px;
+            height: auto;
+            animation: mark-hr-move 18s linear infinite;
+        }
+
+        @keyframes mark-hr-move {
+            from { left: -88px; }
+            to { left: 100%; }
+        }
+
+        @media (max-width: 1024px) {
+            .stats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); min-height: 0; }
+            .stat:nth-child(3n) { border-right: none; }
+            .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
         @media (max-width: 900px) {
-            /* Gia tri da test tren console (DevTools responsive), khong gay thanh truot ngang. */
-            .team .slider-arrow--prev { left: -25px; }
-            .team .slider-arrow--next { right: -20px; }
-            .quotes .slider-arrow--prev { left: -25px; }
-            .quotes .slider-arrow--next { right: -20px; }
+            .section--content { padding: 60px 24px 70px; }
+            .split-row { grid-template-columns: 1fr; gap: 36px; margin-bottom: 60px; }
+            /* Mobile: 5 dong ngang xep chong, gach ngang chia tung dong (thay vi cot doc) */
+            .stats-grid { grid-template-columns: 1fr; margin-bottom: 70px; }
+            .stat {
+                justify-content: flex-start !important;
+                border-right: none !important;
+                border-bottom: 1px solid #e5e5e2;
+                padding: 28px 0;
+            }
+            .stat:last-child { border-bottom: none; }
+
+            /*
+                Hieu ung "sticky ngang": vi tri truot cua moi dong duoc tinh TRUC TIEP
+                theo scroll (khong phai hieu ung xuat hien 1 lan) — xen ke trai/phai
+                (dong 1,3,5 tu phai qua trai; dong 2,4 tu trai qua phai), dung han
+                (translateX(0)) khi cham "tuong". JS o cuoi file cap nhat transform
+                moi frame scroll qua requestAnimationFrame, chi bat o mobile.
+            */
+            .stat--parallax {
+                will-change: transform;
+            }
+
+            .section-heading-row { grid-template-columns: 1fr; align-items: flex-start; gap: 16px; }
+            .legal-block { grid-template-columns: 1fr; padding: 0; }
+            .office-block { grid-template-columns: 1fr; gap: 32px; }
+        }
+
+        @media (max-width: 680px) {
+            .team-grid { grid-template-columns: 1fr; }
         }
 
         /* --- CTA --- */
@@ -550,20 +857,6 @@
             background: var(--gold);
             border-color: var(--gold);
             color: var(--white);
-        }
-
-        @media (max-width: 1024px) {
-            .team__member { flex-basis: calc((100% - 40px) / 2); } /* 2 cot */
-        }
-
-        @media (max-width: 900px) {
-            .section--content { padding: 60px 24px 70px; }
-            .info-grid { grid-template-columns: 1fr; gap: 36px; margin-bottom: 70px; }
-            .values-grid { grid-template-columns: 1fr; gap: 36px; margin-bottom: 70px; }
-        }
-
-        @media (max-width: 680px) {
-            .team__member { flex-basis: 100%; } /* 1 cot */
         }
 
         /* ===== WIDGET CONTACT (fixed goc duoi phai, tham khao contact-direct.png / -clicked.png) ===== */
@@ -1121,241 +1414,164 @@
     <section class="section--content">
         <div class="content__container">
 
-            <!-- Tieu de lon -->
-            <h2 class="content__heading">OVER 10<br>YEARS ESTABLISHED</h2>
-
-            <!-- 3 cot thong tin -->
-            <div class="info-grid">
-                <div>
-                    <h5>About Us</h5>
-                    <p>We believe architecture is more than just forms and volumes — it is the connection between people and the spaces they live in. Every project is carefully crafted, from family homes to rental spaces, delivering a comfortable living experience in harmony with nature and local identity.</p>
-                    <p>Let us accompany you on the journey to creating the perfect space!</p>
-                </div>
-                <div>
-                    <h5>Our Goal</h5>
-                    <p>MVN aims to create quality spaces and a sustainable living environment. With over 10 years in the profession, we bring our clients deep expertise combined with integrity and empathy.</p>
-                </div>
-                <div>
-                    <h5>Awards</h5>
-                    <p class="u"><a href="https://top10awards.vn/tam-giao-i-noam-architecture/" target="_blank" rel="noopener noreferrer">TOP 10 Awards 2022</a></p>
-                    <p class="u"><a href="https://kienviet.net/2020/4/17/tam-giao-ngoi-nha-cua-su-giao-thoa-noam-architecture" target="_blank" rel="noopener noreferrer">Featured on Kien Viet, Jan 4, 2024</a></p>
-                    <p class="u"><a href="#" target="_blank" rel="noopener noreferrer">Featured on Happynest.vn, Jul 4, 2023</a></p>
-                    <p class="u"><a href="#" target="_blank" rel="noopener noreferrer">Best Design of Year</a></p>
-
+            <!-- Tieu de lon + About (bo cuc 2 cot, kieu chu dung/nghieng xen ke — tham khao apaconsultant.com/about-us) -->
+            <div class="split-row">
+                <h1 class="content__heading">
+                BOLD IDEAS <span style="font-style:italic;" class="wixui-rich-text__text">for</span><br class="wixui-rich-text__text">
+<span style="font-style:italic;" class="wixui-rich-text__text">lasting </span>LEGACIES</h1>
+                <div class="split-row__side">
+                    <h5 class="eyebrow"><i class="eyebrow__icon"></i>About Us MVN Group</h5>
+                    <p>An enterprise with 20+ years of experience in providing comprehensive project consulting services, specializing in planning, design, and project development. In line with our mission, we aim to create works that not only possess high aesthetic value but are also sustainable across generations.</p>
                 </div>
             </div>
 
-            <!-- Gallery slide + Core values -->
-            <div class="values-grid">
-                <div class="gallery" id="gallery">
-                    <div class="gallery__slides">
-                        <img class="is-active" src="images/about-us-01.jpg" alt="MVN project">
-                        <img src="images/about-us-02.jpg" alt="MVN project">
-                        <img src="images/about-us-03.jpg" alt="MVN project">
-                        <img src="images/about-us-04.jpg" alt="MVN project">
+            <!-- Stats: so lieu that MVN cung cap -->
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat__sticky">
+                        <span class="stat__value">MVN</span>
+                        <span class="stat__label">Since 2016</span>
                     </div>
-                    <button type="button" class="slider-arrow slider-arrow--prev" data-dir="-1" aria-label="Previous slide">
-                        <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="1.1" y1="4.8" x2="16.2" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="5.3,8.9 1.3,4.8 5.3,0.6"></polyline></g></svg>
-                    </button>
-                    <button type="button" class="slider-arrow slider-arrow--next" data-dir="1" aria-label="Next slide">
-                        <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="15.2" y1="4.8" x2="0" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="10.9,0.6 15,4.8 10.9,8.9"></polyline></g></svg>
-                    </button>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">03</span>
+                    <span class="stat__label">Office Locations</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">10+</span>
+                    <span class="stat__label">Years of Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">450+</span>
+                    <span class="stat__label">Completed Projects</span>
+                </div>
+                <div class="stat">
+                    <div class="stat__sticky">
+                        <span class="stat__value">230+</span>
+                        <span class="stat__label">Partners &amp; Customers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission + Awards (cung bo cuc 2 cot voi phan About) -->
+            <div class="split-row split-row--mission">
+                <h3 class="content__heading font_3 wixui-rich-text__text"><span style="font-style:italic;" class="wixui-rich-text__text">End-to-end</span><br class="wixui-rich-text__text">
+SOLUTIONS</h3>
+                <div class="split-row__side">
+                    <h5 class="eyebrow"><i class="eyebrow__icon"></i>Our Mission</h5>
+                    <p>Through comprehensive solutions and innovative designs, we strive to create environments that inspire, connect, and foster growth. MVN's commitment goes beyond aesthetics, as we offer comprehensive consulting services in legal matters and business models, ensuring the sustainable development goals of each project are achieved.</p>
+                </div>
+            </div>
+
+            <hr class="section-hr">
+
+            <!-- Team (grid tinh, khong slider — tham khao "Meet APA Team" nhung giu anh nhu ban cu) -->
+            <div class="section-heading-row">
+                <h2 class="content__heading"><em>Meet</em> MVN TEAM</h2>
+                <h5 class="eyebrow eyebrow--muted"><i class="eyebrow__icon eyebrow__icon--muted"></i>06 Team Members</h5>
+            </div>
+            <div class="team-grid">
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-01.jpg" alt="M.Arch. Truong Anh Vuong">
+                    <h5>M.Arch. Truong Anh Vuong</h5>
+                    <p>Founder</p>
+                </div>
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-02.jpg" alt="Nguyen Huu Thang">
+                    <h5>Nguyen Huu Thang</h5>
+                    <p>Architect</p>
+                </div>
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-03.jpg" alt="Huynh Thanh Dung">
+                    <h5>Huynh Thanh Dung</h5>
+                    <p>Architect</p>
+                </div>
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-04.jpg" alt="Nguyen Quan">
+                    <h5>Nguyen Quan</h5>
+                    <p>Architect</p>
+                </div>
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-05.jpg" alt="Nguyen Tan Bin">
+                    <h5>Nguyen Tan Bin</h5>
+                    <p>IT & Marketing</p>
+                </div>
+                <div class="team__member">
+                    <img loading="lazy" src="images/team-06.jpg" alt="Do Tan Dat">
+                    <h5>Do Tan Dat</h5>
+                    <p>Architect</p>
+                </div>
+            </div>
+
+            <!--
+                Khoi ho so nang luc: MVN chua co CEO/ma so thue/chung chi nang luc/PDF profile rieng.
+                Theo yeu cau, GIU NGUYEN cau truc + link cua APA lam placeholder — can thay bang
+                thong tin that cua MVN truoc khi public trang nay.
+            -->
+            <div class="legal-block">
+                <div class="legal-block__left">
+                    <h5 class="eyebrow eyebrow--muted"><i class="eyebrow__icon eyebrow__icon--muted"></i>View Profile</h5>
+                    <h2 class="content__heading">BUILDING<br> DREAMS<br><em>since 2017</em></h2>
+                    <div class="legal-block__actions">
+                        <a class="pill-btn" href="https://www.apaconsultant.com/_files/ugd/14fc5c_ea0a9ad1691e47d2af6e428eb6d4fc71.pdf" target="_blank" rel="noopener">ENG</a>
+                        <a class="pill-btn" href="#">VIE</a>
+                    </div>
+                
+                </div>
+                <dl class="legal-block__info">
+                    <div>
+                        <dt>Business Name</dt>
+                        <dd>MVN Group</dd>
+                    </div>
+                    <div>
+                        <dt>CEO &amp; Legal Representative</dt>
+                        <dd>M.Arch. Truong Anh Vuong</dd>
+                    </div>
+                    <div>
+                        <dt>Business Tax Code</dt>
+                        <dd>No. ----------</dd>
+                    </div>
+                    <div>
+                        <dt>Capability Certificate</dt>
+                        <dd>No. -----------</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <!-- hr giua View Profile va MVN GROUP: logo chay 1 chieu vo han, mat hut roi xuat hien lai o dau kia -->
+            <div class="mark-hr">
+                <div class="mark-hr__line"></div>
+                <img src="../images/logo.avif" alt="" class="mark-hr__icon" loading="lazy">
+            </div>
+
+            <!-- Head office / lien he: du lieu that lay tu schema.org cua trang, gio lam viec chua cong bo -->
+            <div class="office-block">
+                <div>
+                    <h2 class="office-block__name">MVN GROUP</h2>
+                    <p><a href="tel:+84948789009">+84 94 878 90 09</a> | <a href="mailto:congtycpdtmvn@gmail.com">congtycpdtmvn@gmail.com</a></p>
                 </div>
                 <div>
-                    <h2 class="values__title">Core Values &amp; Mission</h2>
-                    <p class="values__text">Our motto: "Architecture with a mission — Quality with commitment." We treasure every opportunity to collaborate, strive to meet our clients' needs, and deliver the most valuable experience in every project.</p>
+                    <h5>Head Office Location</h5>
+                    <p>906 Ton Duc Thang, Da Nang<br>33 Pham Nhu Tang, Da Nang</p>
+                </div>
+                <div>
+                    <h5>Working Hours</h5>
+                    <p>Mon - Fri: 8:00 am - 18:00 pm<br>Saturday: 8:00 am - 15:00 pm</p>
                 </div>
             </div>
 
-            <!-- Team slide -->
-            <h2 class="content__heading">Design<br>Team</h2>
-            <div class="team" id="team">
-                <div class="team__viewport">
-                    <div class="team__track">
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-01.jpg" alt="M.Arch. Truong Anh Vuong">
-                            <h5>M.Arch. Truong Anh Vuong</h5>
-                            <p>Founder</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-02.jpg" alt="Nguyen Huu Thang">
-                            <h5>Nguyen Huu Thang</h5>
-                            <p>Architect</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-03.jpg" alt="Huynh Thanh Dung">
-                            <h5>Huynh Thanh Dung</h5>
-                            <p>Architect</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-04.jpg" alt="Nguyen Quan">
-                            <h5>Nguyen Quan</h5>
-                            <p>Architect</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-05.jpg" alt="Nguyen Tan Bin">
-                            <h5>Nguyen Tan Bin</h5>
-                            <p>IT & Marketing</p>
-                        </div>
-                        <div class="team__member">
-                            <img loading="lazy" src="images/team-06.jpg" alt="Do Tan Dat">
-                            <h5>Do Tan Dat</h5>
-                            <p>Architect</p>
-                        </div>
-                    </div>
-                </div>
-                <button type="button" class="slider-arrow slider-arrow--prev" data-dir="-1" aria-label="Previous slide">
-                    <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="1.1" y1="4.8" x2="16.2" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="5.3,8.9 1.3,4.8 5.3,0.6"></polyline></g></svg>
-                </button>
-                <button type="button" class="slider-arrow slider-arrow--next" data-dir="1" aria-label="Next slide">
-                    <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="15.2" y1="4.8" x2="0" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="10.9,0.6 15,4.8 10.9,8.9"></polyline></g></svg>
-                </button>
-                <div class="team__fraction" id="teamFraction">01/05</div>
-            </div>
-
-            <!-- Quotes slide -->
-            <div class="quotes" id="quotes">
-                <div class="quotes__slides">
-                    <div class="quotes__slide is-active">
-                        <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
-                        <p class="quotes__text">"Architecture is not about building structures — it's about creating spaces that listen to people. There, light is not just for seeing, materials are not just for touching, and every line carries a story — of memory, of dreams, and of how we want to live in this world."</p>
-                        <p class="quotes__author">Nguyen Huu Thang <span>Architect</span></p>
-                    </div>
-                    <div class="quotes__slide">
-                        <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
-                        <p class="quotes__text">A beautiful building may catch the eye. But a space that touches the soul is what makes people want to stay.</p>
-                        <p class="quotes__author">Huynh Thanh Dung <span>Architect</span></p>
-                    </div>
-                    <div class="quotes__slide">
-                        <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.1,1.6c1.1,1,1.6,2.4,1.6,4.1c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L6.6,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9C0.3,7.9,0,6.9,0,5.6c0-1.7,0.6-3,1.7-4.1C2.8,0.5,4.2,0,5.9,0S9,0.5,10.1,1.6z M24.4,1.6C25.5,2.6,26,4,26,5.6c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.6,2-1.3,3.5L20.9,20h-6l2.6-9.3c-1-0.4-1.8-1.1-2.4-1.9c-0.6-0.9-0.8-1.9-0.8-3.1c0-1.7,0.6-3,1.7-4.1c1.1-1,2.5-1.6,4.2-1.6C21.9,0,23.3,0.5,24.4,1.6z"></path></svg>
-                        <p class="quotes__text">Every building is a work of art, every space is a story. We don't just design for beauty — we design so that every living space becomes an essential part of people's emotional journey, connecting them to lasting values.</p>
-                        <p class="quotes__author">Truong Anh Vuong, M.Arch. <span>Founder</span></p>
-                    </div>
-                </div>
-                <button type="button" class="slider-arrow slider-arrow--prev" data-dir="-1" aria-label="Previous slide">
-                    <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="1.1" y1="4.8" x2="16.2" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="5.3,8.9 1.3,4.8 5.3,0.6"></polyline></g></svg>
-                </button>
-                <button type="button" class="slider-arrow slider-arrow--next" data-dir="1" aria-label="Next slide">
-                    <svg viewBox="0 0 16.2 9.6" xmlns="http://www.w3.org/2000/svg"><g><line stroke="currentColor" stroke-width="2" x1="15.2" y1="4.8" x2="0" y2="4.8"></line><polyline fill="none" stroke="currentColor" stroke-width="2" points="10.9,0.6 15,4.8 10.9,8.9"></polyline></g></svg>
-                </button>
-            </div>
-
-            <!-- CTA -->
-            <div class="cta">
-                <h2>ARE YOU PLANNING TO BUILD OR RENOVATE?</h2>
-                <p>MVN Group is ready to accompany you from concept consulting and design to construction and quality/schedule management</p>
-                <div class="cta__buttons">
-                    <a class="cta__btn" href="tel:0948789009">Call us: 094 878 90 09</a>
-                    <a class="cta__btn" href="https://mvngroup.vn/contact-us/" target="_blank" rel="noopener">Contact MVN Group</a>
-                </div>
+            <!-- Ban do: dia chi that (906 Ton Duc Thang, Da Nang) -->
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps?q=906+T%C3%B4n+%C4%90%E1%BB%A9c+Th%E1%BA%AFng,+%C4%90%C3%A0+N%E1%BA%B5ng&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="MVN Group – Head office location">
+                </iframe>
             </div>
 
         </div>
     </section>
-
-    <!-- Sliders: gallery (fade) + team (track) + quotes (fade), autoplay -->
-    <script>
-        /* Slide fade dung chung: gallery va quotes */
-        function initFadeSlider(rootId, slideSelector, interval) {
-            const root = document.getElementById(rootId);
-            if (!root) return;
-            const slides = root.querySelectorAll(slideSelector);
-            let index = 0;
-            let timer;
-
-            function show(i) {
-                index = (i + slides.length) % slides.length;
-                slides.forEach((s, k) => s.classList.toggle('is-active', k === index));
-            }
-
-            function autoplay() {
-                clearInterval(timer);
-                timer = setInterval(() => show(index + 1), interval);
-            }
-
-            root.querySelectorAll('.slider-arrow').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    show(index + Number(btn.dataset.dir));
-                    autoplay();
-                });
-            });
-
-            autoplay();
-        }
-
-        initFadeSlider('gallery', '.gallery__slides img', 4000);
-        initFadeSlider('quotes', '.quotes__slide', 6000);
-
-        /* Team slider: vong lap vo han (clone 4 item dau), fraction chay du 01..06 */
-        (function () {
-            const team = document.getElementById('team');
-            const track = team.querySelector('.team__track');
-            const fraction = document.getElementById('teamFraction');
-            const realCount = track.children.length; // 6 thanh vien that
-
-            // Nhan ban cac item dau noi vao cuoi de truot qua thanh vien cuoi van day khung hinh
-            const CLONES = 4; // = so item hien thi toi da (perView desktop)
-            for (let i = 0; i < CLONES; i++) {
-                track.appendChild(track.children[i].cloneNode(true));
-            }
-
-            const members = track.children;
-            let index = 0;
-            let timer;
-
-            function pad(n) { return String(n).padStart(2, '0'); }
-
-            function apply(noTransition) {
-                if (noTransition) track.style.transition = 'none';
-                const step = members[0].getBoundingClientRect().width + 40; // gap 40px
-                track.style.transform = 'translateX(' + (-index * step) + 'px)';
-                if (noTransition) {
-                    track.getBoundingClientRect(); // ep reflow de transition tat han
-                    track.style.transition = '';
-                }
-                fraction.textContent = pad((index % realCount) + 1) + '/' + pad(realCount);
-            }
-
-            // Khi truot toi vung clone (index = 6) -> nhay ve 0 khong hieu ung, nguoi xem khong nhan ra
-            track.addEventListener('transitionend', () => {
-                if (index >= realCount) {
-                    index = index % realCount;
-                    apply(true);
-                }
-            });
-
-            function next() {
-                if (index >= realCount) return; // dang cho snap ve dau
-                index += 1;
-                apply(false);
-            }
-
-            function prev() {
-                if (index === 0) {
-                    index = realCount; // nhay khong hieu ung sang vung clone
-                    apply(true);
-                }
-                index -= 1;
-                apply(false);
-            }
-
-            function autoplay() {
-                clearInterval(timer);
-                timer = setInterval(next, 4500);
-            }
-
-            team.querySelectorAll('.slider-arrow').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    Number(btn.dataset.dir) > 0 ? next() : prev();
-                    autoplay();
-                });
-            });
-
-            window.addEventListener('resize', () => apply(true));
-            apply(true);
-            autoplay();
-        })();
-    </script>
 
     <!-- ===== SEARCH OVERLAY ===== -->
     <div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Site search" hidden>
@@ -1450,7 +1666,7 @@
             <a href="../index.html">Home</a>
             <a href="./" class="active">About</a>
             <a href="../our-projects/">Projects</a>
-            <a href="../contact-us/">Contact</a>
+            <a href="../about-us/">Contact</a>
             <a href="../news/">News</a>
         </nav>
 
@@ -1487,7 +1703,7 @@
                 <a href="../index.html" class="footer__link">HOME</a>
                 <a href="./" class="footer__link footer__link--active">ABOUT</a>
                 <a href="../our-projects/" class="footer__link">PROJECTS</a>
-                <a href="../contact-us/" class="footer__link">CONTACT</a>
+                <a href="../about-us/" class="footer__link">CONTACT</a>
                 <a href="../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
@@ -1606,6 +1822,67 @@
             const isOpen = chatWidget.classList.toggle('open');
             chatToggle.setAttribute('aria-expanded', isOpen);
         });
+    </script>
+
+    <!--
+        Mobile: 5 dong cua khoi stats "sticky ngang" — vi tri truot te theo scroll
+        (khong phai hieu ung xuat hien 1 lan). Dong le (1,3,5) truot tu phai qua trai,
+        dong chan (2,4) tu trai qua phai; ca 2 deu dung han o translateX(0) ("cham
+        tuong") khi dong do toi khoang giua man hinh, du cuon them cung khong xe qua.
+        Cuon nguoc len thi tu dong tra lai vi tri cu vi transform tinh lai moi frame.
+    -->
+    <script>
+        (function () {
+            function isMobile() { return window.matchMedia('(max-width: 900px)').matches; }
+
+            const stats = document.querySelectorAll('.stats-grid .stat');
+            if (!stats.length) return;
+
+            // Khoang cach lech ban dau rieng cho tung dong (vw): MVN 20%, roi 30/40/50/20%
+            const OFFSETS_VW = [20, 30, 40, 50, 20];
+
+            stats.forEach((stat, i) => {
+                stat.classList.add('stat--parallax');
+                stat.dataset.dir = i % 2 === 0 ? '1' : '-1'; // 1 = tu phai qua trai, -1 = tu trai qua phai
+                stat.dataset.offset = OFFSETS_VW[i] != null ? OFFSETS_VW[i] : 60;
+            });
+
+            // Cuon trang (window.scrollY) bao nhieu px thi dat toi "tuong" (progress = 1)
+            const SCROLL_RANGE = 500;
+            let ticking = false;
+
+            function update() {
+                ticking = false;
+
+                if (!isMobile()) {
+                    stats.forEach((stat) => { stat.style.transform = ''; });
+                    return;
+                }
+
+                // Dung window.scrollY (tuyet doi) thay vi vi tri rieng cua tung dong trong
+                // khung nhin — de vi tri ban dau (progress = 0, offset day du 20/30/40/50/20%)
+                // hien dung ngay khi tai trang (scrollY = 0), khong can cuon toi moi thay.
+                let progress = window.scrollY / SCROLL_RANGE;
+                progress = Math.min(Math.max(progress, 0), 1); // clamp — cham tuong thi dung, khong vuot qua
+
+                stats.forEach((stat) => {
+                    const dir = Number(stat.dataset.dir);
+                    const offset = Number(stat.dataset.offset);
+                    const translate = dir * offset * (1 - progress);
+                    stat.style.transform = translate ? `translateX(${translate}vw)` : '';
+                });
+            }
+
+            function onScrollOrResize() {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(update);
+            }
+
+            window.addEventListener('scroll', onScrollOrResize, { passive: true });
+            window.addEventListener('resize', onScrollOrResize);
+            update();
+        })();
     </script>
 
 </body>
