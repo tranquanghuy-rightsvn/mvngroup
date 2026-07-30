@@ -1,5 +1,25 @@
 [
   {
+    "id": "b04041a2-7ffb-4fbe-a6a9-e210dcf2047d",
+    "slug": "high-rise-residential-architecture",
+    "title": "High-Rise Residential Architecture",
+    "description": "At MVN GROUP, we believe that high-rise architecture should offer more than just a place to live. It must be a living ecosystem—where people, nature, and the urban environment connect in perfect harmony. The project is d",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Từ Liêm, Hà Nội",
+    "area": "1.8 ha",
+    "date": "2026-05-30",
+    "categories": [
+      "Public Works",
+      "Housing",
+      "Residential - Service",
+      "Structure"
+    ],
+    "cover": "our-projects/high-rise-residential-architecture/images/01.jpg",
+    "order": 1,
+    "created_at": "2026-07-30T07:25:30.934Z",
+    "updated_at": "2026-07-30T07:25:30.934Z"
+  },
+  {
     "id": "c1285978-b622-4532-90b1-076f37379180",
     "slug": "canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
     "title": "LANDSCAPE DESIGN FOR A SHOPPING CENTER AND OFFICE COMPLEX",
@@ -14,7 +34,7 @@
       "Structure"
     ],
     "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 1,
+    "order": 2,
     "created_at": "2026-07-30T07:16:30.490Z",
     "updated_at": "2026-07-30T07:22:08.046Z"
   },
@@ -33,7 +53,7 @@
       "Structure"
     ],
     "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 2,
+    "order": 3,
     "created_at": "2026-07-30T06:54:46.656Z",
     "updated_at": "2026-07-30T07:10:54.351Z"
   },
@@ -51,7 +71,7 @@
       "Residential - Service"
     ],
     "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
-    "order": 3,
+    "order": 4,
     "created_at": "2026-07-20T16:27:09.775Z",
     "updated_at": "2026-07-29T18:10:12.911Z"
   },
@@ -72,7 +92,7 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 4,
+    "order": 5,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
@@ -92,7 +112,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 5,
+    "order": 6,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-30T06:37:59.544Z"
   },
@@ -112,7 +132,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 6,
+    "order": 7,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
@@ -131,7 +151,7 @@
       "Interior"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 7,
+    "order": 8,
     "created_at": "2026-07-23T09:17:13.869Z",
     "updated_at": "2026-07-29T18:20:30.535Z"
   },
@@ -150,7 +170,7 @@
       "Interior"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 8,
+    "order": 9,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-29T18:21:32.620Z"
   },
@@ -170,7 +190,7 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 9,
+    "order": 10,
     "created_at": "2026-07-23T10:00:08.925Z",
     "updated_at": "2026-07-29T18:22:34.849Z"
   },
@@ -189,7 +209,7 @@
       "Interior"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 10,
+    "order": 11,
     "created_at": "2026-07-23T09:25:36.267Z",
     "updated_at": "2026-07-29T18:23:37.674Z"
   }
