@@ -81,6 +81,11 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/</loc>
+        <lastmod>2026-07-30</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/trung-tam-thuong-mai-ket-hop-van-phong/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -188,11 +193,6 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/</loc>
         <lastmod>2025-07-24</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/</loc>
-        <lastmod>2025-07-22</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
