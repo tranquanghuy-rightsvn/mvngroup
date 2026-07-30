@@ -20,62 +20,6 @@
     "updated_at": "2026-07-30T07:25:30.934Z"
   },
   {
-    "id": "c1285978-b622-4532-90b1-076f37379180",
-    "slug": "canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
-    "title": "LANDSCAPE DESIGN FOR A SHOPPING CENTER AND OFFICE COMPLEX",
-    "description": "This landscape design presents a contemporary environment that seamlessly accommodates the needs of working, shopping, and leisure. Carefully planned green spaces, water features, and outdoor seating areas create a harmo",
-    "architect": "KTS Đỗ Tấn Đạt",
-    "location": "Từ Liêm, Đà Nẵng",
-    "area": "3.8 ha",
-    "date": "2025-06-22",
-    "categories": [
-      "Landscape",
-      "Public Works",
-      "Structure"
-    ],
-    "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 2,
-    "created_at": "2026-07-30T07:16:30.490Z",
-    "updated_at": "2026-07-30T07:22:08.046Z"
-  },
-  {
-    "id": "aeb09b35-02b6-47c5-81ba-bef67365e324",
-    "slug": "trung-tam-thuong-mai-ket-hop-van-phong",
-    "title": "Mixed-Use Commercial and Office Building",
-    "description": "This high-rise mixed-use development is envisioned as a multifunctional urban hub, integrating office spaces, a hotel, retail facilities, and public amenities within a single destination. The overall design emphasizes se",
-    "architect": "KTS Đỗ Tấn Đạt",
-    "location": "Từ Liêm, Hà Nội",
-    "area": "3.8 ha",
-    "date": "2025-06-22",
-    "categories": [
-      "Public Works",
-      "Residential - Service",
-      "Structure"
-    ],
-    "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 3,
-    "created_at": "2026-07-30T06:54:46.656Z",
-    "updated_at": "2026-07-30T07:10:54.351Z"
-  },
-  {
-    "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
-    "slug": "kien-truc-chung-cu-cao-tang",
-    "title": "High-Rise Residential Architecture",
-    "description": "At MVN GROUP, we believe that high-rise architecture should offer more than just a place to live. It must be a living ecosystem—where people, nature, and the urban environment connect in perfect harmony. The project is d",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Hà Nội",
-    "area": "1.8 ha",
-    "date": "2026-05-30",
-    "categories": [
-      "Housing",
-      "Residential - Service"
-    ],
-    "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
-    "order": 4,
-    "created_at": "2026-07-20T16:27:09.775Z",
-    "updated_at": "2026-07-29T18:10:12.911Z"
-  },
-  {
     "id": "acd5e8c8-1d55-4b98-9ffa-4f1a9ea5af36",
     "slug": "vertical-hue-lang-hue-tren-cao",
     "title": "VERTICAL HUE – HUE VILLAGE IN THE SKY",
@@ -92,7 +36,7 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 5,
+    "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
@@ -112,7 +56,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 6,
+    "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-30T06:37:59.544Z"
   },
@@ -132,7 +76,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 7,
+    "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
@@ -151,7 +95,7 @@
       "Interior"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 8,
+    "order": 5,
     "created_at": "2026-07-23T09:17:13.869Z",
     "updated_at": "2026-07-29T18:20:30.535Z"
   },
@@ -170,9 +114,28 @@
       "Interior"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 9,
+    "order": 6,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-29T18:21:32.620Z"
+  },
+  {
+    "id": "1461842a-6159-426e-9a14-276016c10eb1",
+    "slug": "tam-giao-house",
+    "title": "TAM GIAO HOUSE",
+    "description": "Tam Giao House was conceived around the \"Tam Giao\" philosophy, with three core values guiding the design process: Harmony between old and new. The interplay of light, wind, and water. Harmony among people. The project se",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "area": "59 m²",
+    "date": "2026-04-14",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "order": 7,
+    "created_at": "2026-07-23T09:25:36.267Z",
+    "updated_at": "2026-07-29T18:23:37.674Z"
   },
   {
     "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
@@ -190,27 +153,64 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 10,
+    "order": 8,
     "created_at": "2026-07-23T10:00:08.925Z",
     "updated_at": "2026-07-29T18:22:34.849Z"
   },
   {
-    "id": "1461842a-6159-426e-9a14-276016c10eb1",
-    "slug": "tam-giao-house",
-    "title": "TAM GIAO HOUSE",
-    "description": "Tam Giao House was conceived around the \"Tam Giao\" philosophy, with three core values guiding the design process: Harmony between old and new. The interplay of light, wind, and water. Harmony among people. The project se",
+    "id": "aeb09b35-02b6-47c5-81ba-bef67365e324",
+    "slug": "trung-tam-thuong-mai-ket-hop-van-phong",
+    "title": "Mixed-Use Commercial and Office Building",
+    "description": "This high-rise mixed-use development is envisioned as a multifunctional urban hub, integrating office spaces, a hotel, retail facilities, and public amenities within a single destination. The overall design emphasizes se",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Từ Liêm, Hà Nội",
+    "area": "3.8 ha",
+    "date": "2025-06-22",
+    "categories": [
+      "Public Works",
+      "Residential - Service",
+      "Structure"
+    ],
+    "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
+    "order": 9,
+    "created_at": "2026-07-30T06:54:46.656Z",
+    "updated_at": "2026-07-30T07:10:54.351Z"
+  },
+  {
+    "id": "1d0526fa-5c2b-4c04-950c-1934a3a91d97",
+    "slug": "kien-truc-chung-cu-cao-tang",
+    "title": "High-Rise Residential Architecture",
+    "description": "At MVN GROUP, we believe that high-rise architecture should offer more than just a place to live. It must be a living ecosystem—where people, nature, and the urban environment connect in perfect harmony. The project is d",
     "architect": "Ths. KTS Trương Anh Vương",
-    "location": "",
-    "area": "59 m²",
-    "date": "2026-04-14",
+    "location": "Hà Nội",
+    "area": "1.8 ha",
+    "date": "2026-05-30",
     "categories": [
       "Housing",
-      "Residential - Service",
-      "Interior"
+      "Residential - Service"
     ],
-    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "cover": "our-projects/kien-truc-chung-cu-cao-tang/images/01.jpg",
+    "order": 10,
+    "created_at": "2026-07-20T16:27:09.775Z",
+    "updated_at": "2026-07-29T18:10:12.911Z"
+  },
+  {
+    "id": "c1285978-b622-4532-90b1-076f37379180",
+    "slug": "canh-quan-trung-tam-thuong-mai-ket-hop-van-phong",
+    "title": "LANDSCAPE DESIGN FOR A SHOPPING CENTER AND OFFICE COMPLEX",
+    "description": "This landscape design presents a contemporary environment that seamlessly accommodates the needs of working, shopping, and leisure. Carefully planned green spaces, water features, and outdoor seating areas create a harmo",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Từ Liêm, Đà Nẵng",
+    "area": "3.8 ha",
+    "date": "2025-06-22",
+    "categories": [
+      "Landscape",
+      "Public Works",
+      "Structure"
+    ],
+    "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
     "order": 11,
-    "created_at": "2026-07-23T09:25:36.267Z",
-    "updated_at": "2026-07-29T18:23:37.674Z"
+    "created_at": "2026-07-30T07:16:30.490Z",
+    "updated_at": "2026-07-30T07:22:08.046Z"
   }
 ]
