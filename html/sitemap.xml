@@ -81,6 +81,11 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/trung-tam-thuong-mai-ket-hop-van-phong/</loc>
+        <lastmod>2026-07-30</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/kien-truc-chung-cu-cao-tang/</loc>
         <lastmod>2026-07-29</lastmod>
         <priority>0.6</priority>
@@ -192,11 +197,6 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/studio-wedding-van-phong-tiec-cuoi/</loc>
-        <lastmod>2025-07-22</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/trung-tam-thuong-mai-ket-hop-van-phong/</loc>
         <lastmod>2025-07-22</lastmod>
         <priority>0.6</priority>
     </url>
