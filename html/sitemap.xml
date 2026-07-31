@@ -81,6 +81,11 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -203,11 +208,6 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/studio-wedding-van-phong-tiec-cuoi/</loc>
         <lastmod>2025-07-22</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
-        <lastmod>2025-07-20</lastmod>
         <priority>0.6</priority>
     </url>
 </urlset>
