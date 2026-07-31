@@ -81,21 +81,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/to-hop-van-hoa-hon-kem-da-dung/</loc>
-        <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/the-red-wood/</loc>
-        <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
-        <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -121,13 +106,28 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/aranmasa-hotel-spa/</loc>
+        <lastmod>2026-07-30</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/gao-lut-house/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/aranmasa-hotel-spa/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <loc>https://mvngroup.vn/our-projects/tam-giao-house/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/to-hop-van-hoa-hon-kem-da-dung/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/the-red-wood/</loc>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -136,8 +136,8 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/tam-giao-house/</loc>
-        <lastmod>2026-07-29</lastmod>
+        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
