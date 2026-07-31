@@ -81,11 +81,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/villa-khu-do-thi-moi/</loc>
-        <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -172,6 +167,11 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/toa-nha-le-huu-trac-le-huu-trac-building/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/villa-khu-do-thi-moi/</loc>
         <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
