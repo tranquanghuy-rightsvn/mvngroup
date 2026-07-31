@@ -81,6 +81,11 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/our-projects/nha-3-tang-hien-dai/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -178,11 +183,6 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/villa-hien-dai-2-tang/</loc>
         <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/nha-3-tang-hien-dai/</loc>
-        <lastmod>2026-03-09</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
