@@ -81,11 +81,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/golden-villa/</loc>
-        <lastmod>2026-07-31</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -208,6 +203,11 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/villa-hien-dai/</loc>
         <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/golden-villa/</loc>
+        <lastmod>2025-12-26</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
