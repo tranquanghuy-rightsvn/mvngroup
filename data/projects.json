@@ -1,63 +1,5 @@
 [
   {
-    "id": "5c004999-f2bb-42e8-815e-63920b5645d3",
-    "slug": "to-hop-van-hoa-hon-kem-da-dung",
-    "title": "HON KEM – DA DUNG CULTURAL COMPLEX",
-    "description": "Inspired by the majestic beauty of Hon Kem – Da Dung, where the Thu Bon River winds gracefully between dramatic limestone mountains, the project is conceived as an “open house” that embraces natural light, fresh air, and",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Quế Sơn, Quảng Nam",
-    "area": "0.2 ha",
-    "date": "2025-05-01",
-    "categories": [
-      "Landscape",
-      "Public Works",
-      "Structure"
-    ],
-    "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/01.jpg",
-    "order": 1,
-    "created_at": "2026-07-31T02:11:09.167Z",
-    "updated_at": "2026-07-31T02:11:09.167Z"
-  },
-  {
-    "id": "3724aa6e-f783-4232-93ab-54e8b51eeb80",
-    "slug": "the-red-wood",
-    "title": "The Red Wood",
-    "description": "The project was conceived with the aspiration of preserving traditional values within a contemporary and sustainable living environment. It represents a harmonious blend of Vietnamese vernacular architecture and modern d",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Đà Nẵng",
-    "area": "300m²",
-    "date": "2024-04-20",
-    "categories": [
-      "Housing",
-      "Residential - Service",
-      "Interior"
-    ],
-    "cover": "our-projects/the-red-wood/images/01.jpg",
-    "order": 2,
-    "created_at": "2026-07-31T01:59:23.247Z",
-    "updated_at": "2026-07-31T01:59:23.247Z"
-  },
-  {
-    "id": "61e87cf0-61dc-4ea0-9c64-d9e569a654a2",
-    "slug": "terra-verde-serviced-apartment",
-    "title": "TERRA VERDE SERVICED APARTMENT",
-    "description": "TERRA VERDE is envisioned as a premium serviced apartment development where contemporary architecture blends seamlessly with nature to create a new standard of urban living. Inspired by the philosophy of “green living, r",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Đường Chính Hữu, phường An Hải, TP. Đà Nẵng",
-    "area": "250m²",
-    "date": "2026-02-15",
-    "categories": [
-      "Housing",
-      "Residential - Service",
-      "Interior",
-      "Structure"
-    ],
-    "cover": "our-projects/terra-verde-serviced-apartment/images/01.jpg",
-    "order": 3,
-    "created_at": "2026-07-31T01:47:15.626Z",
-    "updated_at": "2026-07-31T01:47:15.626Z"
-  },
-  {
     "id": "b04041a2-7ffb-4fbe-a6a9-e210dcf2047d",
     "slug": "high-rise-residential-architecture",
     "title": "High-Rise Residential Architecture",
@@ -73,7 +15,7 @@
       "Structure"
     ],
     "cover": "our-projects/high-rise-residential-architecture/images/01.jpg",
-    "order": 4,
+    "order": 1,
     "created_at": "2026-07-30T07:25:30.934Z",
     "updated_at": "2026-07-30T07:25:30.934Z"
   },
@@ -94,7 +36,7 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 5,
+    "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
@@ -114,7 +56,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 6,
+    "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-31T01:35:21.426Z"
   },
@@ -134,7 +76,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 7,
+    "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
@@ -154,28 +96,9 @@
       "Structure"
     ],
     "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/01.jpg",
-    "order": 8,
+    "order": 5,
     "created_at": "2026-07-30T08:04:10.015Z",
     "updated_at": "2026-07-31T01:32:55.376Z"
-  },
-  {
-    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
-    "slug": "gao-lut-house",
-    "title": "GAO LUT HOUSE",
-    "description": "Gao Lut House draws inspiration from the story of a young family living and working in Da Nang. The name \"Gao Lut\" refers both to nutritious brown rice and its rustic beauty, and to the family's affectionate nickname for",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
-    "area": "90 m²",
-    "date": "2026-05-27",
-    "categories": [
-      "Housing",
-      "Residential - Service",
-      "Interior"
-    ],
-    "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 9,
-    "created_at": "2026-07-23T09:17:13.869Z",
-    "updated_at": "2026-07-30T07:33:33.683Z"
   },
   {
     "id": "91a14e77-644e-4464-9460-490020460e92",
@@ -192,9 +115,85 @@
       "Structure"
     ],
     "cover": "our-projects/aranmasa-hotel-spa/images/01.jpg",
-    "order": 10,
+    "order": 6,
     "created_at": "2026-07-30T07:40:41.512Z",
     "updated_at": "2026-07-30T07:40:41.512Z"
+  },
+  {
+    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
+    "slug": "gao-lut-house",
+    "title": "GAO LUT HOUSE",
+    "description": "Gao Lut House draws inspiration from the story of a young family living and working in Da Nang. The name \"Gao Lut\" refers both to nutritious brown rice and its rustic beauty, and to the family's affectionate nickname for",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
+    "area": "90 m²",
+    "date": "2026-05-27",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/gao-lut-house/images/01.jpg",
+    "order": 7,
+    "created_at": "2026-07-23T09:17:13.869Z",
+    "updated_at": "2026-07-30T07:33:33.683Z"
+  },
+  {
+    "id": "1461842a-6159-426e-9a14-276016c10eb1",
+    "slug": "tam-giao-house",
+    "title": "TAM GIAO HOUSE",
+    "description": "Tam Giao House was conceived around the \"Tam Giao\" philosophy, with three core values guiding the design process: Harmony between old and new. The interplay of light, wind, and water. Harmony among people. The project se",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "",
+    "area": "59 m²",
+    "date": "2026-04-14",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "order": 8,
+    "created_at": "2026-07-23T09:25:36.267Z",
+    "updated_at": "2026-07-29T18:23:37.674Z"
+  },
+  {
+    "id": "5c004999-f2bb-42e8-815e-63920b5645d3",
+    "slug": "to-hop-van-hoa-hon-kem-da-dung",
+    "title": "HON KEM – DA DUNG CULTURAL COMPLEX",
+    "description": "Inspired by the majestic beauty of Hon Kem – Da Dung, where the Thu Bon River winds gracefully between dramatic limestone mountains, the project is conceived as an “open house” that embraces natural light, fresh air, and",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Quế Sơn, Quảng Nam",
+    "area": "0.2 ha",
+    "date": "2025-05-01",
+    "categories": [
+      "Landscape",
+      "Public Works",
+      "Structure"
+    ],
+    "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/01.jpg",
+    "order": 9,
+    "created_at": "2026-07-31T02:11:09.167Z",
+    "updated_at": "2026-07-31T02:11:09.167Z"
+  },
+  {
+    "id": "3724aa6e-f783-4232-93ab-54e8b51eeb80",
+    "slug": "the-red-wood",
+    "title": "The Red Wood",
+    "description": "The project was conceived with the aspiration of preserving traditional values within a contemporary and sustainable living environment. It represents a harmonious blend of Vietnamese vernacular architecture and modern d",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "300m²",
+    "date": "2024-04-20",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/the-red-wood/images/01.jpg",
+    "order": 10,
+    "created_at": "2026-07-31T01:59:23.247Z",
+    "updated_at": "2026-07-31T01:59:23.247Z"
   },
   {
     "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
@@ -216,23 +215,24 @@
     "updated_at": "2026-07-29T18:21:32.620Z"
   },
   {
-    "id": "1461842a-6159-426e-9a14-276016c10eb1",
-    "slug": "tam-giao-house",
-    "title": "TAM GIAO HOUSE",
-    "description": "Tam Giao House was conceived around the \"Tam Giao\" philosophy, with three core values guiding the design process: Harmony between old and new. The interplay of light, wind, and water. Harmony among people. The project se",
+    "id": "61e87cf0-61dc-4ea0-9c64-d9e569a654a2",
+    "slug": "terra-verde-serviced-apartment",
+    "title": "TERRA VERDE SERVICED APARTMENT",
+    "description": "TERRA VERDE is envisioned as a premium serviced apartment development where contemporary architecture blends seamlessly with nature to create a new standard of urban living. Inspired by the philosophy of “green living, r",
     "architect": "Ths. KTS Trương Anh Vương",
-    "location": "",
-    "area": "59 m²",
-    "date": "2026-04-14",
+    "location": "Đường Chính Hữu, phường An Hải, TP. Đà Nẵng",
+    "area": "250m²",
+    "date": "2026-02-15",
     "categories": [
       "Housing",
       "Residential - Service",
-      "Interior"
+      "Interior",
+      "Structure"
     ],
-    "cover": "our-projects/tam-giao-house/images/01.jpg",
+    "cover": "our-projects/terra-verde-serviced-apartment/images/01.jpg",
     "order": 12,
-    "created_at": "2026-07-23T09:25:36.267Z",
-    "updated_at": "2026-07-29T18:23:37.674Z"
+    "created_at": "2026-07-31T01:47:15.626Z",
+    "updated_at": "2026-07-31T01:47:15.626Z"
   },
   {
     "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
