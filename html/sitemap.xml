@@ -81,11 +81,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/q-v-house/</loc>
-        <lastmod>2026-08-01</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
@@ -178,6 +173,11 @@
     <url>
         <loc>https://mvngroup.vn/our-projects/villa-khu-do-thi-moi/</loc>
         <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/q-v-house/</loc>
+        <lastmod>2026-08-01</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
