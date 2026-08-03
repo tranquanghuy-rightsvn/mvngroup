@@ -1,0 +1,27 @@
+{
+  "id": "fb03fcd3-6b74-4628-b9da-d269f4edac63",
+  "slug": "modern-rental-housing",
+  "title": "Modern Rental Housing",
+  "description": "The project is designed to provide comfortable, well-ventilated accommodation while optimizing investment efficiency. Guided by practical financial considerations, the architectural solutions maximize natural daylight, c",
+  "architect": "Ths. KTS Trương Anh Vương",
+  "location": "Đà Nẵng",
+  "area": "120m²",
+  "date": "2020-10-03",
+  "categories": [
+    "Housing",
+    "Residential - Service",
+    "Interior"
+  ],
+  "cover": "our-projects/modern-rental-housing/images/01.jpg",
+  "order": 1,
+  "created_at": "2026-08-03T03:05:02.892Z",
+  "updated_at": "2026-08-03T03:05:02.892Z",
+  "images": [
+    "our-projects/modern-rental-housing/images/01.jpg",
+    "our-projects/modern-rental-housing/images/02.jpg",
+    "our-projects/modern-rental-housing/images/03.jpg",
+    "our-projects/modern-rental-housing/images/04.jpg",
+    "our-projects/modern-rental-housing/images/05.jpg"
+  ],
+  "content": "<p>The project is designed to provide comfortable, well-ventilated accommodation while optimizing investment efficiency. Guided by practical financial considerations, the architectural solutions maximize natural daylight, cross ventilation, and efficient space planning to create an organized, comfortable living environment for students and working professionals.</p>"
+}
