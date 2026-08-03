@@ -1,29 +1,9 @@
 [
   {
-    "id": "eef4c084-35bc-4716-bda2-cd82c76ab25e",
-    "slug": "truong-hoc-lien-cap-integrated-school",
-    "title": "TRƯỜNG HỌC LIÊN CẤP – INTEGRATED SCHOOL",
-    "description": "Mô hình trường học liên cấp được phát triển như một bài toán tổng thể từ thiết kế, vận hành đến khai thác lâu dài. Không gian học tập an toàn, linh hoạt và hỗ trợ phát triển toàn diện cho học sinh. Giải pháp kiến trúc tố",
-    "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Phường Đồng Nguyên, tỉnh Bắc Ninh",
-    "area": "143 ha",
-    "date": "2026-03-02",
-    "categories": [
-      "Landscape",
-      "Public Works",
-      "Housing",
-      "Structure"
-    ],
-    "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/01.jpg",
-    "order": 1,
-    "created_at": "2026-07-30T08:04:10.015Z",
-    "updated_at": "2026-07-30T10:04:15.987Z"
-  },
-  {
     "id": "b04041a2-7ffb-4fbe-a6a9-e210dcf2047d",
     "slug": "high-rise-residential-architecture",
     "title": "High-Rise Residential Architecture",
-    "description": "At MVN GROUP, we believe that high-rise architecture should offer more than just a place to live. It must be a living ecosystem—where people, nature, and the urban environment connect in perfect harmony. The project is d",
+    "description": "At MVN GROUP, we believe that high-rise architecture should offer more than just a place to live. It must be a living ecosystem—where people, nature, and the urban environment connect in perfect harmony . The project is ",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Từ Liêm, Hà Nội",
     "area": "1.8 ha",
@@ -35,9 +15,9 @@
       "Structure"
     ],
     "cover": "our-projects/high-rise-residential-architecture/images/01.jpg",
-    "order": 2,
+    "order": 1,
     "created_at": "2026-07-30T07:25:30.934Z",
-    "updated_at": "2026-07-30T07:25:30.934Z"
+    "updated_at": "2026-08-02T06:42:13.443Z"
   },
   {
     "id": "acd5e8c8-1d55-4b98-9ffa-4f1a9ea5af36",
@@ -56,15 +36,15 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 4,
+    "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
   {
     "id": "2ea3ccef-747c-4bc3-92d0-0da104b537c5",
     "slug": "my-dinh-pearl",
-    "title": "MỸ ĐÌNH PEARL",
-    "description": "Drawing inspiration from contemporary lifestyles and the spirit of an urban retreat, the Mỹ Đình Pearl lobby is envisioned as the first point of contact that conveys the stature of the entire development. The design purs",
+    "title": "MY DINH PEARL",
+    "description": "Drawing inspiration from contemporary lifestyles and the spirit of an urban retreat, the My Dinh Pearl lobby is envisioned as the first point of contact that conveys the stature of the entire development. The design purs",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Từ Liêm, Hà Nội",
     "area": "3.8 ha",
@@ -76,9 +56,9 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 5,
+    "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
-    "updated_at": "2026-07-30T06:37:59.544Z"
+    "updated_at": "2026-07-31T01:35:21.426Z"
   },
   {
     "id": "f218feb3-459d-4cb4-9b61-5d2d0d82fff0",
@@ -96,28 +76,29 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 6,
+    "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
   {
-    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
-    "slug": "gao-lut-house",
-    "title": "GAO LUT HOUSE",
-    "description": "Gao Lut House draws inspiration from the story of a young family living and working in Da Nang. The name \"Gao Lut\" refers both to nutritious brown rice and its rustic beauty, and to the family's affectionate nickname for",
+    "id": "eef4c084-35bc-4716-bda2-cd82c76ab25e",
+    "slug": "truong-hoc-lien-cap-integrated-school",
+    "title": "INTEGRATED PRIMARY AND SECONDARY SCHOOL",
+    "description": "As one of the projects completed during the first six months of 2026, Edison Hanaka International Primary and Secondary School represents a forward-thinking approach to educational architecture, where every space is thou",
     "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
-    "area": "90 m²",
-    "date": "2026-05-27",
+    "location": "Phường Đồng Nguyên, tỉnh Bắc Ninh",
+    "area": "1.2 ha",
+    "date": "2026-03-02",
     "categories": [
+      "Landscape",
+      "Public Works",
       "Housing",
-      "Residential - Service",
-      "Interior"
+      "Structure"
     ],
-    "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 7,
-    "created_at": "2026-07-23T09:17:13.869Z",
-    "updated_at": "2026-07-30T07:33:33.683Z"
+    "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/01.jpg",
+    "order": 5,
+    "created_at": "2026-07-30T08:04:10.015Z",
+    "updated_at": "2026-07-31T01:32:55.376Z"
   },
   {
     "id": "91a14e77-644e-4464-9460-490020460e92",
@@ -134,28 +115,47 @@
       "Structure"
     ],
     "cover": "our-projects/aranmasa-hotel-spa/images/01.jpg",
-    "order": 8,
+    "order": 6,
     "created_at": "2026-07-30T07:40:41.512Z",
     "updated_at": "2026-07-30T07:40:41.512Z"
   },
   {
-    "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
-    "slug": "the-red-mountain-nha-nui-do",
-    "title": "The Red Mountain",
-    "description": "This house is not only visually striking; it also embodies a refined integration of traditional and sustainable architecture. The dedicated research undertaken by MVN Group's architects into local materials and advanced ",
+    "id": "3cde6fda-2dff-4e97-9683-10c167407427",
+    "slug": "toa-nha-le-huu-trac-le-huu-trac-building",
+    "title": "LE HUU TRAC Building",
+    "description": "The project presents an innovative architectural response to the challenges of designing a home within a narrow urban alley, where limited site dimensions and irregular plot conditions become opportunities for creative d",
     "architect": "Ths. KTS Trương Anh Vương",
-    "location": "Đà Nẵng",
-    "area": "51 m²",
-    "date": "2026-05-22",
+    "location": "Lê Hữu Trác, Đà Nẵng",
+    "area": "140m²",
+    "date": "2026-05-21",
     "categories": [
       "Housing",
       "Residential - Service",
       "Interior"
     ],
-    "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 9,
-    "created_at": "2026-07-22T08:05:37.683Z",
-    "updated_at": "2026-07-29T18:21:32.620Z"
+    "cover": "our-projects/toa-nha-le-huu-trac-le-huu-trac-building/images/01.jpg",
+    "order": 7,
+    "created_at": "2026-07-31T04:05:04.368Z",
+    "updated_at": "2026-07-31T04:05:04.368Z"
+  },
+  {
+    "id": "a4fd273f-3b01-4530-8f97-c66e171311d0",
+    "slug": "gao-lut-house",
+    "title": "GAO LUT HOUSE",
+    "description": "Gao Lut House draws inspiration from the story of a young family living and working in Da Nang. The name \"Gao Lut\" refers both to nutritious brown rice and its rustic beauty, and to the family's affectionate nickname for",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Hòa Minh 19, P. Hòa Minh, TP. Đà Nẵng",
+    "area": "90 m²",
+    "date": "2026-05-27",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/gao-lut-house/images/01.jpg",
+    "order": 8,
+    "created_at": "2026-07-23T09:17:13.869Z",
+    "updated_at": "2026-07-30T07:33:33.683Z"
   },
   {
     "id": "1461842a-6159-426e-9a14-276016c10eb1",
@@ -172,19 +172,96 @@
       "Interior"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 10,
+    "order": 9,
     "created_at": "2026-07-23T09:25:36.267Z",
     "updated_at": "2026-07-29T18:23:37.674Z"
+  },
+  {
+    "id": "5c004999-f2bb-42e8-815e-63920b5645d3",
+    "slug": "to-hop-van-hoa-hon-kem-da-dung",
+    "title": "HON KEM – DA DUNG CULTURAL COMPLEX",
+    "description": "Inspired by the majestic beauty of Hon Kem – Da Dung, where the Thu Bon River winds gracefully between dramatic limestone mountains, the project is conceived as an “open house” that embraces natural light, fresh air, and",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Quế Sơn, Quảng Nam",
+    "area": "0.2 ha",
+    "date": "2025-05-01",
+    "categories": [
+      "Landscape",
+      "Public Works",
+      "Structure"
+    ],
+    "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/01.jpg",
+    "order": 10,
+    "created_at": "2026-07-31T02:11:09.167Z",
+    "updated_at": "2026-07-31T02:11:09.167Z"
+  },
+  {
+    "id": "3724aa6e-f783-4232-93ab-54e8b51eeb80",
+    "slug": "the-red-wood",
+    "title": "The Red Wood",
+    "description": "The project was conceived with the aspiration of preserving traditional values within a contemporary and sustainable living environment. It represents a harmonious blend of Vietnamese vernacular architecture and modern d",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "300m²",
+    "date": "2024-04-20",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/the-red-wood/images/01.jpg",
+    "order": 11,
+    "created_at": "2026-07-31T01:59:23.247Z",
+    "updated_at": "2026-07-31T01:59:23.247Z"
+  },
+  {
+    "id": "6749068a-16d0-42b0-a98f-bd01db0cbacd",
+    "slug": "the-red-mountain-nha-nui-do",
+    "title": "The Red Mountain",
+    "description": "This house is not only visually striking; it also embodies a refined integration of traditional and sustainable architecture. The dedicated research undertaken by MVN Group's architects into local materials and advanced ",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "51 m²",
+    "date": "2026-05-22",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
+    "order": 12,
+    "created_at": "2026-07-22T08:05:37.683Z",
+    "updated_at": "2026-07-29T18:21:32.620Z"
+  },
+  {
+    "id": "61e87cf0-61dc-4ea0-9c64-d9e569a654a2",
+    "slug": "terra-verde-serviced-apartment",
+    "title": "TERRA VERDE SERVICED APARTMENT",
+    "description": "TERRA VERDE is envisioned as a premium serviced apartment development where contemporary architecture blends seamlessly with nature to create a new standard of urban living. Inspired by the philosophy of “green living, r",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đường Chính Hữu, phường An Hải, TP. Đà Nẵng",
+    "area": "250m²",
+    "date": "2026-02-15",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior",
+      "Structure"
+    ],
+    "cover": "our-projects/terra-verde-serviced-apartment/images/01.jpg",
+    "order": 13,
+    "created_at": "2026-07-31T01:47:15.626Z",
+    "updated_at": "2026-07-31T01:47:15.626Z"
   },
   {
     "id": "e3923796-ab9d-490f-9a54-2c35511e20ac",
     "slug": "toi-gian-dam-chat-nhiet-doi",
     "title": "Tropical Minimalism",
-    "description": "The project adopts a contemporary Brutalist language, combining the raw beauty of concrete with minimalist timber screens and lush tropical greenery. The design seeks to create a contemporary living environment. Conceive",
+    "description": "The project is designed in a contemporary Brutalist style, combining the raw beauty of exposed concrete with minimalist timber screens and lush tropical landscaping to create a distinctive architectural identity. Conceiv",
     "architect": "Ths. KTS Trương Anh Vương",
     "location": "Đà Nẵng",
-    "area": "81 m²",
-    "date": "2026-03-10",
+    "area": "350m²",
+    "date": "2025-04-13",
     "categories": [
       "Housing",
       "Residential - Service",
@@ -192,9 +269,9 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 11,
+    "order": 14,
     "created_at": "2026-07-23T10:00:08.925Z",
-    "updated_at": "2026-07-29T18:22:34.849Z"
+    "updated_at": "2026-07-31T03:19:06.262Z"
   },
   {
     "id": "aeb09b35-02b6-47c5-81ba-bef67365e324",
@@ -211,7 +288,7 @@
       "Structure"
     ],
     "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 12,
+    "order": 15,
     "created_at": "2026-07-30T06:54:46.656Z",
     "updated_at": "2026-07-30T07:10:54.351Z"
   },
@@ -230,8 +307,579 @@
       "Structure"
     ],
     "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 13,
+    "order": 16,
     "created_at": "2026-07-30T07:16:30.490Z",
     "updated_at": "2026-07-30T07:22:08.046Z"
+  },
+  {
+    "id": "856c31d7-d2fe-4318-81ea-108026d0ce37",
+    "slug": "khu-san-pickleball-to-hop-the-thao",
+    "title": "MULTI-SPORTS COMPLEX WITH PICKLEBALL COURTS",
+    "description": "The project stands out through its fluid architectural language, with a series of gracefully curved roof forms that create a distinctive and iconic identity. Warm terracotta tones, combined with expansive glass façades a",
+    "architect": "ThS. Kts Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "0.12 ha",
+    "date": "2026-03-12",
+    "categories": [
+      "Landscape",
+      "Public Works",
+      "Structure"
+    ],
+    "cover": "our-projects/khu-san-pickleball-to-hop-the-thao/images/01.jpg",
+    "order": 17,
+    "created_at": "2026-07-31T02:24:17.904Z",
+    "updated_at": "2026-07-31T03:42:49.160Z"
+  },
+  {
+    "id": "937cff12-e3ef-4c8a-9985-9de3586cd27b",
+    "slug": "cong-vien-vui-choi-cong-dong-o-hoi-an",
+    "title": "HOI AN COMMUNITY RECREATION PARK",
+    "description": "Hoi An City Park is envisioned as a vibrant urban green space where people, nature, and the community come together in a welcoming and sustainable environment. The project is designed to provide an inclusive destination ",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Hội An, TP. Đà Nẵng",
+    "area": "0.2 ha",
+    "date": "2024-10-15",
+    "categories": [
+      "Landscape",
+      "Public Works",
+      "Structure"
+    ],
+    "cover": "our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/images/01.jpg",
+    "order": 18,
+    "created_at": "2026-07-31T02:33:44.588Z",
+    "updated_at": "2026-07-31T08:25:00.108Z"
+  },
+  {
+    "id": "4bd40ab2-feef-442a-bbb5-7e8b6b2e82a0",
+    "slug": "villa-khu-do-thi-moi",
+    "title": "Modern Urban Villa",
+    "description": "The language of modern architecture is expressed through soft curved forms, extended balconies, and vertically layered spaces, creating a harmonious composition with refined details and a dynamic sense of movement. Rathe",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "300m²",
+    "date": "2026-03-26",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior",
+      "Villa"
+    ],
+    "cover": "our-projects/villa-khu-do-thi-moi/images/01.jpg",
+    "order": 19,
+    "created_at": "2026-07-31T10:38:26.136Z",
+    "updated_at": "2026-07-31T10:38:26.136Z"
+  },
+  {
+    "id": "95e2417f-9642-4f80-ba99-d909c8a0909a",
+    "slug": "q-v-house",
+    "title": "Q.V House",
+    "description": "The project is developed to fully capitalize on the advantages of its corner site, creating a contemporary, open, and highly adaptable living environment. The design maximizes panoramic views, natural daylight, and cross",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "120m²",
+    "date": "2024-03-15",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/q-v-house/images/01.jpg",
+    "order": 20,
+    "created_at": "2026-08-01T02:19:58.308Z",
+    "updated_at": "2026-08-01T04:37:29.620Z"
+  },
+  {
+    "id": "096aaca0-ff0f-4fef-906e-512587c97c5c",
+    "slug": "villa-hien-dai-2",
+    "title": "MODERN VILLA",
+    "description": "The villa makes a strong impression through its minimalist architectural language, where clean lines, bold geometric forms, and carefully balanced proportions create a refined sense of elegance. Every design element is t",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "138m²",
+    "date": "2026-07-20",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/villa-hien-dai-2/images/01.jpg",
+    "order": 21,
+    "created_at": "2026-07-31T09:12:35.598Z",
+    "updated_at": "2026-07-31T09:12:35.598Z"
+  },
+  {
+    "id": "50887c57-ad22-4841-8f10-00c3e0c8eef9",
+    "slug": "villa-hien-dai-2-tang",
+    "title": "PHO VILLA",
+    "description": "Pho Villa is designed around the philosophy of Minimalism, embracing a clean, contemporary aesthetic that remains timeless. The project celebrates simplicity in form while creating spatial depth, offering a living experi",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "200m²",
+    "date": "2024-05-14",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/villa-hien-dai-2-tang/images/01.jpg",
+    "order": 22,
+    "created_at": "2026-07-31T10:07:00.620Z",
+    "updated_at": "2026-07-31T10:07:00.620Z"
+  },
+  {
+    "id": "bc5dbe28-ff16-48d5-9ea8-07bb30a12a8f",
+    "slug": "nha-3-tang-hien-dai",
+    "title": "Contemporary Townhouse",
+    "description": "The townhouse features a contemporary design complemented by a series of lush green balconies, creating an open and refreshing living environment that seamlessly blends architecture with nature in the heart of the city. ",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2025-08-13",
+    "categories": [
+      "Housing",
+      "Interior"
+    ],
+    "cover": "our-projects/nha-3-tang-hien-dai/images/01.jpg",
+    "order": 23,
+    "created_at": "2026-07-31T10:13:45.090Z",
+    "updated_at": "2026-08-01T01:14:11.874Z"
+  },
+  {
+    "id": "dfe76e0f-638a-41de-8657-4cfa39aef5c4",
+    "slug": "mam-house-nha-o-ket-hop-cho-thue",
+    "title": "MAM HOUSE",
+    "description": "The townhouse stands out with its contemporary design and multi-level green balconies, creating an airy living environment that seamlessly integrates nature into the urban setting. The carefully arranged greenery across ",
+    "architect": "KTS Đỗ Tấn Đạt",
+    "location": "Đà Nẵng",
+    "area": "125m²",
+    "date": "2025-07-15",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/mam-house-nha-o-ket-hop-cho-thue/images/01.jpg",
+    "order": 24,
+    "created_at": "2026-07-31T10:25:03.133Z",
+    "updated_at": "2026-07-31T10:45:15.460Z"
+  },
+  {
+    "id": "f54d02a2-3896-4599-88aa-2d20d879df7e",
+    "slug": "nha-o-ket-hop-cho-thue",
+    "title": "Residential House with Rental Spaces",
+    "description": "The project is envisioned as an architectural form that “breathes with nature”, developed vertically through a series of flexible stacked volumes that create a harmonious transition between architecture and landscape. Ea",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2025-09-23",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/nha-o-ket-hop-cho-thue/images/01.jpg",
+    "order": 25,
+    "created_at": "2026-07-31T10:29:27.219Z",
+    "updated_at": "2026-07-31T10:29:27.219Z"
+  },
+  {
+    "id": "58f95639-81e9-4759-8901-ce6dfc8124be",
+    "slug": "dan-villa",
+    "title": "DAN VILLA",
+    "description": "The project embraces a contemporary architectural style with an open-plan layout that fosters a seamless connection between people and nature. Every space is thoughtfully designed to enhance interaction, flexibility, and",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "200m²",
+    "date": "2025-05-12",
+    "categories": [
+      "Housing",
+      "Interior",
+      "Villa"
+    ],
+    "cover": "our-projects/dan-villa/images/01.jpg",
+    "order": 26,
+    "created_at": "2026-08-03T08:17:15.345Z",
+    "updated_at": "2026-08-03T08:17:15.345Z"
+  },
+  {
+    "id": "ff2b1662-ee6b-4571-bc8f-a54c646719df",
+    "slug": "villa-hien-dai",
+    "title": "Modern Black & White Villa",
+    "description": "The project is envisioned in a modern and minimalist style, with refined design and living experience serving as its core values. The architecture embraces strong lines, distinctive forms, and premium materials to create",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "160m²",
+    "date": "2025-03-12",
+    "categories": [
+      "Housing",
+      "Interior",
+      "Villa"
+    ],
+    "cover": "our-projects/villa-hien-dai/images/01.jpg",
+    "order": 27,
+    "created_at": "2026-07-31T10:33:08.624Z",
+    "updated_at": "2026-07-31T10:33:08.624Z"
+  },
+  {
+    "id": "052f022f-f8f7-4424-ae25-bce11992f1b0",
+    "slug": "golden-villa",
+    "title": "THE TULIP",
+    "description": "Inspired by the graceful form of the tulip flower—a symbol of elegance, vitality, and renewal—The Tulip is envisioned as a contemporary residence that seamlessly blends refined architecture with the beauty of nature. The",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "250m²",
+    "date": "2024-03-22",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/golden-villa/images/01.jpg",
+    "order": 28,
+    "created_at": "2026-08-01T01:39:24.816Z",
+    "updated_at": "2026-08-01T01:41:27.230Z"
+  },
+  {
+    "id": "8fd7fec4-4f3b-4e75-9f13-46846a5ddfe7",
+    "slug": "studio-wedding-van-phong-tiec-cuoi",
+    "title": "WEDDING STUDIO",
+    "description": "The house is conceived through a thoughtful dialogue between the practical needs of everyday living and the unique characteristics of its site. From the proportions of its architectural volumes and spatial planning to th",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Liên chiểu, Đà Nẵng",
+    "area": "300m²",
+    "date": "2025-06-22",
+    "categories": [
+      "Public Works",
+      "Housing",
+      "Residential - Service",
+      "Interior",
+      "Structure"
+    ],
+    "cover": "our-projects/studio-wedding-van-phong-tiec-cuoi/images/01.jpg",
+    "order": 29,
+    "created_at": "2026-08-01T01:53:41.248Z",
+    "updated_at": "2026-08-01T01:53:41.248Z"
+  },
+  {
+    "id": "e254fc5b-ae35-4d5b-94d1-c46a5d1032bf",
+    "slug": "garden-house",
+    "title": "GARDEN HOUSE",
+    "description": "The Garden House is envisioned as a peaceful retreat where architecture and nature exist in perfect harmony. Designed to embrace the surrounding landscape, the project creates a tranquil living environment that encourage",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "160m²",
+    "date": "2024-07-12",
+    "categories": [
+      "Housing",
+      "Residential - Service"
+    ],
+    "cover": "our-projects/garden-house/images/01.jpg",
+    "order": 30,
+    "created_at": "2026-08-01T02:01:28.900Z",
+    "updated_at": "2026-08-01T02:01:28.900Z"
+  },
+  {
+    "id": "f28b052b-ea27-4574-9f6a-11bd96594f4e",
+    "slug": "dragon-coffee",
+    "title": "dragon coffee",
+    "description": "Dragon Coffee is designed with a distinctive architectural identity that harmoniously blends contemporary design, bold character, and lush green spaces to create a relaxing and welcoming destination. The project offers m",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "120m²",
+    "date": "2025-06-14",
+    "categories": [
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/dragon-coffee/images/01.jpg",
+    "order": 31,
+    "created_at": "2026-08-01T09:06:09.726Z",
+    "updated_at": "2026-08-01T09:06:09.726Z"
+  },
+  {
+    "id": "6da294e1-6ea0-4aac-9306-0f3fadb72469",
+    "slug": "mediterranean-villa",
+    "title": "MEDITERRANEAN VILLA",
+    "description": "The villa is thoughtfully designed for a young couple with a passion for travel and a deep appreciation for European culture. Inspired by the timeless elegance of Renaissance architecture and complemented by the relaxed ",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "120m²",
+    "date": "2022-06-01",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior",
+      "Villa"
+    ],
+    "cover": "our-projects/mediterranean-villa/images/01.jpg",
+    "order": 32,
+    "created_at": "2026-08-01T09:11:50.835Z",
+    "updated_at": "2026-08-01T09:11:50.835Z"
+  },
+  {
+    "id": "894dabf5-f987-4ef2-9dac-97fda1b9b232",
+    "slug": "happy-house",
+    "title": "Happy house",
+    "description": "Happy House is inspired by the philosophy that \"A house is not just a place to live, but a place to return to.\" The project is envisioned as a warm and welcoming home where family members can find peace, strengthen their",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "160m²",
+    "date": "2022-09-03",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/happy-house/images/01.jpg",
+    "order": 33,
+    "created_at": "2026-08-01T09:15:21.365Z",
+    "updated_at": "2026-08-03T08:48:30.861Z"
+  },
+  {
+    "id": "8b58031d-8eca-4531-879d-46aaac4c6fd1",
+    "slug": "modern-3-storey-townhouse",
+    "title": "Modern 3-Storey Townhouse",
+    "description": "Designed for contemporary urban living, this 3-storey townhouse maximizes every square meter within a 5 × 20 m footprint. The design emphasizes clean architectural lines, open-plan living spaces, and abundant natural lig",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "100m²",
+    "date": "2024-03-24",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/modern-3-storey-townhouse/images/01.jpg",
+    "order": 34,
+    "created_at": "2026-08-03T02:47:19.629Z",
+    "updated_at": "2026-08-03T02:47:19.629Z"
+  },
+  {
+    "id": "802a3d29-a38c-4167-b193-4c79d491b678",
+    "slug": "mountain-retreat-resort",
+    "title": "Mountain Retreat Resort",
+    "description": "Inspired by the beauty of the mountain landscape, the resort is thoughtfully designed to exist in harmony with its natural surroundings. Clean architectural forms, warm timber, expansive glazing, and abundant greenery cr",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "300m²",
+    "date": "2024-07-25",
+    "categories": [
+      "Landscape",
+      "Housing",
+      "Residential - Service",
+      "Villa"
+    ],
+    "cover": "our-projects/mountain-retreat-resort/images/01.jpg",
+    "order": 35,
+    "created_at": "2026-08-03T02:51:07.386Z",
+    "updated_at": "2026-08-03T02:51:07.386Z"
+  },
+  {
+    "id": "5c4be676-a2b5-49f0-9b32-a954171696a6",
+    "slug": "residential-rental-apartments",
+    "title": "Residential & Rental Apartments",
+    "description": "The project is envisioned as a multifunctional residential model, harmoniously combining private family living spaces with rental apartments. The design aims to optimize real estate utilization while ensuring privacy, co",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "216m²",
+    "date": "2025-02-12",
+    "categories": [
+      "Housing",
+      "Residential - Service"
+    ],
+    "cover": "our-projects/residential-rental-apartments/images/01.jpg",
+    "order": 36,
+    "created_at": "2026-08-03T03:30:09.425Z",
+    "updated_at": "2026-08-03T03:30:09.425Z"
+  },
+  {
+    "id": "fb03fcd3-6b74-4628-b9da-d269f4edac63",
+    "slug": "modern-rental-housing",
+    "title": "Modern Rental Housing",
+    "description": "The project is designed to provide comfortable, well-ventilated accommodation while optimizing investment efficiency. Guided by practical financial considerations, the architectural solutions maximize natural daylight, c",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "120m²",
+    "date": "2020-10-03",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/modern-rental-housing/images/01.jpg",
+    "order": 37,
+    "created_at": "2026-08-03T03:05:02.892Z",
+    "updated_at": "2026-08-03T03:05:02.892Z"
+  },
+  {
+    "id": "f5f66cce-83f1-4cc1-a1f5-ef6503a52c0d",
+    "slug": "golden-sunset-hotel",
+    "title": "Golden Sunset Hotel",
+    "description": "The project is inspired by the timeless charm of Hoi An, blending contemporary architecture with the distinctive character of its traditional heritage. Local architectural elements are thoughtfully reinterpreted to creat",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Lý Thường kiệt, Hội An, TP. Đà Nẵng",
+    "area": "250m²",
+    "date": "2023-05-16",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/golden-sunset-hotel/images/01.jpg",
+    "order": 38,
+    "created_at": "2026-08-03T03:11:49.865Z",
+    "updated_at": "2026-08-03T03:11:49.865Z"
+  },
+  {
+    "id": "cd082b23-e8f4-4fc5-9ed5-e4f84050538b",
+    "slug": "residence-with-hair-salon",
+    "title": "Residence with Hair Salon",
+    "description": "Designed for a 5 × 25 m urban site, this mixed-use residence seamlessly integrates family living with a hair salon, maximizing space efficiency while meeting both residential and commercial needs. The ground floor accomm",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "125m²",
+    "date": "2025-04-16",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/residence-with-hair-salon/images/01.jpg",
+    "order": 39,
+    "created_at": "2026-08-03T09:01:59.930Z",
+    "updated_at": "2026-08-03T09:01:59.930Z"
+  },
+  {
+    "id": "ac877d08-cba2-4ff8-bf62-f9c5b7d1eb6c",
+    "slug": "residential-commercial-building",
+    "title": "Residential & Commercial Building",
+    "description": "Designed as a mixed-use development, this project seamlessly combines residential living with commercial functions, balancing operational efficiency and everyday comfort. Contemporary architecture, layered volumes, gener",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2025-04-12",
+    "categories": [
+      "Housing",
+      "Residential - Service"
+    ],
+    "cover": "our-projects/residential-commercial-building/images/01.jpg",
+    "order": 40,
+    "created_at": "2026-08-03T03:08:10.247Z",
+    "updated_at": "2026-08-03T03:08:10.247Z"
+  },
+  {
+    "id": "6ee238f6-eca2-4618-81cb-c872eac69740",
+    "slug": "block-aparment",
+    "title": "Block Aparment",
+    "description": "Developed with a contemporary minimalist philosophy, the project is designed to create a tranquil living environment that reconnects people with nature in the heart of the city. Rather than relying on decorative elements",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2023-11-04",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/block-aparment/images/01.jpg",
+    "order": 41,
+    "created_at": "2026-08-03T03:24:35.218Z",
+    "updated_at": "2026-08-03T03:24:35.218Z"
+  },
+  {
+    "id": "db968098-a156-4c30-9ad2-af51ac315a1b",
+    "slug": "house-with-a-jackfruit-tree",
+    "title": "House with a Jackfruit Tree",
+    "description": "The villa is defined by a contemporary architectural style with a minimalist design language, emphasizing clean geometric forms, bold lines, and well-balanced proportions. The simplicity of the design creates a timeless ",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Hoà Xuân, Đà Nẵng",
+    "area": "180m²",
+    "date": "2024-05-20",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior",
+      "Villa"
+    ],
+    "cover": "our-projects/house-with-a-jackfruit-tree/images/01.jpg",
+    "order": 42,
+    "created_at": "2026-08-03T03:18:37.990Z",
+    "updated_at": "2026-08-03T03:18:37.990Z"
+  },
+  {
+    "id": "3bad5a2d-6ac0-4a19-bac2-3a2bf4c574f5",
+    "slug": "high-rise-building",
+    "title": "High-rise Building",
+    "description": "The project embraces a sustainable architectural vision, centered on human well-being and environmental responsibility. Beyond providing spaces for commercial and service activities, it seeks to establish a green urban e",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "375m²",
+    "date": "2024-07-26",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Structure"
+    ],
+    "cover": "our-projects/high-rise-building/images/01.jpg",
+    "order": 43,
+    "created_at": "2026-08-03T03:36:04.189Z",
+    "updated_at": "2026-08-03T03:36:04.189Z"
+  },
+  {
+    "id": "c6d31be3-407a-47ce-a18f-a9067ab84742",
+    "slug": "loft-mini-apartment",
+    "title": "Loft Mini Apartment",
+    "description": "The project is envisioned as a modern rental apartment model, optimizing spatial efficiency while ensuring comfort, functionality, and a high quality of living. The design focuses on maximizing natural light, enhancing v",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "TP. Nha Trang, Khánh Hòa",
+    "area": "90m²",
+    "date": "2021-07-12",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/loft-mini-apartment/images/01.jpg",
+    "order": 44,
+    "created_at": "2026-08-03T03:41:30.242Z",
+    "updated_at": "2026-08-03T03:41:30.242Z"
+  },
+  {
+    "id": "30850555-789c-4f9f-9942-96abfeb36d2d",
+    "slug": "4-storey-townhouse-with-a-penthouse",
+    "title": "4-Storey Townhouse with a Penthouse",
+    "description": "The project embraces a contemporary architectural approach integrated with green spaces, creating a living environment that is open, flexible, and closely connected to nature. The design places natural daylight, ventilat",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2024-10-12",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/4-storey-townhouse-with-a-penthouse/images/01.jpg",
+    "order": 45,
+    "created_at": "2026-08-03T08:51:46.880Z",
+    "updated_at": "2026-08-03T08:51:46.880Z"
+  },
+  {
+    "id": "f091dc61-369f-4720-a0f4-c27f269490c2",
+    "slug": "office-building-for-rent",
+    "title": "Office Building for Rent",
+    "description": "The project is designed in a contemporary Eco architectural style, placing people and nature at the heart of the design. The layout prioritizes open, flexible spaces that maximize natural daylight, cross ventilation, and",
+    "architect": "Ths. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "200m²",
+    "date": "2024-03-04",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/office-building-for-rent/images/01.jpg",
+    "order": 46,
+    "created_at": "2026-08-03T08:56:54.582Z",
+    "updated_at": "2026-08-03T08:56:54.582Z"
   }
 ]

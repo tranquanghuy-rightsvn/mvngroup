@@ -1,0 +1,28 @@
+{
+  "id": "6ee238f6-eca2-4618-81cb-c872eac69740",
+  "slug": "block-aparment",
+  "title": "Block Aparment",
+  "description": "Developed with a contemporary minimalist philosophy, the project is designed to create a tranquil living environment that reconnects people with nature in the heart of the city. Rather than relying on decorative elements",
+  "architect": "ThS. KTS Trương Anh Vương",
+  "location": "Đà Nẵng",
+  "area": "150m²",
+  "date": "2023-11-04",
+  "categories": [
+    "Housing",
+    "Residential - Service",
+    "Interior"
+  ],
+  "cover": "our-projects/block-aparment/images/01.jpg",
+  "order": 1,
+  "created_at": "2026-08-03T03:24:35.218Z",
+  "updated_at": "2026-08-03T03:24:35.218Z",
+  "images": [
+    "our-projects/block-aparment/images/01.jpg",
+    "our-projects/block-aparment/images/02.jpg",
+    "our-projects/block-aparment/images/03.jpg",
+    "our-projects/block-aparment/images/04.jpg",
+    "our-projects/block-aparment/images/05.jpg",
+    "our-projects/block-aparment/images/06.jpg"
+  ],
+  "content": "<p class=\"PDq2pG_selectionAnchorContainer\" data-start=\"94\" data-end=\"479\">Developed with a contemporary minimalist philosophy, the project is designed to create a tranquil living environment that reconnects people with nature in the heart of the city. Rather than relying on decorative elements, the architecture emphasizes clean forms, natural light, carefully selected materials, and integrated greenery to achieve a sense of balance, privacy, and serenity.</p>\n<p data-start=\"484\" data-end=\"700\" data-is-last-node=\"\">Every space is thoughtfully crafted as a place to slow down, unwind, and experience the harmonious relationship between architecture and nature, offering a refined lifestyle that embraces both comfort and simplicity.</p>"
+}

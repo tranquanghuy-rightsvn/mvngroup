@@ -27,7 +27,7 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/news/vinh-danh-quan-quan-bang-professional-cho-phuong-an-vertical-hue/</loc>
-        <lastmod>2026-07-29</lastmod>
+        <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -42,52 +42,52 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/news/bao-kien-viet-dua-tin-ve-du-an-gao-lut-house/</loc>
-        <lastmod>2026-03-03</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/gao-lut-house-tren-bao-chi/</loc>
-        <lastmod>2026-03-03</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/tam-giao-house-tren-bao-kien-viet/</loc>
-        <lastmod>2026-03-03</lastmod>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/news/tam-giao-house-named-among-the-top-10-at-the-awards/</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/the-5th-world-library/</loc>
-        <lastmod>2025-06-30</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/international-world/</loc>
-        <lastmod>2025-06-10</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/thi-cong-thuc-te/</loc>
-        <lastmod>2025-02-18</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/extensions-of-media/</loc>
-        <lastmod>2021-10-12</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/news/gallery-for-buildings/</loc>
-        <lastmod>2021-10-12</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/truong-hoc-lien-cap-integrated-school/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <lastmod>2026-08-02</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -97,7 +97,7 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/my-dinh-pearl/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -106,8 +106,8 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/gao-lut-house/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <loc>https://mvngroup.vn/our-projects/truong-hoc-lien-cap-integrated-school/</loc>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -116,8 +116,13 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/the-red-mountain-nha-nui-do/</loc>
-        <lastmod>2026-07-29</lastmod>
+        <loc>https://mvngroup.vn/our-projects/toa-nha-le-huu-trac-le-huu-trac-building/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/gao-lut-house/</loc>
+        <lastmod>2026-07-30</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -126,8 +131,28 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/toi-gian-dam-chat-nhiet-doi/</loc>
+        <loc>https://mvngroup.vn/our-projects/to-hop-van-hoa-hon-kem-da-dung/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/the-red-wood/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/the-red-mountain-nha-nui-do/</loc>
         <lastmod>2026-07-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/toi-gian-dam-chat-nhiet-doi/</loc>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
@@ -141,73 +166,153 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/toa-nha-le-huu-trac-le-huu-trac-building/</loc>
-        <lastmod>2026-05-21</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/villa-hien-dai-2/</loc>
-        <lastmod>2026-04-06</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/villa-hien-dai-2-tang/</loc>
-        <lastmod>2026-03-12</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/khu-san-pickleball-to-hop-the-thao/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/nha-3-tang-hien-dai/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/nha-o-ket-hop-cho-thue/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/to-hop-van-hoa-hon-kem-da-dung/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/villa-hien-dai/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/villa-khu-do-thi-moi/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/golden-villa/</loc>
-        <lastmod>2025-12-26</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/our-projects/mam-house-nha-o-ket-hop-cho-thue/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-07-31</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/</loc>
-        <lastmod>2025-07-24</lastmod>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/villa-khu-do-thi-moi/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/q-v-house/</loc>
+        <lastmod>2026-08-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/villa-hien-dai-2/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/villa-hien-dai-2-tang/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/nha-3-tang-hien-dai/</loc>
+        <lastmod>2026-08-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/mam-house-nha-o-ket-hop-cho-thue/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/nha-o-ket-hop-cho-thue/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/dan-villa/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/villa-hien-dai/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/golden-villa/</loc>
+        <lastmod>2026-08-01</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/studio-wedding-van-phong-tiec-cuoi/</loc>
-        <lastmod>2025-07-22</lastmod>
+        <lastmod>2026-08-01</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/terra-verde-serviced-apartment/</loc>
-        <lastmod>2025-07-20</lastmod>
+        <loc>https://mvngroup.vn/our-projects/garden-house/</loc>
+        <lastmod>2026-08-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/dragon-coffee/</loc>
+        <lastmod>2026-08-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/mediterranean-villa/</loc>
+        <lastmod>2026-08-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/happy-house/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/modern-3-storey-townhouse/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/mountain-retreat-resort/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/residential-rental-apartments/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/modern-rental-housing/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/golden-sunset-hotel/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/residence-with-hair-salon/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/residential-commercial-building/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/block-aparment/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/house-with-a-jackfruit-tree/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/high-rise-building/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/loft-mini-apartment/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/4-storey-townhouse-with-a-penthouse/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/office-building-for-rent/</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
 </urlset>

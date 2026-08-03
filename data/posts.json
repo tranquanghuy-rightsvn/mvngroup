@@ -8,7 +8,7 @@
     "cover": "news/vinh-danh-quan-quan-bang-professional-cho-phuong-an-vertical-hue/images/cover.jpg",
     "order": 1,
     "created_at": "2026-07-29T18:00:01.045Z",
-    "updated_at": "2026-07-29T18:05:25.399Z"
+    "updated_at": "2026-07-30T11:46:44.622Z"
   },
   {
     "id": "b3280eba-a395-4993-bd23-7eebbf33c669",
@@ -31,5 +31,104 @@
     "order": 3,
     "created_at": "2026-07-29T17:46:33.358Z",
     "updated_at": "2026-07-29T18:03:51.870Z"
+  },
+  {
+    "id": "c1947c94-beaa-4d04-8687-9e5eddef3144",
+    "slug": "bao-kien-viet-dua-tin-ve-du-an-gao-lut-house",
+    "title": "Kien Viet Magazine Features the Gao Lut House Project",
+    "description": "Gao Lut House by MVN Group was featured by Kien Viet Magazine as a sustainable architectural project that harmoniously integrates natural light, rustic materials, and a strong connection with nature.",
+    "author": "MVN Group",
+    "cover": "news/bao-kien-viet-dua-tin-ve-du-an-gao-lut-house/images/cover.jpg",
+    "order": 4,
+    "created_at": "2026-08-03T03:45:32.154Z",
+    "updated_at": "2026-08-03T03:51:02.519Z"
+  },
+  {
+    "id": "578fbd36-71c7-46a1-a946-d04576ec58c5",
+    "slug": "gao-lut-house-tren-bao-chi",
+    "title": "Gao Lut House Featured in the Press",
+    "description": "Gao Lut House by MVN Group has been recognized at Awards Cycle 52 for its outstanding architectural value, highlighting the harmony between contemporary design, functionality, local identity, and sustainable living principles.",
+    "author": "MVN Group",
+    "cover": "news/gao-lut-house-tren-bao-chi/images/cover.jpg",
+    "order": 5,
+    "created_at": "2026-08-03T03:48:54.048Z",
+    "updated_at": "2026-08-03T03:51:52.699Z"
+  },
+  {
+    "id": "a7a38b94-f902-4a7d-b8fd-273189e650d9",
+    "slug": "tam-giao-house-tren-bao-kien-viet",
+    "title": "Tam Giao House in Kien Viet Magazine",
+    "description": "Tam Giao House by MVN Architecture & Construction was featured in Kien Viet Magazine, highlighting a design philosophy centered on the harmony between old and new, nature and architecture, and the connection between people and their living environment.",
+    "author": "MVN Group",
+    "cover": "news/tam-giao-house-tren-bao-kien-viet/images/cover.jpg",
+    "order": 6,
+    "created_at": "2026-08-03T03:56:48.366Z",
+    "updated_at": "2026-08-03T03:56:48.366Z"
+  },
+  {
+    "id": "dfcf74a8-4042-41ad-b623-bc387ef622fa",
+    "slug": "tam-giao-house-named-among-the-top-10-at-the-awards",
+    "title": "Tam Giao House Named Among the Top 10 at the Awards",
+    "description": "Tam Giao House was recognized among the Top 10 award-winning projects, celebrating its thoughtful design, sustainable approach, and harmonious connection between architecture, nature, and everyday living.",
+    "author": "MVN Group",
+    "cover": "news/tam-giao-house-named-among-the-top-10-at-the-awards/images/cover.jpg",
+    "order": 7,
+    "created_at": "2026-08-03T09:11:09.271Z",
+    "updated_at": "2026-08-03T09:11:09.271Z"
+  },
+  {
+    "id": "e128ca67-5048-48f2-9f6a-1bddac88e210",
+    "slug": "the-5th-world-library",
+    "title": "Natural Light: Both Beauty and Challenge",
+    "description": "Natural light is an essential element in interior and architectural design, bringing numerous benefits while also presenting certain challenges. Understanding the advantages and limitations of natural lighting helps architects and designers effectively utilize this “free resource” to create better living environments.",
+    "author": "MVN Group",
+    "cover": "news/the-5th-world-library/images/cover.jpg",
+    "order": 8,
+    "created_at": "2026-08-03T04:17:33.373Z",
+    "updated_at": "2026-08-03T04:17:33.373Z"
+  },
+  {
+    "id": "19627524-4bec-4601-9c05-a5e681f6db96",
+    "slug": "international-world",
+    "title": "A Day at the Construction Site",
+    "description": "A glimpse into a day on site, where dedication, teamwork, and craftsmanship come together to transform architectural ideas into reality.",
+    "author": "MVN Group",
+    "cover": "news/international-world/images/cover.jpg",
+    "order": 9,
+    "created_at": "2026-08-03T04:21:05.464Z",
+    "updated_at": "2026-08-03T08:44:23.746Z"
+  },
+  {
+    "id": "35123b4b-2153-4aaf-9ce9-d9fa53253053",
+    "slug": "thi-cong-thuc-te",
+    "title": "Real Construction Progress",
+    "description": "Follow the progress of a townhouse project under construction in Lien Chieu, where precision, craftsmanship, and dedication come together to bring every architectural vision to life.",
+    "author": "MVN Group",
+    "cover": "news/thi-cong-thuc-te/images/cover.jpg",
+    "order": 10,
+    "created_at": "2026-08-03T04:30:15.695Z",
+    "updated_at": "2026-08-03T08:40:31.596Z"
+  },
+  {
+    "id": "4fec5125-bffd-46fd-b25b-0191d887a2b8",
+    "slug": "extensions-of-media",
+    "title": "Milan Effect Brick: From Material to Design Identity",
+    "description": "Discover how Milan Effect Brick transforms light into a design element, combining Italian innovation with refined aesthetics to create elegant and inspiring living spaces.",
+    "author": "MVN Group",
+    "cover": "news/extensions-of-media/images/cover.jpg",
+    "order": 11,
+    "created_at": "2026-08-03T04:56:56.548Z",
+    "updated_at": "2026-08-03T08:45:23.825Z"
+  },
+  {
+    "id": "26832021-1936-4e6e-82c3-d5b2a1777f4c",
+    "slug": "gallery-for-buildings",
+    "title": "Projects Under Construction",
+    "description": "Explore our ongoing construction projects, where every stage reflects our commitment to quality, precision, and bringing architectural visions to life.",
+    "author": "MVN Group",
+    "cover": "news/gallery-for-buildings/images/cover.jpg",
+    "order": 12,
+    "created_at": "2026-08-03T05:13:39.171Z",
+    "updated_at": "2026-08-03T08:46:41.571Z"
   }
 ]
