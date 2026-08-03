@@ -1,42 +1,5 @@
 [
   {
-    "id": "5c4be676-a2b5-49f0-9b32-a954171696a6",
-    "slug": "residential-rental-apartments",
-    "title": "Residential & Rental Apartments",
-    "description": "The project is envisioned as a multifunctional residential model, harmoniously combining private family living spaces with rental apartments. The design aims to optimize real estate utilization while ensuring privacy, co",
-    "architect": "ThS. KTS Trương Anh Vương",
-    "location": "Đà Nẵng",
-    "area": "216m²",
-    "date": "2025-02-12",
-    "categories": [
-      "Housing",
-      "Residential - Service"
-    ],
-    "cover": "our-projects/residential-rental-apartments/images/01.jpg",
-    "order": 1,
-    "created_at": "2026-08-03T03:30:09.425Z",
-    "updated_at": "2026-08-03T03:30:09.425Z"
-  },
-  {
-    "id": "6ee238f6-eca2-4618-81cb-c872eac69740",
-    "slug": "block-aparment",
-    "title": "Block Aparment",
-    "description": "Developed with a contemporary minimalist philosophy, the project is designed to create a tranquil living environment that reconnects people with nature in the heart of the city. Rather than relying on decorative elements",
-    "architect": "ThS. KTS Trương Anh Vương",
-    "location": "Đà Nẵng",
-    "area": "150m²",
-    "date": "2023-11-04",
-    "categories": [
-      "Housing",
-      "Residential - Service",
-      "Interior"
-    ],
-    "cover": "our-projects/block-aparment/images/01.jpg",
-    "order": 2,
-    "created_at": "2026-08-03T03:24:35.218Z",
-    "updated_at": "2026-08-03T03:24:35.218Z"
-  },
-  {
     "id": "b04041a2-7ffb-4fbe-a6a9-e210dcf2047d",
     "slug": "high-rise-residential-architecture",
     "title": "High-Rise Residential Architecture",
@@ -52,7 +15,7 @@
       "Structure"
     ],
     "cover": "our-projects/high-rise-residential-architecture/images/01.jpg",
-    "order": 3,
+    "order": 1,
     "created_at": "2026-07-30T07:25:30.934Z",
     "updated_at": "2026-08-02T06:42:13.443Z"
   },
@@ -73,7 +36,7 @@
       "Interior"
     ],
     "cover": "our-projects/vertical-hue-lang-hue-tren-cao/images/01.jpg",
-    "order": 4,
+    "order": 2,
     "created_at": "2026-07-25T03:59:05.501Z",
     "updated_at": "2026-07-29T18:17:48.690Z"
   },
@@ -93,7 +56,7 @@
       "Structure"
     ],
     "cover": "our-projects/my-dinh-pearl/images/01.jpg",
-    "order": 5,
+    "order": 3,
     "created_at": "2026-07-23T08:36:51.096Z",
     "updated_at": "2026-07-31T01:35:21.426Z"
   },
@@ -113,7 +76,7 @@
       "Structure"
     ],
     "cover": "our-projects/the-diamond-bvlgravia/images/01.jpg",
-    "order": 6,
+    "order": 4,
     "created_at": "2026-07-23T08:45:07.761Z",
     "updated_at": "2026-07-29T18:19:10.698Z"
   },
@@ -133,7 +96,7 @@
       "Structure"
     ],
     "cover": "our-projects/truong-hoc-lien-cap-integrated-school/images/01.jpg",
-    "order": 7,
+    "order": 5,
     "created_at": "2026-07-30T08:04:10.015Z",
     "updated_at": "2026-07-31T01:32:55.376Z"
   },
@@ -152,7 +115,7 @@
       "Structure"
     ],
     "cover": "our-projects/aranmasa-hotel-spa/images/01.jpg",
-    "order": 8,
+    "order": 6,
     "created_at": "2026-07-30T07:40:41.512Z",
     "updated_at": "2026-07-30T07:40:41.512Z"
   },
@@ -171,7 +134,7 @@
       "Interior"
     ],
     "cover": "our-projects/gao-lut-house/images/01.jpg",
-    "order": 9,
+    "order": 7,
     "created_at": "2026-07-23T09:17:13.869Z",
     "updated_at": "2026-07-30T07:33:33.683Z"
   },
@@ -190,7 +153,7 @@
       "Interior"
     ],
     "cover": "our-projects/tam-giao-house/images/01.jpg",
-    "order": 10,
+    "order": 8,
     "created_at": "2026-07-23T09:25:36.267Z",
     "updated_at": "2026-07-29T18:23:37.674Z"
   },
@@ -209,7 +172,7 @@
       "Structure"
     ],
     "cover": "our-projects/to-hop-van-hoa-hon-kem-da-dung/images/01.jpg",
-    "order": 11,
+    "order": 9,
     "created_at": "2026-07-31T02:11:09.167Z",
     "updated_at": "2026-07-31T02:11:09.167Z"
   },
@@ -228,7 +191,7 @@
       "Interior"
     ],
     "cover": "our-projects/the-red-wood/images/01.jpg",
-    "order": 12,
+    "order": 10,
     "created_at": "2026-07-31T01:59:23.247Z",
     "updated_at": "2026-07-31T01:59:23.247Z"
   },
@@ -247,7 +210,7 @@
       "Interior"
     ],
     "cover": "our-projects/the-red-mountain-nha-nui-do/images/01.jpg",
-    "order": 13,
+    "order": 11,
     "created_at": "2026-07-22T08:05:37.683Z",
     "updated_at": "2026-07-29T18:21:32.620Z"
   },
@@ -267,7 +230,7 @@
       "Structure"
     ],
     "cover": "our-projects/terra-verde-serviced-apartment/images/01.jpg",
-    "order": 14,
+    "order": 12,
     "created_at": "2026-07-31T01:47:15.626Z",
     "updated_at": "2026-07-31T01:47:15.626Z"
   },
@@ -287,7 +250,7 @@
       "Structure"
     ],
     "cover": "our-projects/toi-gian-dam-chat-nhiet-doi/images/01.jpg",
-    "order": 15,
+    "order": 13,
     "created_at": "2026-07-23T10:00:08.925Z",
     "updated_at": "2026-07-31T03:19:06.262Z"
   },
@@ -306,7 +269,7 @@
       "Structure"
     ],
     "cover": "our-projects/trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 16,
+    "order": 14,
     "created_at": "2026-07-30T06:54:46.656Z",
     "updated_at": "2026-07-30T07:10:54.351Z"
   },
@@ -325,7 +288,7 @@
       "Structure"
     ],
     "cover": "our-projects/canh-quan-trung-tam-thuong-mai-ket-hop-van-phong/images/01.jpg",
-    "order": 17,
+    "order": 15,
     "created_at": "2026-07-30T07:16:30.490Z",
     "updated_at": "2026-07-30T07:22:08.046Z"
   },
@@ -344,7 +307,7 @@
       "Structure"
     ],
     "cover": "our-projects/khu-san-pickleball-to-hop-the-thao/images/01.jpg",
-    "order": 18,
+    "order": 16,
     "created_at": "2026-07-31T02:24:17.904Z",
     "updated_at": "2026-07-31T03:42:49.160Z"
   },
@@ -363,7 +326,7 @@
       "Structure"
     ],
     "cover": "our-projects/cong-vien-vui-choi-cong-dong-o-hoi-an/images/01.jpg",
-    "order": 19,
+    "order": 17,
     "created_at": "2026-07-31T02:33:44.588Z",
     "updated_at": "2026-07-31T08:25:00.108Z"
   },
@@ -382,7 +345,7 @@
       "Interior"
     ],
     "cover": "our-projects/toa-nha-le-huu-trac-le-huu-trac-building/images/01.jpg",
-    "order": 20,
+    "order": 18,
     "created_at": "2026-07-31T04:05:04.368Z",
     "updated_at": "2026-07-31T04:05:04.368Z"
   },
@@ -402,7 +365,7 @@
       "Villa"
     ],
     "cover": "our-projects/villa-khu-do-thi-moi/images/01.jpg",
-    "order": 21,
+    "order": 19,
     "created_at": "2026-07-31T10:38:26.136Z",
     "updated_at": "2026-07-31T10:38:26.136Z"
   },
@@ -421,7 +384,7 @@
       "Interior"
     ],
     "cover": "our-projects/q-v-house/images/01.jpg",
-    "order": 22,
+    "order": 20,
     "created_at": "2026-08-01T02:19:58.308Z",
     "updated_at": "2026-08-01T04:37:29.620Z"
   },
@@ -440,7 +403,7 @@
       "Interior"
     ],
     "cover": "our-projects/villa-hien-dai-2/images/01.jpg",
-    "order": 23,
+    "order": 21,
     "created_at": "2026-07-31T09:12:35.598Z",
     "updated_at": "2026-07-31T09:12:35.598Z"
   },
@@ -459,7 +422,7 @@
       "Interior"
     ],
     "cover": "our-projects/villa-hien-dai-2-tang/images/01.jpg",
-    "order": 24,
+    "order": 22,
     "created_at": "2026-07-31T10:07:00.620Z",
     "updated_at": "2026-07-31T10:07:00.620Z"
   },
@@ -477,7 +440,7 @@
       "Interior"
     ],
     "cover": "our-projects/nha-3-tang-hien-dai/images/01.jpg",
-    "order": 25,
+    "order": 23,
     "created_at": "2026-07-31T10:13:45.090Z",
     "updated_at": "2026-08-01T01:14:11.874Z"
   },
@@ -496,7 +459,7 @@
       "Interior"
     ],
     "cover": "our-projects/mam-house-nha-o-ket-hop-cho-thue/images/01.jpg",
-    "order": 26,
+    "order": 24,
     "created_at": "2026-07-31T10:25:03.133Z",
     "updated_at": "2026-07-31T10:45:15.460Z"
   },
@@ -515,7 +478,7 @@
       "Interior"
     ],
     "cover": "our-projects/nha-o-ket-hop-cho-thue/images/01.jpg",
-    "order": 27,
+    "order": 25,
     "created_at": "2026-07-31T10:29:27.219Z",
     "updated_at": "2026-07-31T10:29:27.219Z"
   },
@@ -534,7 +497,7 @@
       "Villa"
     ],
     "cover": "our-projects/villa-hien-dai/images/01.jpg",
-    "order": 28,
+    "order": 26,
     "created_at": "2026-07-31T10:33:08.624Z",
     "updated_at": "2026-07-31T10:33:08.624Z"
   },
@@ -553,7 +516,7 @@
       "Interior"
     ],
     "cover": "our-projects/golden-villa/images/01.jpg",
-    "order": 29,
+    "order": 27,
     "created_at": "2026-08-01T01:39:24.816Z",
     "updated_at": "2026-08-01T01:41:27.230Z"
   },
@@ -574,7 +537,7 @@
       "Structure"
     ],
     "cover": "our-projects/studio-wedding-van-phong-tiec-cuoi/images/01.jpg",
-    "order": 30,
+    "order": 28,
     "created_at": "2026-08-01T01:53:41.248Z",
     "updated_at": "2026-08-01T01:53:41.248Z"
   },
@@ -592,7 +555,7 @@
       "Residential - Service"
     ],
     "cover": "our-projects/garden-house/images/01.jpg",
-    "order": 31,
+    "order": 29,
     "created_at": "2026-08-01T02:01:28.900Z",
     "updated_at": "2026-08-01T02:01:28.900Z"
   },
@@ -610,7 +573,7 @@
       "Interior"
     ],
     "cover": "our-projects/dragon-coffee/images/01.jpg",
-    "order": 32,
+    "order": 30,
     "created_at": "2026-08-01T09:06:09.726Z",
     "updated_at": "2026-08-01T09:06:09.726Z"
   },
@@ -630,7 +593,7 @@
       "Villa"
     ],
     "cover": "our-projects/mediterranean-villa/images/01.jpg",
-    "order": 33,
+    "order": 31,
     "created_at": "2026-08-01T09:11:50.835Z",
     "updated_at": "2026-08-01T09:11:50.835Z"
   },
@@ -649,7 +612,7 @@
       "Interior"
     ],
     "cover": "our-projects/happy-house/images/01.jpg",
-    "order": 34,
+    "order": 32,
     "created_at": "2026-08-01T09:15:21.365Z",
     "updated_at": "2026-08-01T09:15:21.365Z"
   },
@@ -668,7 +631,7 @@
       "Interior"
     ],
     "cover": "our-projects/modern-3-storey-townhouse/images/01.jpg",
-    "order": 35,
+    "order": 33,
     "created_at": "2026-08-03T02:47:19.629Z",
     "updated_at": "2026-08-03T02:47:19.629Z"
   },
@@ -688,9 +651,27 @@
       "Villa"
     ],
     "cover": "our-projects/mountain-retreat-resort/images/01.jpg",
-    "order": 36,
+    "order": 34,
     "created_at": "2026-08-03T02:51:07.386Z",
     "updated_at": "2026-08-03T02:51:07.386Z"
+  },
+  {
+    "id": "5c4be676-a2b5-49f0-9b32-a954171696a6",
+    "slug": "residential-rental-apartments",
+    "title": "Residential & Rental Apartments",
+    "description": "The project is envisioned as a multifunctional residential model, harmoniously combining private family living spaces with rental apartments. The design aims to optimize real estate utilization while ensuring privacy, co",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "216m²",
+    "date": "2025-02-12",
+    "categories": [
+      "Housing",
+      "Residential - Service"
+    ],
+    "cover": "our-projects/residential-rental-apartments/images/01.jpg",
+    "order": 35,
+    "created_at": "2026-08-03T03:30:09.425Z",
+    "updated_at": "2026-08-03T03:30:09.425Z"
   },
   {
     "id": "fb03fcd3-6b74-4628-b9da-d269f4edac63",
@@ -707,7 +688,7 @@
       "Interior"
     ],
     "cover": "our-projects/modern-rental-housing/images/01.jpg",
-    "order": 37,
+    "order": 36,
     "created_at": "2026-08-03T03:05:02.892Z",
     "updated_at": "2026-08-03T03:05:02.892Z"
   },
@@ -726,7 +707,7 @@
       "Interior"
     ],
     "cover": "our-projects/golden-sunset-hotel/images/01.jpg",
-    "order": 38,
+    "order": 37,
     "created_at": "2026-08-03T03:11:49.865Z",
     "updated_at": "2026-08-03T03:11:49.865Z"
   },
@@ -744,9 +725,28 @@
       "Residential - Service"
     ],
     "cover": "our-projects/residential-commercial-building/images/01.jpg",
-    "order": 39,
+    "order": 38,
     "created_at": "2026-08-03T03:08:10.247Z",
     "updated_at": "2026-08-03T03:08:10.247Z"
+  },
+  {
+    "id": "6ee238f6-eca2-4618-81cb-c872eac69740",
+    "slug": "block-aparment",
+    "title": "Block Aparment",
+    "description": "Developed with a contemporary minimalist philosophy, the project is designed to create a tranquil living environment that reconnects people with nature in the heart of the city. Rather than relying on decorative elements",
+    "architect": "ThS. KTS Trương Anh Vương",
+    "location": "Đà Nẵng",
+    "area": "150m²",
+    "date": "2023-11-04",
+    "categories": [
+      "Housing",
+      "Residential - Service",
+      "Interior"
+    ],
+    "cover": "our-projects/block-aparment/images/01.jpg",
+    "order": 39,
+    "created_at": "2026-08-03T03:24:35.218Z",
+    "updated_at": "2026-08-03T03:24:35.218Z"
   },
   {
     "id": "db968098-a156-4c30-9ad2-af51ac315a1b",
