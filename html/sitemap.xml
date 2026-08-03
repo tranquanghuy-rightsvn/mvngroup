@@ -81,11 +81,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/our-projects/residence-with-hair-salon/</loc>
-        <lastmod>2026-08-03</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/our-projects/high-rise-residential-architecture/</loc>
         <lastmod>2026-08-02</lastmod>
         <priority>0.6</priority>
@@ -272,6 +267,11 @@
     </url>
     <url>
         <loc>https://mvngroup.vn/our-projects/golden-sunset-hotel/</loc>
+        <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/our-projects/residence-with-hair-salon/</loc>
         <lastmod>2026-08-03</lastmod>
         <priority>0.6</priority>
     </url>
