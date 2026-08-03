@@ -1,0 +1,27 @@
+{
+  "id": "c6d31be3-407a-47ce-a18f-a9067ab84742",
+  "slug": "loft-mini-apartment",
+  "title": "Loft Mini Apartment",
+  "description": "The project is envisioned as a modern rental apartment model, optimizing spatial efficiency while ensuring comfort, functionality, and a high quality of living. The design focuses on maximizing natural light, enhancing v",
+  "architect": "ThS. KTS Trương Anh Vương",
+  "location": "TP. Nha Trang, Khánh Hòa",
+  "area": "90m²",
+  "date": "2021-07-12",
+  "categories": [
+    "Housing",
+    "Residential - Service",
+    "Interior"
+  ],
+  "cover": "our-projects/loft-mini-apartment/images/01.jpg",
+  "order": 1,
+  "created_at": "2026-08-03T03:41:30.242Z",
+  "updated_at": "2026-08-03T03:41:30.242Z",
+  "images": [
+    "our-projects/loft-mini-apartment/images/01.jpg",
+    "our-projects/loft-mini-apartment/images/02.jpg",
+    "our-projects/loft-mini-apartment/images/03.jpg",
+    "our-projects/loft-mini-apartment/images/04.jpg",
+    "our-projects/loft-mini-apartment/images/05.jpg"
+  ],
+  "content": "<p>The project is envisioned as a modern rental apartment model, optimizing spatial efficiency while ensuring comfort, functionality, and a high quality of living. The design focuses on maximizing natural light, enhancing ventilation, and creating flexible spatial arrangements, providing a comfortable living environment for residents while improving investment efficiency for the owner.</p>"
+}
