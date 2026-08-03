@@ -1,0 +1,23 @@
+{
+  "id": "5c4be676-a2b5-49f0-9b32-a954171696a6",
+  "slug": "residential-rental-apartments",
+  "title": "Residential & Rental Apartments",
+  "description": "The project is envisioned as a multifunctional residential model, harmoniously combining private family living spaces with rental apartments. The design aims to optimize real estate utilization while ensuring privacy, co",
+  "architect": "ThS. KTS Trương Anh Vương",
+  "location": "Đà Nẵng",
+  "area": "216m²",
+  "date": "2025-02-12",
+  "categories": [
+    "Housing",
+    "Residential - Service"
+  ],
+  "cover": "our-projects/residential-rental-apartments/images/01.jpg",
+  "order": 1,
+  "created_at": "2026-08-03T03:30:09.425Z",
+  "updated_at": "2026-08-03T03:30:09.425Z",
+  "images": [
+    "our-projects/residential-rental-apartments/images/01.jpg",
+    "our-projects/residential-rental-apartments/images/02.jpg"
+  ],
+  "content": "<p>The project is envisioned as a multifunctional residential model, harmoniously combining private family living spaces with rental apartments. The design aims to optimize real estate utilization while ensuring privacy, comfort, and a high quality of living for the homeowners.</p>\n<p>The architectural solution focuses on flexible spatial planning, creating independence between functional areas while maintaining overall connectivity. Natural light, ventilation, and material selection are carefully considered to create a modern, comfortable, and sustainable living environment for long-term use.</p>"
+}
