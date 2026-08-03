@@ -163,6 +163,11 @@
             font-family: 'Helvetica W01 Light', 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
         }
 
+        /* ===== PAGE HEAD (trang, khong banner) ===== */
+        .page-head {
+            background: var(--white);
+        }
+
         /* ===== HERO (banner anh our-projects.avif, full man hinh) ===== */
         .hero {
             position: relative;
@@ -323,7 +328,24 @@
         /* ===== LATEST NEWS ===== */
         .section--news {
             background: #fff;
-            padding: 90px 0 100px;
+            padding: 70px 0 150px; /* lui xuong khoi logo/menu fixed vi khong con banner */
+        }
+
+        .news__eyebrow {
+            margin: 0 0 60px;
+            font-family: helvetica-w01-light, sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+            color: rgb(91, 102, 0);
+        }
+
+        .news__heading {
+            margin: 0 0 56px;
+            padding-left: 10px;
+            font-family: helvetica-w01-roman, sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: rgb(113, 113, 113);
         }
 
         .news__title {
@@ -396,7 +418,7 @@
         }
 
         @media (max-width: 768px) {
-            .section--news { padding: 60px 0 70px; }
+            .section--news { padding: 110px 0 70px; }
             .news__grid { grid-template-columns: 1fr; gap: 32px; margin-top: 48px; }
         }
 
@@ -683,7 +705,7 @@
             right: 0;
             height: 100%;
             width: min(480px, 100vw);
-            background: #6b6762;
+            background: #717171;
             color: var(--white);
             z-index: 10002;
             display: flex;
@@ -939,10 +961,8 @@
 
 <body>
 
-    <!-- ===== HERO (banner anh) ===== -->
-    <header class="hero">
-
-        <img class="hero__banner" src="../images/news-bg.jpg" alt="MVN Group news">
+    <!-- ===== PAGE HEAD (khong banner) ===== -->
+    <header class="page-head">
 
         <!-- Thanh tren -->
         <div class="hero__bar">
@@ -974,23 +994,15 @@
 
         </div>
 
-        <!-- Caption goc duoi trai -->
-        <div class="hero__caption">
-            <div class="hero__caption-label">
-                <svg viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path fill="#ffffff" d="M7.999 2.667 13.332 8l-5.333 5.333H2.665V2.667z"></path>
-                </svg>
-                Latest News
-            </div>
-            <h1 class="hero__caption-title"><em>Discover</em> THE LATEST NEWS</h1>
-        </div>
-
     </header>
 
 
     <!-- ===== LATEST NEWS ===== -->
     <section class="section--news">
         <div class="section__container">
+
+            <p class="news__eyebrow">All Posts</p>
+            <h1 class="news__heading">All Posts</h1>
 
             <div class="news__grid">
 {{NEWS_CARDS}}
