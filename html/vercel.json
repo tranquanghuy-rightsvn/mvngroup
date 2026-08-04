@@ -39,16 +39,16 @@
       "source": "/blog",
       "destination": "/news/",
       "permanent": true
-    }
-  ],
-  "rewrites": [
+    },
     {
       "source": "/contact-us",
-      "destination": "/about-us/"
+      "destination": "/about-us/#office-block",
+      "permanent": true
     },
     {
       "source": "/contact-us/",
-      "destination": "/about-us/"
+      "destination": "/about-us/#office-block",
+      "permanent": true
     }
   ]
 }

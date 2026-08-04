@@ -1697,7 +1697,7 @@ SOLUTIONS</h3>
             <a href="./" class="active">About</a>
             <a href="../our-projects/">Projects</a>
             <a href="../services/">Services</a>
-            <a href="../contact-us/">Contact</a>
+            <a href="../about-us/#office-block">Contact</a>
             <a href="../news/">News</a>
         </nav>
 
@@ -1740,7 +1740,7 @@ SOLUTIONS</h3>
                 <a href="./" class="footer__link footer__link--active">ABOUT</a>
                 <a href="../our-projects/" class="footer__link">PROJECTS</a>
                 <a href="../services/" class="footer__link">SERVICES</a>
-                <a href="../contact-us/" class="footer__link">CONTACT</a>
+                <a href="../about-us/#office-block" class="footer__link">CONTACT</a>
                 <a href="../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
@@ -1920,15 +1920,6 @@ SOLUTIONS</h3>
             window.addEventListener('resize', onScrollOrResize);
             update();
         })();
-    </script>
-
-    <script>
-        // Trang duoc rewrite (URL van la /contact-us/) -> tu cuon xuong khoi lien he
-        window.addEventListener('load', function () {
-            if (location.pathname.indexOf('contact-us') === -1) return;
-            const target = document.getElementById('office-block');
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
     </script>
 
 </body>
