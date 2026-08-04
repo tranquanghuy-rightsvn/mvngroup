@@ -1922,6 +1922,17 @@ SOLUTIONS</h3>
         })();
     </script>
 
+    <script>
+        // Vao #office-block van cuon toi noi, nhung xoa hash tren URL sau khi cuon xong
+        if (location.hash === '#office-block') {
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    history.replaceState(null, '', location.pathname + location.search);
+                }, 800);
+            });
+        }
+    </script>
+
 </body>
 
 </html>
