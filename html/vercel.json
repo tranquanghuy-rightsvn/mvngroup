@@ -40,5 +40,15 @@
       "destination": "/news/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/contact-us",
+      "destination": "/about-us/"
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/about-us/"
+    }
   ]
 }

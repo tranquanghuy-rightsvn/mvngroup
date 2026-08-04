@@ -166,21 +166,19 @@
         /* ===== HERO (banner anh our-projects.avif, full man hinh) ===== */
         .hero {
             position: relative;
-            /* khong cao qua chieu cao tu nhien cua anh (ty le ~2.05:1) de khong ho trang tren/duoi */
-            height: min(75vh, 48.8vw);
+            /* lan dau xuat hien full 100vh */
+            height: 100vh;
             min-height: 480px;
             overflow: hidden;
         }
 
-        /* Anh hien tron ven chieu ngang (khong bi cover cat 2 ben),
-           phan du chieu doc bi hero (overflow: hidden) cat deu 2 phia */
+        /* object-fit: cover de lap kin 100vh khong ho trang tren/duoi */
         .hero__banner {
             position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            inset: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             z-index: 0;
         }
 

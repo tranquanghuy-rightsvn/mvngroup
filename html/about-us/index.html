@@ -184,6 +184,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: 'Helvetica W01 Light', 'Inter Tight', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -657,6 +661,7 @@
             grid-template-columns: 2fr 1fr 1fr;
             gap: 48px;
             margin-bottom: 40px;
+            scroll-margin-top: 110px;
         }
 
         .office-block__name {
@@ -1494,32 +1499,32 @@ SOLUTIONS</h3>
             </div>
             <div class="team-grid">
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-01.jpg" alt="M.Arch. Truong Anh Vuong">
+                    <img loading="lazy" src="/about-us/images/team-01.jpg" alt="M.Arch. Truong Anh Vuong">
                     <h5>M.Arch. Truong Anh Vuong</h5>
                     <p>Founder</p>
                 </div>
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-02.jpg" alt="Nguyen Huu Thang">
+                    <img loading="lazy" src="/about-us/images/team-02.jpg" alt="Nguyen Huu Thang">
                     <h5>Nguyen Huu Thang</h5>
                     <p>Architect</p>
                 </div>
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-03.jpg" alt="Huynh Thanh Dung">
+                    <img loading="lazy" src="/about-us/images/team-03.jpg" alt="Huynh Thanh Dung">
                     <h5>Huynh Thanh Dung</h5>
                     <p>Architect</p>
                 </div>
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-04.jpg" alt="Nguyen Quan">
+                    <img loading="lazy" src="/about-us/images/team-04.jpg" alt="Nguyen Quan">
                     <h5>Nguyen Quan</h5>
                     <p>Architect</p>
                 </div>
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-05.jpg" alt="Vo Tan Bin">
+                    <img loading="lazy" src="/about-us/images/team-05.jpg" alt="Vo Tan Bin">
                     <h5>Vo Tan Bin</h5>
                     <p>IT & Marketing</p>
                 </div>
                 <div class="team__member">
-                    <img loading="lazy" src="images/team-06.jpg" alt="Do Tan Dat">
+                    <img loading="lazy" src="/about-us/images/team-06.jpg" alt="Do Tan Dat">
                     <h5>Do Tan Dat</h5>
                     <p>Architect</p>
                 </div>
@@ -1567,7 +1572,7 @@ SOLUTIONS</h3>
             </div>
 
             <!-- Head office / lien he: du lieu that lay tu schema.org cua trang, gio lam viec chua cong bo -->
-            <div class="office-block">
+            <div class="office-block" id="office-block">
                 <div>
                     <h2 class="office-block__name">MVN GROUP</h2>
                     <p><a href="tel:+84948789009">+84 94 878 90 09</a> | <a href="mailto:congtycpdtmvn@gmail.com">congtycpdtmvn@gmail.com</a></p>
@@ -1578,7 +1583,7 @@ SOLUTIONS</h3>
                 </div>
                 <div>
                     <h5>Working Hours</h5>
-                    <p>Mon - Fri: 8:00 am - 18:00 pm<br>Saturday: 8:00 am - 15:00 pm</p>
+                    <p>Mon - Sat: 8:00 am - 12:00 pm<br>13:30 pm - 17:30 pm</p>
                 </div>
             </div>
 
@@ -1692,7 +1697,7 @@ SOLUTIONS</h3>
             <a href="./" class="active">About</a>
             <a href="../our-projects/">Projects</a>
             <a href="../services/">Services</a>
-            <a href="../about-us/">Contact</a>
+            <a href="../contact-us/">Contact</a>
             <a href="../news/">News</a>
         </nav>
 
@@ -1735,7 +1740,7 @@ SOLUTIONS</h3>
                 <a href="./" class="footer__link footer__link--active">ABOUT</a>
                 <a href="../our-projects/" class="footer__link">PROJECTS</a>
                 <a href="../services/" class="footer__link">SERVICES</a>
-                <a href="../about-us/" class="footer__link">CONTACT</a>
+                <a href="../contact-us/" class="footer__link">CONTACT</a>
                 <a href="../news/" class="footer__link">NEWS</a>
             </nav>
             <div class="footer__meta">
@@ -1915,6 +1920,15 @@ SOLUTIONS</h3>
             window.addEventListener('resize', onScrollOrResize);
             update();
         })();
+    </script>
+
+    <script>
+        // Trang duoc rewrite (URL van la /contact-us/) -> tu cuon xuong khoi lien he
+        window.addEventListener('load', function () {
+            if (location.pathname.indexOf('contact-us') === -1) return;
+            const target = document.getElementById('office-block');
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
     </script>
 
 </body>
