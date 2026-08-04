@@ -39,16 +39,6 @@
       "source": "/blog",
       "destination": "/news/",
       "permanent": true
-    },
-    {
-      "source": "/contact-us",
-      "destination": "/about-us/#office-block",
-      "permanent": true
-    },
-    {
-      "source": "/contact-us/",
-      "destination": "/about-us/#office-block",
-      "permanent": true
     }
   ]
 }
