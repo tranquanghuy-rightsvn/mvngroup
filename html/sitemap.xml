@@ -36,11 +36,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/news/chi-phi-xay-nha-tron-goi-da-nang-2026/</loc>
-        <lastmod>2026-07-29</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/news/bao-kien-viet-dua-tin-ve-du-an-gao-lut-house/</loc>
         <lastmod>2026-08-04</lastmod>
         <priority>0.6</priority>
@@ -83,6 +78,11 @@
     <url>
         <loc>https://mvngroup.vn/news/gallery-for-buildings/</loc>
         <lastmod>2026-08-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/news/chi-phi-xay-nha-tron-goi-da-nang-2026/</loc>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
