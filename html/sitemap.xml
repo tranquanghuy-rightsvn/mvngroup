@@ -26,6 +26,11 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://mvngroup.vn/news/chi-phi-xay-nha-tron-goi-da-nang-2026/</loc>
+        <lastmod>2026-09-14</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://mvngroup.vn/news/mvn-group-signs-design-consultancy-contract-for-my-dinh-pear-pear-3-and-the-overall-project-sales-documentation/</loc>
         <lastmod>2026-09-14</lastmod>
         <priority>0.6</priority>
@@ -83,11 +88,6 @@
     <url>
         <loc>https://mvngroup.vn/news/gallery-for-buildings/</loc>
         <lastmod>2026-08-03</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mvngroup.vn/news/chi-phi-xay-nha-tron-goi-da-nang-2026/</loc>
-        <lastmod>2026-06-29</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
