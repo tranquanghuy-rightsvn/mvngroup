@@ -328,7 +328,7 @@ def build_projects_index(projects_merged, posts_merged, tpl):
 
 
 def update_homepage(merged, projects_merged):
-    """Cập nhật tại chỗ trang chủ: grid LATEST NEWS + search overlay (news + projects).
+    """Cập nhật tại chỗ trang chủ: grid LATEST NEWS + 6 công trình mới nhất.
     Phần còn lại của html/index.html giữ nguyên (trang chủ vẫn sửa tay được)."""
     path = HTML / "index.html"
     if not path.exists():
@@ -342,7 +342,33 @@ def update_homepage(merged, projects_merged):
         lambda m: m.group(1) + "\n" + cards + "\n            " + m.group(2),
         s, count=1, flags=re.S,
     )
-    search = "\n".join(search_card(p) for p in top3)
+    # "Những công trình mới nhất": 6 dự án mới nhất trong dải kéo ngang
+    scroller = "\n\n".join(project_card(p, "/our-projects/") for p in projects_merged[:6])
+    s = re.sub(
+        r'(<div class="projects__scroller">).*?(</div>\s*<!-- /projects__scroller -->)',
+        lambda m: m.group(1) + "\n\n" + scroller + "\n\n        " + m.group(2),
+        s, count=1, flags=re.S,
+    )
+    path.write_text(s, encoding="utf-8")
+    print("built html/index.html (latest news + 6 công trình mới nhất)")
+
+
+# Mọi trang tĩnh (không được build.py sinh ra từ template) nhưng có sẵn khối search overlay
+# (nav "Latest News"/"Latest Projects") cần được đồng bộ mỗi lần build, nếu không sẽ giữ dữ liệu
+# cũ (bài/dự án đã xoá vẫn còn link, bài mới nhất không xuất hiện) - xem update_search_overlay().
+STATIC_OVERLAY_PAGES = ["index.html", "about-us/index.html", "contact-us/index.html",
+                         "services/index.html", "search/index.html"]
+
+
+def update_search_overlay(path, merged, projects_merged):
+    """Cập nhật khối 'Latest News' / 'Latest Projects' trong search overlay (nav) của MỘT trang.
+    Dùng đường dẫn tuyệt đối (/news/.., /our-projects/..) như search_card()/search_project_card()
+    nên áp dụng đúng bất kể trang nằm ở độ sâu thư mục nào."""
+    if not path.exists():
+        return
+    s = path.read_text(encoding="utf-8")
+    orig = s
+    search = "\n".join(search_card(p) for p in merged[:3])
     s = re.sub(
         r'(<h4>Latest News</h4>\s*<div class="search-overlay__grid">).*?(</div>\s*</div>)',
         lambda m: m.group(1) + "\n" + search + "\n            " + m.group(2),
@@ -354,15 +380,9 @@ def update_homepage(merged, projects_merged):
         lambda m: m.group(1) + "\n" + searchprj + "\n            " + m.group(2),
         s, count=1, flags=re.S,
     )
-    # "Những công trình mới nhất": 6 dự án mới nhất trong dải kéo ngang
-    scroller = "\n\n".join(project_card(p, "/our-projects/") for p in projects_merged[:6])
-    s = re.sub(
-        r'(<div class="projects__scroller">).*?(</div>\s*<!-- /projects__scroller -->)',
-        lambda m: m.group(1) + "\n\n" + scroller + "\n\n        " + m.group(2),
-        s, count=1, flags=re.S,
-    )
-    path.write_text(s, encoding="utf-8")
-    print("built html/index.html (latest news + 6 công trình mới nhất + search overlay)")
+    if s != orig:
+        path.write_text(s, encoding="utf-8")
+        print("updated search overlay:", path.relative_to(ROOT))
 
 
 def build_sitemap(merged, projects_merged):
@@ -443,6 +463,8 @@ def main():
     build_projects_index(projects_merged, merged, projects_index_tpl)
     build_search_page(merged, projects_merged)
     update_homepage(merged, projects_merged)
+    for rel in STATIC_OVERLAY_PAGES:
+        update_search_overlay(HTML / rel, merged, projects_merged)
     build_sitemap(merged, projects_merged)
     print("Done: %d bài + %d dự án CMS | tổng %d bài, %d dự án" % (built, built_prj, len(merged), len(projects_merged)))
 

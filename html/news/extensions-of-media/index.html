@@ -409,7 +409,10 @@
             margin: 20px 0 28px;
         }
 
-        .post figure img {
+        /* .post img (khong chi .post figure img): noi dung CMS thuong dan anh <img> tran, khong
+           boc trong <figure> -> neu chi style figure img thi anh tran render theo kich thuoc goc,
+           tran ra khoi khung 920px cua .post. */
+        .post img {
             width: 100%;
             height: auto;
             display: block;
