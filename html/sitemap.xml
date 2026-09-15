@@ -46,11 +46,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://mvngroup.vn/news/gao-lut-house-tren-bao-chi/</loc>
-        <lastmod>2026-08-04</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://mvngroup.vn/news/tam-giao-house-tren-bao-kien-viet/</loc>
         <lastmod>2026-08-04</lastmod>
         <priority>0.6</priority>
@@ -88,6 +83,11 @@
     <url>
         <loc>https://mvngroup.vn/news/mvn-gianh-quan-quan-genesis-green-living-2026/</loc>
         <lastmod>2026-06-01</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://mvngroup.vn/news/gao-lut-house-tren-bao-chi/</loc>
+        <lastmod>2026-03-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
